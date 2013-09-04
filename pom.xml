@@ -112,7 +112,6 @@
         later in the file
         -->
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
-        <jcabi.version>0.8</jcabi.version>
     </properties>
     <repositories>
         <!--
@@ -920,7 +919,7 @@
                     <plugin>
                         <groupId>com.jcabi</groupId>
                         <artifactId>jcabi-maven-plugin</artifactId>
-                        <version>${jcabi.version}</version>
+                        <version>0.7.22</version>
                         <executions>
                             <execution>
                                 <id>jcabi-versionalize-packages</id>
@@ -943,7 +942,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aether</artifactId>
-                <version>${jcabi.version}</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -952,7 +951,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>${jcabi.version}</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -961,7 +960,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-jdbc</artifactId>
-                <version>${jcabi.version}</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -970,7 +969,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>${jcabi.version}</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -979,7 +978,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-manifests</artifactId>
-                <version>${jcabi.version}</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -988,7 +987,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-maven-slf4j</artifactId>
-                <version>${jcabi.version}</version>
+                <version>0.7.22</version>
             </dependency>
             <dependency>
                 <!--
@@ -997,7 +996,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-urn</artifactId>
-                <version>${jcabi.version}</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -1006,7 +1005,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-velocity</artifactId>
-                <version>${jcabi.version}</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -1272,22 +1271,22 @@
                 <plugin>
                     <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-maven-plugin</artifactId>
-                    <version>${jcabi.version}</version>
+                    <version>0.7.22</version>
                 </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-ssl-maven-plugin</artifactId>
-                    <version>${jcabi.version}</version>
+                    <version>0.7.22</version>
                 </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-heroku-maven-plugin</artifactId>
-                    <version>${jcabi.version}</version>
+                    <version>0.7.22</version>
                 </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-beanstalk-maven-plugin</artifactId>
-                    <version>${jcabi.version}</version>
+                    <version>0.7.22</version>
                 </plugin>
                 <plugin>
                     <!--
