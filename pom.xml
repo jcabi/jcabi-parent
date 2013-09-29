@@ -34,7 +34,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.10.1</version>
     <packaging>pom</packaging>
     <name>parent</name>
     <description>com.jcabi:parent</description>
@@ -357,7 +357,7 @@
                     </plugin>
                     <plugin>
                         <artifactId>maven-site-plugin</artifactId>
-                        <version>3.2</version>
+                        <version>3.3</version>
                         <configuration>
                             <generateSitemap>true</generateSitemap>
                             <reportPlugins>
