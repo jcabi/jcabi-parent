@@ -919,7 +919,7 @@
                     <plugin>
                         <groupId>com.jcabi</groupId>
                         <artifactId>jcabi-maven-plugin</artifactId>
-                        <version>0.7.22</version>
+                        <version>0.9</version>
                         <executions>
                             <execution>
                                 <id>jcabi-versionalize-packages</id>
@@ -951,7 +951,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.10</version>
+                <version>0.11.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -969,7 +969,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.8</version>
+                <version>0.9</version>
             </dependency>
             <dependency>
                 <!--
@@ -1202,7 +1202,7 @@
                 -->
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr-runtime</artifactId>
-                <version>3.5</version>
+                <version>3.5.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
