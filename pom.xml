@@ -632,6 +632,71 @@
         </profile>
         <profile>
             <!--
+            REMPL source code reading and reporting in site.
+            More details are here: http://www.rempl.com
+            -->
+            <id>rempl</id>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <artifactId>maven-site-plugin</artifactId>
+                            <inherited>false</inherited>
+                            <configuration>
+                                <reportPlugins combine.children="append">
+                                    <plugin>
+                                        <groupId>com.rempl.plugins</groupId>
+                                        <artifactId>rempl-maven-plugin</artifactId>
+                                        <configuration>
+                                            <reports>
+                                                <report>
+                                                    <type>com.rempl.pdd.SummaryReport</type>
+                                                </report>
+                                            </reports>
+                                        </configuration>
+                                    </plugin>
+                                </reportPlugins>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+                <plugins>
+                    <plugin>
+                        <groupId>com.rempl.plugins</groupId>
+                        <artifactId>rempl-maven-plugin</artifactId>
+                        <version>1.2</version>
+                        <configuration>
+                            <profiles>
+                                <profile>
+                                    <type>com.rempl.pdd.PDDProfile</type>
+                                    <arguments>
+                                        <argument>${basedir}</argument>
+                                        <argument>**</argument>
+                                        <argument>target/**,**/target,.git/**</argument>
+                                    </arguments>
+                                </profile>
+                            </profiles>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>read</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <dependencies>
+                            <dependency>
+                                <groupId>com.rempl.profiles</groupId>
+                                <artifactId>rempl-pdd-profile</artifactId>
+                                <version>1.2</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <!--
             Sign artifacts before installation with GPG. To enable
             this profile you should have "gpg.keyname" property defined.
             -->
