@@ -1178,7 +1178,7 @@
                 -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>0.12.0</version>
+                <version>1.12.2</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
