@@ -1334,6 +1334,16 @@
                 </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
+                    <artifactId>jcabi-mysql-maven-plugin</artifactId>
+                    <version>0.3</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.jcabi</groupId>
+                    <artifactId>jcabi-dynamodb-maven-plugin</artifactId>
+                    <version>0.1.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-ssl-maven-plugin</artifactId>
                     <version>0.8</version>
                 </plugin>
@@ -1353,7 +1363,7 @@
                     -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>cobertura-maven-plugin</artifactId>
-                    <version>2.5.2</version>
+                    <version>2.5.2</version> <!-- don't upgrade it, see https://github.com/jcabi/parent/issues/1 -->
                 </plugin>
                 <plugin>
                     <artifactId>maven-antrun-plugin</artifactId>
