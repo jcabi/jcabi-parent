@@ -1028,7 +1028,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.9</version>
+                <version>0.10</version>
             </dependency>
             <dependency>
                 <!--
@@ -1327,6 +1327,11 @@
         </plugins>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>com.rultor</groupId>
+                    <artifactId>rultor-maven-plugin</artifactId>
+                    <version>0.3</version>
+                </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-maven-plugin</artifactId>
