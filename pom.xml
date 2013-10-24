@@ -90,8 +90,8 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <site>
-            <id>www.jcabi.com</id>
-            <url>s3://www.jcabi.com/parent/</url>
+            <id>parent.jcabi.com</id>
+            <url>http://parent.jcabi.com/</url>
         </site>
     </distributionManagement>
     <prerequisites>
