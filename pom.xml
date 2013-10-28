@@ -1165,6 +1165,20 @@
                 <version>0.2</version>
             </dependency>
             <dependency>
+                <!-- JSON API -->
+                <groupId>javax.json</groupId>
+                <artifactId>javax.json-api</artifactId>
+                <version>1.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <!-- JSON reference implementation -->
+                <groupId>org.glassfish</groupId>
+                <artifactId>javax.json</artifactId>
+                <version>1.0.3</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
                 <!--
                 Google Guava
                 @see https://code.google.com/p/guava-libraries/
