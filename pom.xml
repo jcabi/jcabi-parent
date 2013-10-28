@@ -716,7 +716,7 @@
             http://pages.github.com/
             http://github.github.com/maven-plugins/site-plugin/site-mojo.html
             -->
-            <id>jcabi-github-pages</id>
+            <id>gh-pages</id>
             <activation>
                 <file>
                     <exists>${basedir}/src/site/resources/CNAME</exists>
