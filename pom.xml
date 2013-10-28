@@ -1077,11 +1077,20 @@
             <dependency>
                 <!--
                 AOP Aspects.
-                @see http://www.jcabi.com/jcabi-aspects/index.html
+                @see http://aspects.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
                 <version>0.12</version>
+            </dependency>
+            <dependency>
+                <!--
+                AWS DynamoDB object layer.
+                @see http://www.jcabi.com/jcabi-dynamo
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-dynamo</artifactId>
+                <version>0.8.3</version>
             </dependency>
             <dependency>
                 <!--
@@ -1095,7 +1104,7 @@
             <dependency>
                 <!--
                 Logging facility.
-                @see http://www.jcabi.com/jcabi-log/index.html
+                @see http://log.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
@@ -1121,12 +1130,30 @@
             </dependency>
             <dependency>
                 <!--
+                AWS SimpleDB object layer.
+                @see http://www.jcabi.com/jcabi-simpledb
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-simpledb</artifactId>
+                <version>0.1</version>
+            </dependency>
+            <dependency>
+                <!--
                 URN.
                 @see http://www.jcabi.com/jcabi-urn/index.html
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-urn</artifactId>
                 <version>0.8</version>
+            </dependency>
+            <dependency>
+                <!--
+                XML parsing and printing.
+                @see http://www.jcabi.com/jcabi-xml
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-xml</artifactId>
+                <version>0.2</version>
             </dependency>
             <dependency>
                 <!--
