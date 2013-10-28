@@ -1186,6 +1186,18 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
+                <!-- JAXB API -->
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.2.11</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.xml.bind</groupId>
+                        <artifactId>jsr173_api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
                 <!--
                 Google Guava
                 @see https://code.google.com/p/guava-libraries/
