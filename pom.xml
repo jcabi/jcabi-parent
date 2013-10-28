@@ -1148,21 +1148,21 @@
             </dependency>
             <dependency>
                 <!--
-                XML parsing and printing.
-                @see http://www.jcabi.com/jcabi-xml
-                -->
-                <groupId>com.jcabi</groupId>
-                <artifactId>jcabi-xml</artifactId>
-                <version>0.2</version>
-            </dependency>
-            <dependency>
-                <!--
                 Velocity wrapper.
                 @see http://www.jcabi.com/jcabi-velocity/index.html
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-velocity</artifactId>
                 <version>0.8</version>
+            </dependency>
+            <dependency>
+                <!--
+                XML parsing and printing.
+                @see http://www.jcabi.com/jcabi-xml
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-xml</artifactId>
+                <version>0.2</version>
             </dependency>
             <dependency>
                 <!--
