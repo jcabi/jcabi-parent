@@ -1491,6 +1491,17 @@
                 <plugin>
                     <artifactId>maven-failsafe-plugin</artifactId>
                     <version>2.16</version>
+                    <configuration>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
+                        <forkCount>0</forkCount>
+                        <parallel>all</parallel>
+                        <parallelTestsTimeoutForcedInSeconds>600</parallelTestsTimeoutForcedInSeconds>
+                        <parallelTestsTimeoutInSeconds>180</parallelTestsTimeoutInSeconds>
+                        <perCoreThreadCount>true</perCoreThreadCount>
+                        <runOrder>random</runOrder>
+                        <threadCount>8</threadCount>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-help-plugin</artifactId>
@@ -1576,6 +1587,13 @@
                         <useFile>false</useFile>
                         <runOrder>random</runOrder>
                         <trimStackTrace>false</trimStackTrace>
+                        <failIfNoSpecifiedTests>true</failIfNoSpecifiedTests>
+                        <parallel>all</parallel>
+                        <parallelTestsTimeoutInSeconds>60</parallelTestsTimeoutInSeconds>
+                        <parallelTestsTimeoutForcedInSeconds>180</parallelTestsTimeoutForcedInSeconds>
+                        <perCoreThreadCount>true</perCoreThreadCount>
+                        <threadCount>4</threadCount>
+                        <forkCount>0</forkCount>
                     </configuration>
                 </plugin>
                 <plugin>
