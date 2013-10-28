@@ -243,6 +243,7 @@
                         <executions>
                             <execution>
                                 <id>jcabi-check</id>
+                                <phase>verify</phase>
                                 <goals>
                                     <goal>jslint</goal>
                                 </goals>
