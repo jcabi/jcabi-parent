@@ -1179,6 +1179,13 @@
                 <scope>runtime</scope>
             </dependency>
             <dependency>
+                <!-- JSR-311 JAX-RS API -->
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>jsr311-api</artifactId>
+                <version>1.1.1</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
                 <!--
                 Google Guava
                 @see https://code.google.com/p/guava-libraries/
