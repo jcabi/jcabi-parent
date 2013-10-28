@@ -1611,7 +1611,8 @@
                 <plugin>
                     <groupId>com.github.github</groupId>
                     <artifactId>site-maven-plugin</artifactId>
-                    <version>0.9</version>
+                    <!-- https://github.com/github/maven-plugins/issues/54 -->
+                    <version>0.8</version>
                 </plugin>
             </plugins>
         </pluginManagement>
