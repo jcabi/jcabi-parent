@@ -1670,6 +1670,7 @@
                         <useFile>false</useFile>
                         <runOrder>random</runOrder>
                         <trimStackTrace>false</trimStackTrace>
+                        <failIfNoTests>false</failIfNoTests>
                         <failIfNoSpecifiedTests>true</failIfNoSpecifiedTests>
                         <parallel>all</parallel>
                         <parallelTestsTimeoutInSeconds>60</parallelTestsTimeoutInSeconds>
