@@ -237,6 +237,22 @@
                         </executions>
                     </plugin>
                     <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>jslint-maven-plugin</artifactId>
+                        <version>1.0.1</version>
+                        <executions>
+                            <execution>
+                                <id>jcabi-check</id>
+                                <goals>
+                                    <goal>jslint</goal>
+                                </goals>
+                                <configuration>
+                                    <sourceJsFolder>${basedir}/src</sourceJsFolder>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
                         <!--
                         This plugin finds dependencies that are not used but
                         declared, and the ones that are not declared but
@@ -1065,7 +1081,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.11.1</version>
+                <version>0.12</version>
             </dependency>
             <dependency>
                 <!--
@@ -1083,7 +1099,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.10</version>
+                <version>0.11</version>
             </dependency>
             <dependency>
                 <!--
