@@ -1469,7 +1469,7 @@
                 <plugin>
                     <groupId>com.rultor</groupId>
                     <artifactId>rultor-maven-plugin</artifactId>
-                    <version>0.3.1</version>
+                    <version>0.4</version>
                 </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
