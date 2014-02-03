@@ -1073,7 +1073,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aether</artifactId>
-                <version>0.8</version>
+                <version>0.9</version>
             </dependency>
             <dependency>
                 <!--
@@ -1082,7 +1082,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.12</version>
+                <version>0.14</version>
             </dependency>
             <dependency>
                 <!--
@@ -1091,7 +1091,25 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-dynamo</artifactId>
-                <version>0.8.3</version>
+                <version>0.9.1</version>
+            </dependency>
+            <dependency>
+                <!--
+                HTTP client.
+                @see http://http.jcabi.com/
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-http</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <!--
+                Immutable collections.
+                @see http://immutable.jcabi.com/
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-immutable</artifactId>
+                <version>1.0</version>
             </dependency>
             <dependency>
                 <!--
@@ -1100,7 +1118,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-jdbc</artifactId>
-                <version>0.10</version>
+                <version>0.10.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1109,7 +1127,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.11</version>
+                <version>0.12.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1163,7 +1181,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
-                <version>0.2</version>
+                <version>0.7.8</version>
             </dependency>
             <dependency>
                 <!-- JSON API -->
@@ -1176,7 +1194,7 @@
                 <!-- JSON reference implementation -->
                 <groupId>org.glassfish</groupId>
                 <artifactId>javax.json</artifactId>
-                <version>1.0.3</version>
+                <version>1.0.4</version>
                 <scope>runtime</scope>
             </dependency>
             <dependency>
@@ -1205,7 +1223,7 @@
                 -->
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>15.0</version>
+                <version>16.0</version>
             </dependency>
             <dependency>
                 <!--
@@ -1214,7 +1232,7 @@
                 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.1</version>
+                <version>3.2.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1232,7 +1250,7 @@
                 -->
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
-                <version>1.8</version>
+                <version>1.9</version>
             </dependency>
             <dependency>
                 <!--
@@ -1267,7 +1285,7 @@
                 -->
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
-                <version>1.7.3</version>
+                <version>1.7.4</version>
             </dependency>
             <dependency>
                 <!--
@@ -1283,13 +1301,13 @@
                 -->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>5.1.0.Alpha1</version>
+                <version>5.1.0.Beta1</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.0-alpha3</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1317,7 +1335,7 @@
                 -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.12.2</version>
+                <version>1.12.4</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
