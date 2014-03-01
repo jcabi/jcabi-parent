@@ -1118,7 +1118,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-jdbc</artifactId>
-                <version>0.10.2</version>
+                <version>0.11</version>
             </dependency>
             <dependency>
                 <!--
@@ -1223,7 +1223,7 @@
                 -->
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>16.0</version>
+                <version>16.0.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1301,13 +1301,13 @@
                 -->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>5.1.0.Beta1</version>
+                <version>5.1.0.CR1</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.6.0-alpha3</version>
+                <version>1.6.0-beta2</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1403,7 +1403,7 @@
                 <!-- Forward all SLF4J calls to LOG4J. -->
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
-                <version>1.7.5</version>
+                <version>1.7.6</version>
             </dependency>
             <dependency>
                 <!-- Use LOG4J logging facility for all loggings. -->
