@@ -21,9 +21,12 @@
             </script>
                                                                                                                 
 <link rel="shortcut icon" href="http://img.jcabi.com/favicon.ico"/>
+                                                                                                                
+<link rel="author" href="https://plus.google.com/u/0/114792568016408327418?rel=author"/>
                                             <link rel="stylesheet" href="./css/highlight.css" />
         <script src="./js/jquery-1.8.3.min.js"></script>
         <script src="./js/highlight-7.3.min.js"></script>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
         <script>
             $(document).ready(
                 function() {
@@ -32,292 +35,200 @@
                             hljs.highlightBlock(element);
                         }
                     );
+                    $(".menu-button").click(
+                        function() {
+                            if ($("#here-goes-menu").attr("class") == "menu-off") {
+                                $("#menu").clone().attr("class", "mobile-menu").appendTo("#here-goes-menu");
+                                $("#here-goes-menu").attr("class", "menu-on");
+                            } else {
+                                $(".mobile-menu").hide();
+                                $("#here-goes-menu").attr("class", "menu-off");
+                            }
+                        }
+                    );
                 }
             );
         </script>
+        <style>
+            @import url("./css/wide.css") (min-width: 1200px) and (max-width:5000px);
+            @import url("./css/900-1199.css") (min-width: 900px) and (max-width:1199px);
+            @import url("./css/600-899.css") (min-width: 600px) and (max-width:899px);
+            @import url("./css/100-599.css") (min-width: 100px) and (max-width:599px);
+        </style>
     </head>
-    <body>
+    <body style="background: url('./images/background.png') fixed;">
+                <div class="page">
+            <div class="menu-section">
                 <ul id="menu">
-                                                    <li>
-                    Parent Project
-                                            <ul>
-                                                                            <li>
-                                                                    <a href="../index.html" title="jcabi">jcabi</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                </ul>
-                                    </li>
-                            <li>
-                    Overview
-                                            <ul>
-                                                                            <li>
-                                                                    <a href="index.html" title="Introduction">Introduction</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="dependencyManagement.html" title="Dependencies">Dependencies</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="pluginManagement.html" title="Plugins">Plugins</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                </ul>
-                                    </li>
-                            <li>
-                    Profiles
-                                            <ul>
-                                                                            <li>
-                                                                    <a href="profile-aspectj.html" title="aspectj">aspectj</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="profile-clojure.html" title="clojure">clojure</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="profile-mock.html" title="mock">mock</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="profile-qulice.html" title="qulice">qulice</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="profile-site.html" title="site">site</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="profile-sonatype.html" title="sonatype">sonatype</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                </ul>
-                                    </li>
-                            <li>
-                    Implicit Profiles
-                                            <ul>
-                                                                            <li>
-                                                                    <a href="profile-antlr3.html" title="jcabi-antlr3">jcabi-antlr3</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="profile-junit.html" title="jcabi-junit">jcabi-junit</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                                        <li>
-                                                                    <a href="profile-slf4j.html" title="jcabi-slf4j">jcabi-slf4j</a>
-                                                                                                                        <ul>
-                                                    </ul>
-                                    </li>
-                                                                </ul>
-                                    </li>
-                    </ul>
-        <div id="content">
-                            <a href="https://github.com/jcabi/parent">
-                    <img style="position: absolute; top: 0; right: 0; border: 0; width: 100px; height: 100px;"
-                        src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
-                        alt="Fork me on GitHub" />
-                </a>
+                                                                                    <li>
+                            Overview
+                                                            <ul>
+                                                                                                    <li>
+                                                                                    <a href="index.html" title="Introduction">Introduction</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="dependencyManagement.html" title="Dependencies">Dependencies</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="pluginManagement.html" title="Plugins">Plugins</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                        </ul>
+                                                    </li>
+                                            <li>
+                            Profiles
+                                                            <ul>
+                                                                                                    <li>
+                                                                                    <a href="profile-aspectj.html" title="aspectj">aspectj</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="profile-clojure.html" title="clojure">clojure</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="profile-mock.html" title="mock">mock</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="profile-qulice.html" title="qulice">qulice</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="profile-site.html" title="site">site</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="profile-sonatype.html" title="sonatype">sonatype</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                        </ul>
+                                                    </li>
+                                            <li>
+                            Implicit Profiles
+                                                            <ul>
+                                                                                                    <li>
+                                                                                    <a href="profile-antlr3.html" title="jcabi-antlr3">jcabi-antlr3</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="profile-junit.html" title="jcabi-junit">jcabi-junit</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                                                        <li>
+                                                                                    <a href="profile-slf4j.html" title="jcabi-slf4j">jcabi-slf4j</a>
+                                                                                                                                                                        <ul>
+                                                                    </ul>
+                                                    </li>
+                                                                                        </ul>
+                                                    </li>
+                                    </ul>
+            </div>
+            <div id="right-side">
+                <div id="content">
+                    <i class="menu-button fa fa-align-justify"></i>
+                    <div class="logo-section">
                         <a href="../" title="${decoration.bannerLeft.title}">
-                <img src="http://img.jcabi.com/logo.png"
-                    alt="jcabi"
-                                            width="200"
-                                                                height="48"
-                                    />
-            </a>
-                        <p>
-                
-                28-Oct-2013
-                0.13
-            </p>
-            <article>
-                <div class="section">
+                            <img src="http://img.jcabi.com/logo.png"
+                                alt="jcabi"
+                                                                    width="200"
+                                                                                                    height="48"
+                                                            />
+                        </a>
+                    </div>
+                    <div class="date">
+                        <div class="date-numbers">
+                            
+                            01-Mar-2014
+                            0.14
+                        </div>
+                                                                            <div class="github">
+                                <iframe
+                                    class="github-large"
+                                    src="http://ghbtns.com/github-btn.html?user=jcabi&amp;repo=parent&amp;type=watch&amp;count=true&amp;size=large"
+                                    allowtransparency="true"
+                                    frameborder="0"
+                                    scrolling="0"
+                                    width="170"
+                                    height="30">
+                                </iframe>
+                                <iframe
+                                    class="github-small"
+                                    src="http://ghbtns.com/github-btn.html?user=jcabi&amp;repo=parent&amp;type=watch&amp;count=true&amp;size=small"
+                                    allowtransparency="true"
+                                    frameborder="0"
+                                    scrolling="0"
+                                    width="170"
+                                    height="30">
+                                </iframe>
+                            </div>
+                                            </div>
+                    <div id="here-goes-menu"></div>
+                    <article>
+                        <div class="section">
+                            <div class="section">
 <h2>Change Log Report<a name="Change_Log_Report"></a></h2>
 <p>Total number of changed sets: 1</p>
 <div class="section">
-<h3>Changes between 2013-09-28 and 2013-10-29<a name="Changes_between_2013-09-28_and_2013-10-29"></a></h3>
-<p>Total commits: 38<br />Total number of files changed: 3</p>
+<h3>Changes between 2014-01-30 and 2014-03-02<a name="Changes_between_2014-01-30_and_2014-03-02"></a></h3>
+<p>Total commits: 6<br />Total number of files changed: 2</p>
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Timestamp</th>
 <th>Author</th>
 <th>Details</th></tr>
 <tr class="b">
-<td>2013-10-28 08:09:43</td>
+<td>2014-03-01 20:28:47</td>
 <td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=40a0dd965df3fdb74293ebcd62129b28fe59dde6&amp;content-type=text/vnd.viewcvs-markup">v 40a0dd965df3fdb74293ebcd62129b28fe59dde6</a><br /><br />zero timeouts</td></tr>
+<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=91824a1065c0cce0ccc018345d7de33510d08e4c&amp;content-type=text/vnd.viewcvs-markup">v 91824a1065c0cce0ccc018345d7de33510d08e4c</a><br /><br />site github plugin to 0.9 version</td></tr>
 <tr class="a">
-<td>2013-10-28 08:00:18</td>
+<td>2014-02-03 20:56:59</td>
 <td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=226e064372b8509fd30c6d1e2fc4b39c155132cb&amp;content-type=text/vnd.viewcvs-markup">v 226e064372b8509fd30c6d1e2fc4b39c155132cb</a><br /><br />dont fail if no tests</td></tr>
+<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=de73456c5ea5a50f3d3dd8be0a35d63ff7d28df6&amp;content-type=text/vnd.viewcvs-markup">v de73456c5ea5a50f3d3dd8be0a35d63ff7d28df6</a><br /><br />version fix</td></tr>
 <tr class="b">
-<td>2013-10-28 07:35:50</td>
+<td>2014-02-03 20:49:12</td>
 <td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=a254b9221fc1ae4f3624353acd0515616a369748&amp;content-type=text/vnd.viewcvs-markup">v a254b9221fc1ae4f3624353acd0515616a369748</a><br /><br />gh-pages profile</td></tr>
+<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=e903c7af787e92018a842e45d1a0bbb41f43f96e&amp;content-type=text/vnd.viewcvs-markup">v e903c7af787e92018a842e45d1a0bbb41f43f96e</a><br /><br />plugins updated</td></tr>
 <tr class="a">
-<td>2013-10-28 07:19:28</td>
+<td>2014-02-03 20:26:15</td>
 <td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=9c7ae57aa4a59735e3f2bba29662a213644c2791&amp;content-type=text/vnd.viewcvs-markup">v 9c7ae57aa4a59735e3f2bba29662a213644c2791</a><br /><br />0.13</td></tr>
+<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=3d19a3103d21a680c97a7f0ff78d55acf5ac4567&amp;content-type=text/vnd.viewcvs-markup">v 3d19a3103d21a680c97a7f0ff78d55acf5ac4567</a><br /><br />new versions of deps</td></tr>
 <tr class="b">
-<td>2013-10-28 07:15:17</td>
+<td>2014-02-03 19:56:34</td>
 <td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=6f6cda28dec4a7a77c2fe75d2010300445d05ad7&amp;content-type=text/vnd.viewcvs-markup">v 6f6cda28dec4a7a77c2fe75d2010300445d05ad7</a><br /><br />JAXB api</td></tr>
+<td><a class="externalLink" href="https://github.com/jcabi/parent/src/site/site.xml">src/site/<b>site.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/src/site/site.xml?rev=c03fc166487239485ddb4bd1e41bbe3cb15daec7&amp;content-type=text/vnd.viewcvs-markup">v c03fc166487239485ddb4bd1e41bbe3cb15daec7</a><br /><br />site fix</td></tr>
 <tr class="a">
-<td>2013-10-28 07:13:44</td>
+<td>2014-02-03 19:55:30</td>
 <td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=592eb31edb653dc3620d745f4241170f375cef70&amp;content-type=text/vnd.viewcvs-markup">v 592eb31edb653dc3620d745f4241170f375cef70</a><br /><br />JAX-RS api</td></tr>
-<tr class="b">
-<td>2013-10-28 07:12:48</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=942de306e2865ee2acdcace727ba7ad6360d8ba5&amp;content-type=text/vnd.viewcvs-markup">v 942de306e2865ee2acdcace727ba7ad6360d8ba5</a><br /><br />JSON api and impl</td></tr>
-<tr class="a">
-<td>2013-10-28 07:11:58</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=033c46159f0bc72c6ede4cd94a215e6b5192f3bc&amp;content-type=text/vnd.viewcvs-markup">v 033c46159f0bc72c6ede4cd94a215e6b5192f3bc</a><br /><br />typo</td></tr>
-<tr class="b">
-<td>2013-10-28 07:10:05</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=71a3f1fd2b4eecc256953ae9430b70689bf14978&amp;content-type=text/vnd.viewcvs-markup">v 71a3f1fd2b4eecc256953ae9430b70689bf14978</a><br /><br />jcabi-xml and jcabi-dynamo</td></tr>
-<tr class="a">
-<td>2013-10-28 07:07:16</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=5ed15c8d6e5d75fa89eb4fb0d0aac63e520673c9&amp;content-type=text/vnd.viewcvs-markup">v 5ed15c8d6e5d75fa89eb4fb0d0aac63e520673c9</a><br /><br />servlet api dependency</td></tr>
-<tr class="b">
-<td>2013-10-28 07:05:56</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=293477ed1525ab03da0f1224b53896a14836148e&amp;content-type=text/vnd.viewcvs-markup">v 293477ed1525ab03da0f1224b53896a14836148e</a><br /><br />jslint maven plugin</td></tr>
-<tr class="a">
-<td>2013-10-28 07:03:34</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=b4efb1b43e403105ecec145df22382fa5a0af90b&amp;content-type=text/vnd.viewcvs-markup">v b4efb1b43e403105ecec145df22382fa5a0af90b</a><br /><br />github site maven plugin back to 0.8</td></tr>
-<tr class="b">
-<td>2013-10-28 07:01:46</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=94248d8f6dc0c47fa26a5bace1b64a931f06a009&amp;content-type=text/vnd.viewcvs-markup">v 94248d8f6dc0c47fa26a5bace1b64a931f06a009</a><br /><br />#4 paralle for surefire and failsafe</td></tr>
-<tr class="a">
-<td>2013-10-24 08:18:51</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=a16b1cc949fce26da62f462b50b4346f56440b0e&amp;content-type=text/vnd.viewcvs-markup">v a16b1cc949fce26da62f462b50b4346f56440b0e</a><br /><br />snapshot</td></tr>
-<tr class="b">
-<td>2013-10-24 08:07:26</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=318dd8e67d98e67866d04c68a3760a5fadad03b7&amp;content-type=text/vnd.viewcvs-markup">v 318dd8e67d98e67866d04c68a3760a5fadad03b7</a><br /><a class="externalLink" href="https://github.com/jcabi/parent/src/site/resources/CNAME">src/site/resources/<b>CNAME</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/src/site/resources/CNAME?rev=318dd8e67d98e67866d04c68a3760a5fadad03b7&amp;content-type=text/vnd.viewcvs-markup">v 318dd8e67d98e67866d04c68a3760a5fadad03b7</a><br /><br />github pages</td></tr>
-<tr class="a">
-<td>2013-10-24 07:50:44</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=690ed3b45289c8d39c28f6f05cdd6d3d8e4959f8&amp;content-type=text/vnd.viewcvs-markup">v 690ed3b45289c8d39c28f6f05cdd6d3d8e4959f8</a><br /><br />#3: site plugin moved to plugins section</td></tr>
-<tr class="b">
-<td>2013-10-24 07:41:07</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=0edc25948ce6e999d93911b5496d6718b4aab1ef&amp;content-type=text/vnd.viewcvs-markup">v 0edc25948ce6e999d93911b5496d6718b4aab1ef</a><br /><br />0.12</td></tr>
-<tr class="a">
-<td>2013-10-24 07:40:41</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=2486ef18a3f7e6e6b96a95d28fba912e5435de9b&amp;content-type=text/vnd.viewcvs-markup">v 2486ef18a3f7e6e6b96a95d28fba912e5435de9b</a><br /><br />#3: jcabi-github-pages profile added</td></tr>
-<tr class="b">
-<td>2013-10-23 20:09:32</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=ff68d0020923d2c19514a299fc2b23c1331767e1&amp;content-type=text/vnd.viewcvs-markup">v ff68d0020923d2c19514a299fc2b23c1331767e1</a><br /><br />doxia dep for maven-site-plugin</td></tr>
-<tr class="a">
-<td>2013-10-23 20:06:12</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=8f3b69a697f836d3cfd68b74de1d2e2648425fa6&amp;content-type=text/vnd.viewcvs-markup">v 8f3b69a697f836d3cfd68b74de1d2e2648425fa6</a><br /><br />0.11.2</td></tr>
-<tr class="b">
-<td>2013-10-23 20:05:06</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=8e17a6f18f01a6f4e3c82341a342143113ffc46c&amp;content-type=text/vnd.viewcvs-markup">v 8e17a6f18f01a6f4e3c82341a342143113ffc46c</a><br /><br />rultor plugin 0.3.1</td></tr>
-<tr class="a">
-<td>2013-10-23 17:21:32</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=7bd0c0ed46a6847912c75cfa52eb4ae5b460dcb3&amp;content-type=text/vnd.viewcvs-markup">v 7bd0c0ed46a6847912c75cfa52eb4ae5b460dcb3</a><br /><br />snapshot</td></tr>
-<tr class="b">
-<td>2013-10-23 17:15:53</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=535173b12854e37d5308188f3ade5293e62ef8f7&amp;content-type=text/vnd.viewcvs-markup">v 535173b12854e37d5308188f3ade5293e62ef8f7</a><br /><br />0.11.1</td></tr>
-<tr class="a">
-<td>2013-10-23 17:15:27</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=da4edc91fe8c40b02e0092b8cc11bc5317a40741&amp;content-type=text/vnd.viewcvs-markup">v da4edc91fe8c40b02e0092b8cc11bc5317a40741</a><br /><br />rultor-maven-plugin added</td></tr>
-<tr class="b">
-<td>2013-10-13 17:02:41</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=2a61b60ff46f4172c871726ba0023cfc6b53a91f&amp;content-type=text/vnd.viewcvs-markup">v 2a61b60ff46f4172c871726ba0023cfc6b53a91f</a><br /><br />back to snapshot</td></tr>
-<tr class="a">
-<td>2013-10-13 16:58:20</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=8c8d01ead1568095d9ea0f499f5ea5c9759f0746&amp;content-type=text/vnd.viewcvs-markup">v 8c8d01ead1568095d9ea0f499f5ea5c9759f0746</a><br /><br />versions of plugins</td></tr>
-<tr class="b">
-<td>2013-10-13 16:55:33</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=173e6b310ce0b51f49966425f2f49bfee2544091&amp;content-type=text/vnd.viewcvs-markup">v 173e6b310ce0b51f49966425f2f49bfee2544091</a><br /><br />new version of lombok</td></tr>
-<tr class="a">
-<td>2013-10-13 16:54:35</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=b3ad407b15d88308527743a8d1754f2b7377991b&amp;content-type=text/vnd.viewcvs-markup">v b3ad407b15d88308527743a8d1754f2b7377991b</a><br /><br />0.11</td></tr>
-<tr class="b">
-<td>2013-10-13 16:51:44</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/src/changes/changes.xml">src/changes/<b>changes.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/src/changes/changes.xml?rev=477f9817334d46ff19f95acafab0bbe9cdefde14&amp;content-type=text/vnd.viewcvs-markup">v 477f9817334d46ff19f95acafab0bbe9cdefde14</a><br /><br />changes explained</td></tr>
-<tr class="a">
-<td>2013-10-13 16:50:52</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=3c3034a2765d1189ec9bdad7669579e8533dbecd&amp;content-type=text/vnd.viewcvs-markup">v 3c3034a2765d1189ec9bdad7669579e8533dbecd</a><br /><br />rempl profile added</td></tr>
-<tr class="b">
-<td>2013-10-08 09:44:42</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=8c6619b281f5484b7f0f679d0e771dfb03c82a6e&amp;content-type=text/vnd.viewcvs-markup">v 8c6619b281f5484b7f0f679d0e771dfb03c82a6e</a><br /><br />snapshot</td></tr>
-<tr class="a">
-<td>2013-10-08 09:29:43</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=ec19a80a1550d5c9188da34fa6fa15909979033c&amp;content-type=text/vnd.viewcvs-markup">v ec19a80a1550d5c9188da34fa6fa15909979033c</a><br /><br />version up of jcabi-jdbc</td></tr>
-<tr class="b">
-<td>2013-10-08 09:28:52</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=ccd79f3c6ef6a789fa4c1cc3db8bba36349a46ce&amp;content-type=text/vnd.viewcvs-markup">v ccd79f3c6ef6a789fa4c1cc3db8bba36349a46ce</a><br /><br />fixes #1 by downgrading cobertura maven plugin to 2.5.2</td></tr>
-<tr class="a">
-<td>2013-10-03 08:55:56</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=c0a06212987bcf564b14c7d821e661e2eb570d93&amp;content-type=text/vnd.viewcvs-markup">v c0a06212987bcf564b14c7d821e661e2eb570d93</a><br /><br />versions updated</td></tr>
-<tr class="b">
-<td>2013-10-03 08:51:07</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=6a8aeadbb6e27010fd4cf2556be0954a855551a6&amp;content-type=text/vnd.viewcvs-markup">v 6a8aeadbb6e27010fd4cf2556be0954a855551a6</a><br /><br />description</td></tr>
-<tr class="a">
-<td>2013-10-03 08:50:20</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=0330691dbd5068c66c6ea0546225179efdfefbbb&amp;content-type=text/vnd.viewcvs-markup">v 0330691dbd5068c66c6ea0546225179efdfefbbb</a><br /><br />site name removed</td></tr>
-<tr class="b">
-<td>2013-10-03 08:49:53</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=03937bab56b83bec16bffc4ffcf962883fa62c42&amp;content-type=text/vnd.viewcvs-markup">v 03937bab56b83bec16bffc4ffcf962883fa62c42</a><br /><br />jcabi-maven-plugin 0.9.1</td></tr>
-<tr class="a">
-<td>2013-09-29 17:18:56</td>
-<td>Yegor Bugayenko &lt;yegor@tpc2.com&gt;</td>
-<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=d30d5f3d6692bedfbd16658a06735db802e5f3f8&amp;content-type=text/vnd.viewcvs-markup">v d30d5f3d6692bedfbd16658a06735db802e5f3f8</a><br /><br />versions up</td></tr></table></div></div>
-            </article>
-            <p style="margin-bottom: 3em; margin-top: 2em;">
-                Copyright &#169;
-                                                    2012-2013
-                                jcabi.com, All Rights Reserved.
-                <a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.
-            </p>
-            <a href="http://maven.apache.org" title="site is built by Apache Maven"
-                style='position: absolute; bottom: 1em; right: 1em;'>
-                <img src='images/built-by-maven.png' style='width: 50px; height: 17px;'
-                    alt='site is built by Apache Maven'/>
-            </a>
+<td><a class="externalLink" href="https://github.com/jcabi/parent/pom.xml"><b>pom.xml</b></a> <a class="externalLink" href="https://github.com/jcabi/parent/pom.xml?rev=7545bd93cb367810386153db0280d6a663c3c5f1&amp;content-type=text/vnd.viewcvs-markup">v 7545bd93cb367810386153db0280d6a663c3c5f1</a><br /><br />0.14</td></tr></table></div></div>
+                        </div>
+                    </article>
+                    <img class="maven-mobile" src="./images/built-by-maven.png" style="float:right" width="80px"/>
+                </div>
+                <div class="legal-notes">
+                    <div class="copyright">
+                        Copyright &#169;
+                                                                            2012-2014
+                                                <br/>
+                        jcabi.com, All Rights Reserved.
+                        <br/>
+                        <a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
