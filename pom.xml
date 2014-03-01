@@ -222,7 +222,7 @@
                         -->
                         <groupId>com.qulice</groupId>
                         <artifactId>qulice-maven-plugin</artifactId>
-                        <version>0.3.1</version>
+                        <version>0.3.2</version>
                         <executions>
                             <execution>
                                 <id>jcabi-check</id>
@@ -1714,8 +1714,7 @@
                 <plugin>
                     <groupId>com.github.github</groupId>
                     <artifactId>site-maven-plugin</artifactId>
-                    <!-- https://github.com/github/maven-plugins/issues/54 -->
-                    <version>0.8</version>
+                    <version>0.9</version>
                 </plugin>
             </plugins>
         </pluginManagement>
