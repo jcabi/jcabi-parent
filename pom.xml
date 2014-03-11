@@ -34,7 +34,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
-    <version>0.16</version>
+    <version>0.18</version>
     <packaging>pom</packaging>
     <name>parent</name>
     <description>Parent POM.xml with most oftenly used pre-configured features</description>
@@ -222,7 +222,7 @@
                         -->
                         <groupId>com.qulice</groupId>
                         <artifactId>qulice-maven-plugin</artifactId>
-                        <version>0.4</version>
+                        <version>0.5.1</version>
                         <executions>
                             <execution>
                                 <id>jcabi-check</id>
@@ -237,6 +237,7 @@
                         </executions>
                     </plugin>
                     <plugin>
+                        <!-- see https://github.com/tpc2/qulice/issues/151 -->
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>jslint-maven-plugin</artifactId>
                         <version>1.0.1</version>
@@ -255,35 +256,12 @@
                     </plugin>
                     <plugin>
                         <!--
-                        This plugin finds dependencies that are not used but
-                        declared, and the ones that are not declared but
-                        are used.
-                        @see http://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html
-                        -->
-                        <artifactId>maven-dependency-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>jcabi-check</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>analyze-only</goal>
-                                    <goal>analyze-dep-mgt</goal>
-                                    <goal>analyze-duplicate</goal>
-                                </goals>
-                                <configuration>
-                                    <ignoreNonCompile>true</ignoreNonCompile>
-                                    <failOnWarning>true</failOnWarning>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <!--
                         This plugin finds duplicated resources and classes
                         and reports them. Very useful tool to avoid dependencies
                         overriding and overlapping.
                         @see https://github.com/ning/maven-duplicate-finder-plugin
                         -->
+                        <!-- see https://github.com/tpc2/qulice/issues/152 -->
                         <groupId>com.ning.maven.plugins</groupId>
                         <artifactId>maven-duplicate-finder-plugin</artifactId>
                         <version>1.0.4</version>
@@ -397,7 +375,7 @@
                                 </plugin>
                                 <plugin>
                                     <artifactId>maven-jxr-plugin</artifactId>
-                                    <version>2.3</version>
+                                    <version>2.4</version>
                                     <configuration>
                                         <aggregate>true</aggregate>
                                     </configuration>
@@ -509,7 +487,7 @@
                                 <plugin>
                                     <groupId>org.codehaus.mojo</groupId>
                                     <artifactId>cobertura-maven-plugin</artifactId>
-                                    <version>2.5.2</version>
+                                    <version>2.6</version>
                                 </plugin>
                                 <plugin>
                                     <artifactId>maven-plugin-plugin</artifactId>
@@ -628,7 +606,7 @@
                     <plugin>
                         <groupId>com.theoryinpractise</groupId>
                         <artifactId>clojure-maven-plugin</artifactId>
-                        <version>1.3.17</version>
+                        <version>1.3.19</version>
                         <configuration>
                             <warnOnReflection>true</warnOnReflection>
                             <vmargs>-Dlog4j.configuration=file:${basedir}/src/test/resources/log4j.properties</vmargs>
@@ -680,7 +658,7 @@
                     <plugin>
                         <groupId>com.rempl.plugins</groupId>
                         <artifactId>rempl-maven-plugin</artifactId>
-                        <version>1.2</version>
+                        <version>1.3</version>
                         <configuration>
                             <profiles>
                                 <profile>
@@ -704,7 +682,7 @@
                             <dependency>
                                 <groupId>com.rempl.profiles</groupId>
                                 <artifactId>rempl-pdd-profile</artifactId>
-                                <version>1.2</version>
+                                <version>1.4</version>
                             </dependency>
                         </dependencies>
                     </plugin>
@@ -788,7 +766,7 @@
                         @link http://www.sonatype.com/people/2010/01/how-to-generate-pgp-signatures-with-maven/
                         -->
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.4</version>
+                        <version>1.5</version>
                         <executions>
                             <execution>
                                 <id>jcabi-sign-artifacts</id>
@@ -1091,7 +1069,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-dynamo</artifactId>
-                <version>0.9.1</version>
+                <version>0.10</version>
             </dependency>
             <dependency>
                 <!--
@@ -1100,7 +1078,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.1</version>
+                <version>1.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1109,7 +1087,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-immutable</artifactId>
-                <version>1.0</version>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1127,7 +1105,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.12.1</version>
+                <version>0.12.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1232,7 +1210,7 @@
                 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.2.1</version>
+                <version>3.3</version>
             </dependency>
             <dependency>
                 <!--
@@ -1301,7 +1279,7 @@
                 -->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>5.1.0.CR1</version>
+                <version>5.1.0.Final</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1335,7 +1313,7 @@
                 -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.12.4</version>
+                <version>1.12.6</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
