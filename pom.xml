@@ -1073,6 +1073,15 @@
             </dependency>
             <dependency>
                 <!--
+                Github API.
+                @see http://github.jcabi.com
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-github</artifactId>
+                <version>0.7.3</version>
+            </dependency>
+            <dependency>
+                <!--
                 HTTP client.
                 @see http://http.jcabi.com/
                 -->
