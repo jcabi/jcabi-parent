@@ -1,6 +1,6 @@
 <img src="http://img.jcabi.com/logo.png" width="200px" height="48px" />
 
-More details are here: [www.jcabi.com/parent](http://www.jcabi.com/parent/index.html)
+More details are here: [parent.jcabi.com](http://parent.jcabi.com/index.html)
 
 Base your Maven projects on this artifact and you will get
 many pre-configuration benefits, including up-to-date
@@ -14,7 +14,7 @@ define our artifact as a parent of your project:
   <parent>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
-    <version>0.8</version>
+    <version>0.17</version>
   </parent>
   <groupId>your-group-id</groupId>
   <artifactId>your-artifact-id</artifactId>
