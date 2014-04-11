@@ -1,4 +1,6 @@
-<img src="http://img.jcabi.com/logo.png" width="200px" height="48px" />
+<img src="http://img.jcabi.com/logo-square.png" width="64px" height="64px" />
+
+[![Build Status](https://travis-ci.org/jcabi/parent.svg?branch=master)](https://travis-ci.org/jcabi/parent)
 
 More details are here: [parent.jcabi.com](http://parent.jcabi.com/index.html)
 
