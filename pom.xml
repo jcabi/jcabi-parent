@@ -254,63 +254,6 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
-                        <!--
-                        This plugin finds duplicated resources and classes
-                        and reports them. Very useful tool to avoid dependencies
-                        overriding and overlapping.
-                        @see https://github.com/ning/maven-duplicate-finder-plugin
-                        -->
-                        <!-- see https://github.com/tpc2/qulice/issues/152 -->
-                        <groupId>com.ning.maven.plugins</groupId>
-                        <artifactId>maven-duplicate-finder-plugin</artifactId>
-                        <version>1.0.4</version>
-                        <executions>
-                            <execution>
-                                <id>jcabi-check</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>check</goal>
-                                </goals>
-                                <configuration>
-                                    <failBuildInCaseOfConflict>true</failBuildInCaseOfConflict>
-                                    <checkTestClasspath>false</checkTestClasspath>
-                                    <ignoredResources>
-                                        <ignoredResource>META-INF/.*</ignoredResource>
-                                    </ignoredResources>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <!--
-                        Validate XML files for well-formeness.
-                        @see http://mojo.codehaus.org/xml-maven-plugin/
-                        -->
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>xml-maven-plugin</artifactId>
-                        <version>1.0</version>
-                        <executions>
-                            <execution>
-                                <id>jcabi-check</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>validate</goal>
-                                </goals>
-                                <configuration>
-                                    <validationSets>
-                                        <validationSet>
-                                            <dir>src</dir>
-                                            <validating>true</validating>
-                                            <includes>
-                                                <include>.xml</include>
-                                            </includes>
-                                        </validationSet>
-                                    </validationSets>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
                 </plugins>
             </build>
         </profile>
