@@ -615,11 +615,53 @@
                         </configuration>
                         <executions>
                             <execution>
+                                <id>jcabi-clojure</id>
                                 <goals>
                                     <goal>add-source</goal>
                                     <goal>add-test-source</goal>
                                     <goal>compile</goal>
                                     <goal>test</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <!--
+            Compile Groovy sources from src/main/groovy and src/test/groovy
+            directories.
+            -->
+            <id>groovy</id>
+            <activation>
+                <file>
+                    <exists>${basedir}/src/main/groovy</exists>
+                </file>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.codehaus.groovy</groupId>
+                    <artifactId>groovy-all</artifactId>
+                </dependency>
+            </dependencies>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.gmaven</groupId>
+                        <artifactId>gmaven-plugin</artifactId>
+                        <version>1.5</version>
+                        <configuration>
+                            <verbose>true</verbose>
+                            <stacktrace>true</stacktrace>
+                            <providerSelection>2.0</providerSelection>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>jcabi-groovy</id>
+                                <goals>
+                                    <goal>compile</goal>
+                                    <goal>testCompile</goal>
                                 </goals>
                             </execution>
                         </executions>
@@ -1475,6 +1517,11 @@
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-annotations</artifactId>
                 <version>4.2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy-all</artifactId>
+                <version>2.3.0-rc-2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
