@@ -236,24 +236,6 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
-                        <!-- see https://github.com/tpc2/qulice/issues/151 -->
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>jslint-maven-plugin</artifactId>
-                        <version>1.0.1</version>
-                        <executions>
-                            <execution>
-                                <id>jcabi-check</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>jslint</goal>
-                                </goals>
-                                <configuration>
-                                    <sourceJsFolder>${basedir}/src</sourceJsFolder>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
                 </plugins>
             </build>
         </profile>
