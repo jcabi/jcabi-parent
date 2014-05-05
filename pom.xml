@@ -34,7 +34,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
-    <version>0.18.1</version>
+    <version>0.19</version>
     <packaging>pom</packaging>
     <name>parent</name>
     <description>Parent POM.xml with most oftenly used pre-configured features</description>
@@ -898,10 +898,49 @@
                         <version>3.5.1</version>
                         <executions>
                             <execution>
-                                <id>jcabi-antlr</id>
+                                <id>jcabi-antlr3</id>
                                 <phase>generate-sources</phase>
                                 <goals>
                                     <goal>antlr</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>antlr4</id>
+            <activation>
+                <file>
+                    <exists>${basedir}/src/main/antlr4</exists>
+                </file>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.antlr</groupId>
+                    <artifactId>antlr4-runtime</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>org.antlr</groupId>
+                    <artifactId>antlr4-annotations</artifactId>
+                </dependency>
+            </dependencies>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.antlr</groupId>
+                        <artifactId>antlr4-maven-plugin</artifactId>
+                        <version>4.2.2</version>
+                        <configuration>
+                            <sourceDirectory>src/main/antlr4</sourceDirectory>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>jcabi-antlr4</id>
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>antlr4</goal>
                                 </goals>
                             </execution>
                         </executions>
@@ -1071,7 +1110,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-dynamo</artifactId>
-                <version>0.10</version>
+                <version>0.10.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1080,7 +1119,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-github</artifactId>
-                <version>0.7.3</version>
+                <version>0.9</version>
             </dependency>
             <dependency>
                 <!--
@@ -1089,7 +1128,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.2</version>
+                <version>1.4.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1103,11 +1142,11 @@
             <dependency>
                 <!--
                 JDBC wrapper.
-                @see http://www.jcabi.com/jcabi-jdbc/index.html
+                @see http://jdbc.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-jdbc</artifactId>
-                <version>0.11</version>
+                <version>0.12.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1125,7 +1164,16 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-manifests</artifactId>
-                <version>0.8</version>
+                <version>0.8.1</version>
+            </dependency>
+            <dependency>
+                <!--
+                XHTML Hamcrest matchers.
+                @see http://matchers.jcabi.com/
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-matchers</artifactId>
+                <version>1.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1165,8 +1213,17 @@
             </dependency>
             <dependency>
                 <!--
+                W3C adapters.
+                @see http://w3c.jcabi.com/
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-w3c</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <!--
                 XML parsing and printing.
-                @see http://www.jcabi.com/jcabi-xml
+                @see http://xml.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
@@ -1212,7 +1269,7 @@
                 -->
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>16.0.1</version>
+                <version>17.0</version>
             </dependency>
             <dependency>
                 <!--
@@ -1221,7 +1278,7 @@
                 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.3</version>
+                <version>3.3.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1274,7 +1331,7 @@
                 -->
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
-                <version>1.7.4</version>
+                <version>1.8.0</version>
             </dependency>
             <dependency>
                 <!--
@@ -1296,7 +1353,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.6.0-beta2</version>
+                <version>1.6.0</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1392,7 +1449,7 @@
                 <!-- Forward all SLF4J calls to LOG4J. -->
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
-                <version>1.7.6</version>
+                <version>1.7.7</version>
             </dependency>
             <dependency>
                 <!-- Use LOG4J logging facility for all loggings. -->
@@ -1407,7 +1464,17 @@
                 -->
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr-runtime</artifactId>
-                <version>3.5.1</version>
+                <version>3.5.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-runtime</artifactId>
+                <version>4.2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-annotations</artifactId>
+                <version>4.2.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
