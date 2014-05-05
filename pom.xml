@@ -1228,6 +1228,15 @@
             </dependency>
             <dependency>
                 <!--
+                Amazon S3 adapter.
+                @see http://s3.jcabi.com/
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-s3</artifactId>
+                <version>0.4.1</version>
+            </dependency>
+            <dependency>
+                <!--
                 AWS SimpleDB object layer.
                 @see http://www.jcabi.com/jcabi-simpledb
                 -->
