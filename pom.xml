@@ -68,16 +68,16 @@
     </developers>
     <issueManagement>
         <system>github</system>
-        <url>https://github.com/jcabi/parent/issues</url>
+        <url>https://github.com/jcabi/jcabi-parent/issues</url>
     </issueManagement>
     <ciManagement>
         <system>rultor</system>
         <url>http://www.rultor.com/s/jcabi</url>
     </ciManagement>
     <scm>
-        <connection>scm:git:github.com:jcabi/parent.git</connection>
-        <developerConnection>scm:git:github.com:jcabi/parent.git</developerConnection>
-        <url>https://github.com/jcabi/parent</url>
+        <connection>scm:git:github.com:jcabi/jcabi-parent.git</connection>
+        <developerConnection>scm:git:github.com:jcabi/jcabi-parent.git</developerConnection>
+        <url>https://github.com/jcabi/jcabi-parent</url>
     </scm>
     <distributionManagement>
         <downloadUrl>https://oss.sonatype.org/content/groups/public</downloadUrl>
