@@ -469,6 +469,11 @@
                     <artifactId>hibernate-validator</artifactId>
                     <scope>provided</scope>
                 </dependency>
+                <dependency>
+                   <groupId>javax.el</groupId>
+                   <artifactId>javax.el-api</artifactId>
+                   <scope>provided</scope>
+                </dependency>
             </dependencies>
             <build>
                 <plugins>
@@ -1077,7 +1082,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-dynamo</artifactId>
-                <version>0.10.2</version>
+                <version>0.11</version>
             </dependency>
             <dependency>
                 <!--
@@ -1203,7 +1208,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
-                <version>0.7.8</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!-- JSON API -->
@@ -1323,7 +1328,13 @@
                 -->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>5.1.0.Final</version>
+                <version>5.1.1.Final</version>
+            </dependency>
+            <dependency>
+                <!-- Required for Hibernate validator -->
+               <groupId>javax.el</groupId>
+               <artifactId>javax.el-api</artifactId>
+               <version>3.0.0</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
