@@ -48,5 +48,5 @@ Pre-Defined Maven Plugins
   All important <<<maven-*-plugin>>> plugins are there.
 
   Check out
-  {{{https://github.com/yegor256/jcabi/blob/master/parent/pom.xml}<<<pom.xml>>>}}
+  {{{https://github.com/jcabi/jcabi-parent/blob/master/pom.xml}<<<pom.xml>>>}}
   for a complete list of plugins.

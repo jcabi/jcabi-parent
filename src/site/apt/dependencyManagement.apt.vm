@@ -66,5 +66,5 @@ Pre-Defined Maven Dependencies
    * {{{http://www.antlr.org/wiki/display/ANTLR3/ANTLR+3+Wiki+Home}<<<org.antlr:antlr-runtime>>>}}.
 
   Check out
-  {{{https://github.com/yegor256/jcabi/blob/master/parent/pom.xml}<<<pom.xml>>>}}
+  {{{https://github.com/jcabi/jcabi-parent/blob/master/pom.xml}<<<pom.xml>>>}}
   for a complete list of dependencies, we update it every month.

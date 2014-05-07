@@ -60,9 +60,9 @@ Universal Maven Parent POM
 +--
 
   This is what we have in our
-  {{{https://github.com/yegor256/jcabi/blob/master/parent/pom.xml}<<<pom.xml>>>}}.
+  {{{https://github.com/jcabi/jcabi-parent/blob/master/pom.xml}<<<pom.xml>>>}}.
 
   Take a look at the
-  {{{https://github.com/yegor256/jcabi/blob/master/pom.xml}<<<pom.xml>>>}}
+  {{{https://github.com/jcabi/jcabi/blob/master/pom.xml}<<<pom.xml>>>}}
   of jcabi itself, as a good example of
   how <<<com.jcabi:parent>>> can be effectively used to minimize XML duplication.

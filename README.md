@@ -16,7 +16,7 @@ define our artifact as a parent of your project:
   <parent>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
-    <version>0.17</version>
+    <version>0.19.3</version>
   </parent>
   <groupId>your-group-id</groupId>
   <artifactId>your-artifact-id</artifactId>
@@ -28,7 +28,7 @@ define our artifact as a parent of your project:
 ## Questions?
 
 If you have any questions about the framework, or something doesn't work as expected,
-please [submit an issue here](https://github.com/yegor256/jcabi/issues/new).
+please [submit an issue here](https://github.com/jcabi/jcabi-parent/issues/new).
 If you want to discuss, please use our [Google Group](https://groups.google.com/forum/#!forum/jcabi).
 
 ## How to contribute?
