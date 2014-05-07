@@ -48,10 +48,10 @@ $ mvn clean install -Paspectj
 +--
 
   The profile runs
-  {{{http://mojo.codehaus.org/aspectj-maven-plugin/}<<<aspectj-maven-plugin>>>}} plugin and adds
+  {{{http://plugin.jcabi.com/example-ajc.html}<<<jcabi-maven-plugin:ajc>>>}} plugin and adds
   these dependencies to the classpath:
 
-   * {{{http://www.jcabi.com/jcabi-aspects}<<<com.jcabi:jcabi-aspects>>>}}:
+   * {{{http://aspects.jcabi.com/}<<<com.jcabi:jcabi-aspects>>>}}:
      JSR-303 and other AOP aspects;
 
    * {{{http://www.eclipse.org/aspectj/}<<<org.aspectj:aspectjrt>>>}} (in <<<runtime>>> scope):
@@ -61,7 +61,7 @@ $ mvn clean install -Paspectj
      JSR-303 API;
 
   Don't forget to add JSR-303 validator implementation to your classpath,
-  as explained in {{{http://www.jcabi.com/jcabi-aspects/jsr-303.html}jcabi-aspects}}.
+  as explained in {{{http://aspects.jcabi.com/jsr-303.html}jcabi-aspects}}.
 
   Pay attention that these dependencies are there only when
   profile is activated. After the artifact installation the profile

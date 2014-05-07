@@ -46,26 +46,15 @@ $ mvn clean install -Pqulice
 +--
 
   It runs a number of checks to make sure the quality of
-  the build is acceptable. These plugins are used at the moment
+  the build is acceptable. There is only one plugin that is used at the moment
   to control quality and prevent errors:
 
-   * {{{http://www.qulice.com/qulice-maven-plugin/}<<<qulice-maven-plugin>>>}}
-     is a compound static analysis plugin, that pre-configures and executes
-     Checkstyle, PMD, FindBugs, CodeNarc (for Groovy code) and a few other
-     plugins in one bucket. That's why the name of the profile, since this
-     is the biggest tool being executed. It is expected by default that
-     your <<<LICENSE.txt>>> is located in a root directory of every module.
-
-   * {{{https://github.com/ning/maven-duplicate-finder-plugin}<<<maven-duplicate-finder-plugin>>>}}
-     is a filter of duplicate classes and resources in classpath. It is a very
-     useful tool to catch overriding dependencies and exclude them earlier.
-
-   * {{{http://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html}<<<maven-dependency-plugin>>>}}
-     with its <<<analyze-only>>> goal helps to identify dependencies that
-     are not used, or the ones that are used but not defined.
-
-   * {{{http://mojo.codehaus.org/xml-maven-plugin/}<<<xml-maven-plugin>>>}}
-     is a validator of XML files for "well formedness".
+  {{{http://www.qulice.com/qulice-maven-plugin/}<<<qulice-maven-plugin>>>}}
+  is a compound static analysis plugin, that pre-configures and executes
+  Checkstyle, PMD, FindBugs, CodeNarc (for Groovy code) and a few other
+  plugins in one bucket. That's why the name of the profile, since this
+  is the biggest tool being executed. It is expected by default that
+  your <<<LICENSE.txt>>> is located in a root directory of every module.
 
   All plugins are bound to the <<<verify>>> Maven phase. All executions
   are named <<<jcabi-check>>>.
