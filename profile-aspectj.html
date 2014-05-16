@@ -146,9 +146,9 @@
                     </div>
                     <div class="date">
                         <div class="date-numbers">
-                            <strong>0.19.3</strong>
+                            <strong>0.20</strong>
                             
-                            07-May-2014
+                            16-May-2014
                         </div>
                                                                             <div class="github">
                                 <iframe
@@ -178,12 +178,12 @@
 <p>The profile is activated automatically when you have a <tt>src/main/aspect</tt> directory in the project. Otherwise, you can activate it explicitly:</p>
 <div class="source">
 <pre>$ mvn clean install -Paspectj</pre></div>
-<p>The profile runs <a class="externalLink" href="http://mojo.codehaus.org/aspectj-maven-plugin/"><tt>aspectj-maven-plugin</tt></a> plugin and adds these dependencies to the classpath:</p>
+<p>The profile runs <a class="externalLink" href="http://plugin.jcabi.com/example-ajc.html"><tt>jcabi-maven-plugin:ajc</tt></a> plugin and adds these dependencies to the classpath:</p>
 <ul>
-<li><a class="externalLink" href="http://www.jcabi.com/jcabi-aspects"><tt>com.jcabi:jcabi-aspects</tt></a>: JSR-303 and other AOP aspects;</li>
+<li><a class="externalLink" href="http://aspects.jcabi.com/"><tt>com.jcabi:jcabi-aspects</tt></a>: JSR-303 and other AOP aspects;</li>
 <li><a class="externalLink" href="http://www.eclipse.org/aspectj/"><tt>org.aspectj:aspectjrt</tt></a> (in <tt>runtime</tt> scope): runtime AOP engine;</li>
 <li><a class="externalLink" href="http://docs.oracle.com/javaee/6/api/javax/validation/package-summary.html"><tt>javax.validation:validation-api</tt></a>: JSR-303 API;</li></ul>
-<p>Don't forget to add JSR-303 validator implementation to your classpath, as explained in <a class="externalLink" href="http://www.jcabi.com/jcabi-aspects/jsr-303.html">jcabi-aspects</a>.</p>
+<p>Don't forget to add JSR-303 validator implementation to your classpath, as explained in <a class="externalLink" href="http://aspects.jcabi.com/jsr-303.html">jcabi-aspects</a>.</p>
 <p>Pay attention that these dependencies are there only when profile is activated. After the artifact installation the profile won't be activated and you should add runtime dependencies explicitly to the project:</p>
 <div class="source">
 <pre>&lt;dependencies&gt;
