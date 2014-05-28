@@ -1,7 +1,7 @@
 <img src="http://img.jcabi.com/logo-square.png" width="64px" height="64px" />
 
 [![Build Status](https://travis-ci.org/jcabi/jcabi-parent.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-parent)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/jcabi-parent)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent)
 
 More details are here: [parent.jcabi.com](http://parent.jcabi.com/index.html)
 
