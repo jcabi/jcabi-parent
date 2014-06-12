@@ -668,25 +668,6 @@
             <build>
                 <plugins>
                     <plugin>
-                        <artifactId>maven-site-plugin</artifactId>
-                        <configuration>
-                            <skipDeploy>true</skipDeploy>
-                            <reportPlugins combine.children="append">
-                                <plugin>
-                                    <artifactId>maven-changes-plugin</artifactId>
-                                    <reportSets>
-                                        <reportSet>
-                                            <reports>
-                                                <report>github-report</report>
-                                                <report>changes-report</report>
-                                            </reports>
-                                        </reportSet>
-                                    </reportSets>
-                                </plugin>
-                            </reportPlugins>
-                        </configuration>
-                    </plugin>
-                    <plugin>
                         <groupId>com.github.github</groupId>
                         <artifactId>site-maven-plugin</artifactId>
                         <configuration>
