@@ -1060,7 +1060,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.15.1</version>
+                <version>0.16</version>
             </dependency>
             <dependency>
                 <!--
@@ -1069,7 +1069,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-dynamo</artifactId>
-                <version>0.15.1</version>
+                <version>0.15.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1078,7 +1078,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-github</artifactId>
-                <version>0.8</version>
+                <version>0.8.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1114,7 +1114,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.12.2</version>
+                <version>0.13</version>
             </dependency>
             <dependency>
                 <!--
@@ -1145,6 +1145,15 @@
             </dependency>
             <dependency>
                 <!--
+                Odesk SDK.
+                @see http://odesk.jcabi.com/
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-odesk</artifactId>
+                <version>0.1</version>
+            </dependency>
+            <dependency>
+                <!--
                 Amazon S3 adapter.
                 @see http://s3.jcabi.com/
                 -->
@@ -1159,7 +1168,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-simpledb</artifactId>
-                <version>0.1</version>
+                <version>0.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1321,7 +1330,7 @@
                 <!-- Required for Hibernate validator -->
                <groupId>javax.el</groupId>
                <artifactId>javax.el-api</artifactId>
-               <version>3.0.1-b01</version>
+               <version>3.0.1-b04</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1339,7 +1348,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>tools.logging</artifactId>
-                <version>0.2.6</version>
+                <version>0.3.0</version>
             </dependency>
             <dependency>
                 <!-- Servlet API -->
@@ -1355,7 +1364,7 @@
                 -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.14.0</version>
+                <version>1.14.2</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
