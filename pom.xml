@@ -34,7 +34,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
-    <version>0.23</version>
+    <version>0.24-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>parent</name>
     <description>Parent POM.xml with most oftenly used pre-configured features</description>
@@ -1727,7 +1727,6 @@
                         <parallelTestsTimeoutForcedInSeconds>0</parallelTestsTimeoutForcedInSeconds>
                         <perCoreThreadCount>true</perCoreThreadCount>
                         <threadCount>4</threadCount>
-                        <forkCount>0</forkCount>
                     </configuration>
                 </plugin>
                 <plugin>
