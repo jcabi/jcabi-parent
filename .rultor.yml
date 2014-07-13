@@ -19,5 +19,5 @@ release:
   script: 
     - "mvn versions:set \"-DnewVersion=${tag}\""
     - "git commit -am \"${tag}\""
-    - "mvn clean deploy -Pqulice -Psonatype -Pjcabi"
+    - "mvn clean deploy -Pqulice -Psonatype -Pjcabi --settings ../settings.xml"
     - "mvn clean site-deploy -Psite -Prempl --settings ../settings.xml"
