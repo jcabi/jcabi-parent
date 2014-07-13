@@ -1,5 +1,7 @@
 assets:
   settings.xml: "yegor256/home#assets/jcabi/settings.xml"
+  pubring.gpg: "yegor256/home#assets/pubring.gpg"
+  secring.gpg: "yegor256/home#assets/secring.gpg"
 
 merge:
   env:
