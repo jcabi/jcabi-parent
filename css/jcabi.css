@@ -36,14 +36,11 @@ body {
   font-size: 1.4em;
   line-height: 1.4em;
   background-color: lightgrey;
-  color: #111111;
 }
 @media all and (max-width: 1200px) {
   body {
     font-size: 1.2em;
     line-height: 1.4em;
-    background-color: white;
-    padding: 0;
   }
 }
 
@@ -53,44 +50,45 @@ a {
   text-decoration: none;
 }
 
-code, tt {
-  background-color: #eeeeee;
+tt {
+  background-color: #eee;
   padding: 0 .5em;
   font-family: "Ubuntu Mono", monospace;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
-h2 {
-  font-size: 1.3em;
-}
-
+h1,
+h2,
 h3 {
-  font-size: 1.1em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
 pre {
   border-left: 2px solid gray;
   margin-left: 1em;
-  color: gray;
+  color: inherit;
   padding: 1em;
   font-family: "Ubuntu Mono", monospace;
-  font-size: 0.9em;
   overflow-x: auto;
   line-height: 1.3em;
 }
-@media all and (max-width: 1200px) {
-  pre {
-    border-left: 0;
-    margin-left: 0;
-    padding-left: 0;
-  }
+
+#breadcrumbs {
+  list-style: none;
+  padding-left: 0;
+}
+#breadcrumbs li {
+  display: inline;
+}
+#breadcrumbs li:before {
+  content: '>';
+}
+#breadcrumbs li:first-child:before {
+  content: none;
 }
 
 table {
-  background-color: white;
+  background-color: #fff;
   border: 0;
   border-collapse: collapse;
 }
@@ -143,7 +141,7 @@ table td:nth-child(1) {
 }
 
 .date {
-  color: gray;
+  color: lightgrey;
 }
 
 .legal-notes {
@@ -155,28 +153,28 @@ table td:nth-child(1) {
 }
 @media all and (max-width: 1200px) {
   .legal-notes {
-    display: none;
+    text-align: center;
   }
 }
 
-.content {
-  background-color: white;
+#content {
+  background-color: #fff;
   position: relative;
   padding: 3em;
 }
 @media all and (max-width: 1200px) {
-  .content {
+  #content {
     padding: 1em;
   }
 }
 
-.right-side {
+#right-side {
   white-space: normal;
   display: inline-block;
   width: 70%;
 }
 @media all and (max-width: 1200px) {
-  .right-side {
+  #right-side {
     width: 100%;
   }
 }
@@ -192,6 +190,10 @@ table td:nth-child(1) {
   }
 }
 
+.github-small {
+  display: none;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -201,57 +203,48 @@ table td:nth-child(1) {
   }
 }
 
-.menu {
-  background-color: white;
+#menu {
+  background-color: #fff;
   padding: 2em 1em 1em;
   margin-right: 1em;
   font-size: 1em;
   line-height: 1.3em;
 }
 @media all and (max-width: 1200px) {
-  .menu {
+  #menu {
     text-align: center;
   }
 }
-.menu > li > ul {
+#menu > li > ul {
   margin-bottom: 1em;
   border-top: 1px solid lightgrey;
 }
-.menu li {
+#menu li {
   font-weight: 700;
-  color: gray;
+  text-transform: uppercase;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu li.active {
-  font-weight: bold;
-}
-.menu li ul {
+#menu li ul {
   list-style: none;
   padding-left: .5em;
 }
-.menu li ul li {
-  color: #111111;
+#menu li ul li {
+  text-transform: none;
   font-weight: 400;
 }
-.menu li a {
+#menu li a {
   border-bottom: 0;
 }
-.menu li a:hover {
+#menu li a:hover {
   border-bottom: 1px dashed;
 }
 
-.logo a {
+.logo-section a {
   border: 0;
 }
 
-.maven-logo {
+.maven-mobile {
   float: right;
-  margin-top: -40px;
-  width: 60px;
-}
-@media all and (max-width: 1200px) {
-  .maven-logo {
-    display: none;
-  }
+  width: 64px;
 }
