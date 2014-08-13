@@ -4,7 +4,6 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>jcabi-parent - "Qulice" Profile for Static Quality Control</title>
-        <link media="all" rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
                             <script>
@@ -45,7 +44,7 @@
             <nav class="menu-section" role="navigation">
                 <ul class="menu" id="menu">
                                                                                     <li>
-                            Overview
+                            <span>Overview</span>
                                                             <ul>
                                                                                                     <li >
                             <span>                        <a href="index.html" title="Introduction">Introduction</a>
@@ -68,7 +67,7 @@
                                                                                         </ul>
                                                     </li>
                                             <li>
-                            Profiles
+                            <span>Profiles</span>
                                                             <ul>
                                                                                                     <li >
                             <span>                        <a href="profile-aspectj.html" title="aspectj">aspectj</a>
@@ -115,7 +114,7 @@
                                                                                         </ul>
                                                     </li>
                                             <li>
-                            Implicit Profiles
+                            <span>Implicit Profiles</span>
                                                             <ul>
                                                                                                     <li >
                             <span>                        <a href="profile-antlr3.html" title="jcabi-antlr3">jcabi-antlr3</a>
@@ -143,11 +142,10 @@
                 <main role="main">
                     <div class="content">
                         <header>
-                            <i class="menu-button fa fa-align-justify"></i>
                             <div class="logo">
                                 <a href="../"
                                     title=" logo ">
-                                    <img src="http://img.jcabi.com/logo-square.png"
+                                    <img src="http://img.jcabi.com/logo-square.svg"
                                         alt="jcabi"
                                                                                     width="64"
                                                                                                                             height="64"
@@ -155,24 +153,30 @@
                                     />
                                 </a>
                             </div>
-                            <div class="date">
-                                <div class="date-numbers">
-                                    <strong itemprop="version">0.27</strong>
+                            <div class="teamed">
+                                <a href="http://www.teamed.io">
+                                    <img src="http://img.teamed.io/btn.svg" alt="teamed.io logo"/>
+                                </a>
+                            </div>
+                            <ul class="badges">
+                                <li>
+                                    <strong itemprop="version">0.27.1</strong>
+                                </li>
+                                <li>
                                     
-                                    <time itemprop="datePublished" datetime="2014-08-13T07:25:39Z">
+                                    <time itemprop="datePublished" datetime="2014-08-13T08:04:44Z">
                                         
                                         13-Aug-2014
                                     </time>
-                                </div>
-                                                                                                    <div>
-                                        <iframe src="http://ghbtns.com/github-btn.html?user=jcabi&amp;repo=jcabi-parent&amp;type=watch&amp;count=true&amp;size=large"
-                                            style="border-width:0px;overflow:hidden;width:170px;height:30px;">
-                                        </iframe>
-                                    </div>
-                                                            </div>
-                            <div id="here-goes-menu" class="menu-off"></div>
+                                </li>
+                                <li class="menu-button">menu</li>
+                            </ul>
                         </header>
-                        <article role="article" itemprop="articleBody">
+                        <div id="here-goes-menu" class="menu-off"></div>
+                                                                            <a href="https://github.com/jcabi/jcabi-parent">
+                                <img src="http://img.jcabi.com/fork-me.svg" class="fork-me"/>
+                            </a>
+                                                <article role="article" itemprop="articleBody">
                             <!--  --><!-- Copyright (c) 2012-2014, jcabi.com --><!-- All rights reserved. --><!--  --><!-- Redistribution and use in source and binary forms, with or without --><!-- modification, are permitted provided that the following conditions --><!-- are met: 1) Redistributions of source code must retain the above --><!-- copyright notice, this list of conditions and the following --><!-- disclaimer. 2) Redistributions in binary form must reproduce the above --><!-- copyright notice, this list of conditions and the following --><!-- disclaimer in the documentation and/or other materials provided --><!-- with the distribution. 3) Neither the name of the jcabi.com nor --><!-- the names of its contributors may be used to endorse or promote --><!-- products derived from this software without specific prior written --><!-- permission. --><!--  --><!-- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS --><!-- "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT --><!-- NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND --><!-- FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL --><!-- THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, --><!-- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES --><!-- (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR --><!-- SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) --><!-- HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, --><!-- STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) --><!-- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED --><!-- OF THE POSSIBILITY OF SUCH DAMAGE. --><!--  --><div class="section">
 <h2>&quot;Qulice&quot; Profile for Static Quality Control<a name="aQulice_Profile_for_Static_Quality_Control"></a></h2>
 <p>Profile <tt>qulice</tt> can be activated only manually from command line, e.g.:</p>
@@ -181,7 +185,6 @@
 <p>It runs a number of checks to make sure the quality of the build is acceptable. There is only one plugin that is used at the moment to control quality and prevent errors:</p>
 <p><a class="externalLink" href="http://www.qulice.com/qulice-maven-plugin/"><tt>qulice-maven-plugin</tt></a> is a compound static analysis plugin, that pre-configures and executes Checkstyle, PMD, FindBugs, CodeNarc (for Groovy code) and a few other plugins in one bucket. That's why the name of the profile, since this is the biggest tool being executed. It is expected by default that your <tt>LICENSE.txt</tt> is located in a root directory of every module.</p>
 <p>All plugins are bound to the <tt>verify</tt> Maven phase. All executions are named <tt>jcabi-check</tt>.</p></div>
-                            <img class="maven-logo" src="//img.jcabi.com/built-by-maven.png" alt="built by maven"/>
                         </article>
                     </div>
                 </main>
