@@ -1065,7 +1065,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-github</artifactId>
-                <version>0.10</version>
+                <version>0.13.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1074,7 +1074,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.8</version>
+                <version>1.8.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1101,7 +1101,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.14</version>
+                <version>0.14.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1110,7 +1110,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-manifests</artifactId>
-                <version>1.0.2</version>
+                <version>1.0.3</version>
             </dependency>
             <dependency>
                 <!--
@@ -1311,7 +1311,7 @@
                 -->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>5.1.1.Final</version>
+                <version>5.1.2.Final</version>
             </dependency>
             <dependency>
                 <!-- Required for Hibernate validator -->
