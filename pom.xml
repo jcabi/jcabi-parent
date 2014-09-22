@@ -973,7 +973,7 @@
             <dependency>
                 <!--
                 Aether wrapper.
-                @see http://www.jcabi.com/jcabi-aether/index.html
+                @see http://aether.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aether</artifactId>
@@ -986,16 +986,16 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.17.2</version>
+                <version>0.18</version>
             </dependency>
             <dependency>
                 <!--
                 AWS DynamoDB object layer.
-                @see http://www.jcabi.com/jcabi-dynamo
+                @see http://dynamo.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-dynamo</artifactId>
-                <version>0.16.1</version>
+                <version>0.16.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1004,7 +1004,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-github</artifactId>
-                <version>0.14</version>
+                <version>0.15</version>
             </dependency>
             <dependency>
                 <!--
@@ -1013,7 +1013,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.8.2</version>
+                <version>1.8.3</version>
             </dependency>
             <dependency>
                 <!--
@@ -1031,7 +1031,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-jdbc</artifactId>
-                <version>0.12.1</version>
+                <version>0.13</version>
             </dependency>
             <dependency>
                 <!--
@@ -1040,12 +1040,12 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.14.2</version>
+                <version>0.14.3</version>
             </dependency>
             <dependency>
                 <!--
                 Reader of META-INF/MANIFEST.MF files
-                @see http://www.jcabi.com/jcabi-manifests/index.html
+                @see http://manifests.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-manifests</artifactId>
@@ -1063,7 +1063,7 @@
             <dependency>
                 <!--
                 Maven to SLF4J binding.
-                @see http://www.jcabi.com/jcabi-maven-slf4j/index.html
+                @see http://slf4j.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-maven-slf4j</artifactId>
@@ -1076,7 +1076,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-odesk</artifactId>
-                <version>0.4</version>
+                <version>0.5</version>
             </dependency>
             <dependency>
                 <!--
@@ -1090,7 +1090,7 @@
             <dependency>
                 <!--
                 AWS SimpleDB object layer.
-                @see http://www.jcabi.com/jcabi-simpledb
+                @see http://simpledb.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-simpledb</artifactId>
@@ -1098,8 +1098,17 @@
             </dependency>
             <dependency>
                 <!--
+                SSH client.
+                @see http://ssh.jcabi.com/
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-ssh</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <!--
                 URN.
-                @see http://www.jcabi.com/jcabi-urn/index.html
+                @see http://urn.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-urn</artifactId>
@@ -1108,7 +1117,7 @@
             <dependency>
                 <!--
                 Velocity wrapper.
-                @see http://www.jcabi.com/jcabi-velocity/index.html
+                @see http://velocity.jcabi.com/
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-velocity</artifactId>
@@ -1130,7 +1139,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
-                <version>0.11.1</version>
+                <version>0.12.1</version>
             </dependency>
             <dependency>
                 <!-- JSON API -->
@@ -1274,7 +1283,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>tools.logging</artifactId>
-                <version>0.3.0</version>
+                <version>0.3.1</version>
             </dependency>
             <dependency>
                 <!-- Servlet API -->
@@ -1290,7 +1299,7 @@
                 -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.14.4</version>
+                <version>1.14.8</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
