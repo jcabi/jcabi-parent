@@ -7,21 +7,24 @@ assets:
 env:
   MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx1g"
 
+install:
+  - "sudo gem install pdd"
+
 merge:
-  script:
-    - "mvn clean install -Pqulice --errors --settings ../settings.xml"
+  script: |
+    mvn clean install -Pqulice --errors --settings ../settings.xml
+    pdd --source=$(pwd) --verbose --file=/dev/null
 
 deploy:
-  script:
-    - "mvn clean deploy -Pqulice --errors --settings ../settings.xml"
-    - "gem install pdd"
-    - "mvn clean"
-    - "pdd --source=$(pwd) --verbose --file=jcabi-parent.xml"
-    - "s3cmd --no-progress put jcabi-parent.xml --config=../s3cfg s3://pdd.teamed.io/jcabi-parent.xml > /dev/null"
+  script: |
+    mvn clean deploy -Pqulice --errors --settings ../settings.xml
+    mvn clean
+    pdd --source=$(pwd) --verbose --file=jcabi-parent.xml
+    s3cmd --no-progress put jcabi-parent.xml --config=../s3cfg s3://pdd.teamed.io/jcabi-parent.xml > /dev/null
 
 release:
-  script:
-    - "mvn versions:set \"-DnewVersion=${tag}\""
-    - "git commit -am \"${tag}\""
-    - "mvn clean deploy -Pqulice -Psonatype -Pjcabi --errors --settings ../settings.xml"
-    - "mvn clean site-deploy -Psite --errors --settings ../settings.xml"
+  script: |
+    mvn versions:set "-DnewVersion=${tag}"
+    git commit -am "${tag}"
+    mvn clean deploy -Pqulice -Psonatype -Pjcabi --errors --settings ../settings.xml
+    mvn clean site-deploy -Psite --errors --settings ../settings.xml
