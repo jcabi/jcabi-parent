@@ -1,13 +1,13 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2014-9-22: Created.
+2014-9-23: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Mon Sep 22 18:33:53 2014
- By be
-Created by be with FontForge 2.0 (http://fontforge.sf.net)
+Created by FontForge 20120731 at Tue Sep 23 08:45:32 2014
+ By ,,,
+Created by ,,, with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
 <defs>
 <font id="ico" horiz-adv-x="512" >
@@ -47,7 +47,7 @@ c-3 0 -7 1 -14 1c-11 0 -22 -1 -33 -2s-22 -4 -33 -8s-21 -9 -29 -14s-16 -13 -21 -2
 s-15 23 -26 31s-22 11 -35 12c-9 0 -17 -2 -25 -6s-16 -9 -21 -16c-9 -12 -14 -28 -14 -48zM321 159v33h65v66h32v-66h65v-33h-65v-67h-32v67h-65z" />
     <glyph glyph-name="uniF104" unicode="&#xf104;" 
 d="M0 338c0 16 5 30 17 41s27 16 45 16s33 -5 44 -16s18 -25 18 -41s-6 -29 -18 -40s-26 -17 -44 -17h-1c-18 0 -33 6 -44 17s-17 24 -17 40zM7 -94v330h109v-330h-109zM177 -94v215v99v16h110v-48h-1c4 7 9 14 14 19s10 11 18 17s18 11 30 14s24 6 38 6c38 0 68 -13 91 -38
-s35 -62 35 -111v-189h-109v177c0 23 -5 42 -14 55s-23 19 -42 19c-14 0 -26 -3 -35 -11s-17 -17 -22 -29c-2 -7 -3 -16 -3 -27v-184h-110v0z" />
+s35 -62 35 -111v-189h-109v177c0 23 -5 42 -14 55s-23 19 -42 19c-14 0 -26 -3 -35 -11s-17 -17 -22 -29c-2 -7 -3 -16 -3 -27v-184h-110z" />
     <glyph glyph-name="uniF101" unicode="&#xf101;" horiz-adv-x="265" 
 d="M0 128v91h78v67c0 38 11 67 32 88s49 32 85 32c30 0 54 -1 70 -4v-81h-48c-18 0 -30 -4 -36 -11s-9 -18 -9 -33v-58h90l-12 -91h-78v-233h-94v233h-78z" />
     <glyph glyph-name="uniF103" unicode="&#xf103;" horiz-adv-x="467" 
