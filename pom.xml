@@ -180,7 +180,7 @@
                         <!-- @see http://www.sonatype.com/books/nexus-book/reference/staging-sect-deployment.html -->
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.2</version>
+                        <version>1.6.5</version>
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>oss.sonatype.org</serverId>
@@ -986,7 +986,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.20</version>
+                <version>0.20.1</version>
             </dependency>
             <dependency>
                 <!--
