@@ -995,7 +995,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-dynamo</artifactId>
-                <version>0.17</version>
+                <version>0.18</version>
             </dependency>
             <dependency>
                 <!--
@@ -1004,7 +1004,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-github</artifactId>
-                <version>0.15.1</version>
+                <version>0.17</version>
             </dependency>
             <dependency>
                 <!--
@@ -1013,7 +1013,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.9</version>
+                <version>1.9.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1031,7 +1031,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-jdbc</artifactId>
-                <version>0.13</version>
+                <version>0.14</version>
             </dependency>
             <dependency>
                 <!--
@@ -1076,7 +1076,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-odesk</artifactId>
-                <version>0.5</version>
+                <version>0.6</version>
             </dependency>
             <dependency>
                 <!--
@@ -1085,7 +1085,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-s3</artifactId>
-                <version>0.6.1</version>
+                <version>0.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -1103,7 +1103,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-ssh</artifactId>
-                <version>1.1</version>
+                <version>1.2.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1139,7 +1139,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
-                <version>0.12.1</version>
+                <version>0.13</version>
             </dependency>
             <dependency>
                 <!-- JSON API -->
@@ -1208,7 +1208,7 @@
                 -->
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
-                <version>1.9</version>
+                <version>1.10</version>
             </dependency>
             <dependency>
                 <!--
@@ -1243,7 +1243,7 @@
                 -->
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
-                <version>1.8.3</version>
+                <version>1.8.4</version>
             </dependency>
             <dependency>
                 <!--
@@ -1271,7 +1271,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.7.0-alpha2</version>
+                <version>1.7.0-alpha4</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1321,7 +1321,7 @@
                 -->
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.12-beta-2</version>
+                <version>4.12-beta-3</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.hamcrest</groupId>
