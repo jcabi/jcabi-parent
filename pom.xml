@@ -999,6 +999,15 @@
             </dependency>
             <dependency>
                 <!--
+                Email sending SDK.
+                @see http://email.jcabi.com/
+                -->
+                <groupId>com.jcabi</groupId>
+                <artifactId>jcabi-email</artifactId>
+                <version>1.4</version>
+            </dependency>
+            <dependency>
+                <!--
                 Github API.
                 @see http://github.jcabi.com
                 -->
