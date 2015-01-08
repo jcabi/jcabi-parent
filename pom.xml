@@ -225,7 +225,7 @@
                         -->
                         <groupId>com.qulice</groupId>
                         <artifactId>qulice-maven-plugin</artifactId>
-                        <version>0.10</version>
+                        <version>0.12</version>
                         <executions>
                             <execution>
                                 <id>jcabi-check</id>
