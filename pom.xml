@@ -1669,7 +1669,7 @@
                     to the STDOUT as well, not only to the file.
                     -->
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.18</version>
+                    <version>2.18.1</version>
                     <configuration>
                         <useFile>false</useFile>
                         <runOrder>random</runOrder>
