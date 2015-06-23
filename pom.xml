@@ -401,9 +401,7 @@
                                 <plugin>
                                     <groupId>org.codehaus.mojo</groupId>
                                     <artifactId>cobertura-maven-plugin</artifactId>
-                                    <!-- This is the latest version that works. Version 2.6
-                                    causes problems in combination with AJC compilation -->
-                                    <version>2.5.2</version>
+                                    <version>2.7</version>
                                 </plugin>
                                 <plugin>
                                     <artifactId>maven-plugin-plugin</artifactId>
@@ -1508,7 +1506,7 @@
                     -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>cobertura-maven-plugin</artifactId>
-                    <version>2.5.2</version> <!-- don't upgrade it, see https://github.com/jcabi/parent/issues/1 -->
+                    <version>2.7</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-antrun-plugin</artifactId>
