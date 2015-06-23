@@ -952,7 +952,7 @@
                     <plugin>
                         <groupId>com.jcabi</groupId>
                         <artifactId>jcabi-maven-plugin</artifactId>
-                        <version>0.9.3</version>
+                        <version>0.13</version>
                         <executions>
                             <execution>
                                 <id>jcabi-versionalize-packages</id>
@@ -1475,7 +1475,7 @@
                 <plugin>
                     <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-maven-plugin</artifactId>
-                    <version>0.9.3</version>
+                    <version>0.13</version>
                 </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
