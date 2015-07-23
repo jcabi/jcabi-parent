@@ -289,6 +289,7 @@
                                             <reports>
                                                 <report>cim</report>
                                                 <report>dependencies</report>
+                                                <report>index</report>
                                                 <report>issue-tracking</report>
                                                 <report>license</report>
                                                 <report>mailing-list</report>
@@ -401,9 +402,7 @@
                                 <plugin>
                                     <groupId>org.codehaus.mojo</groupId>
                                     <artifactId>cobertura-maven-plugin</artifactId>
-                                    <!-- This is the latest version that works. Version 2.6
-                                    causes problems in combination with AJC compilation -->
-                                    <version>2.5.2</version>
+                                    <version>2.7</version>
                                 </plugin>
                                 <plugin>
                                     <artifactId>maven-plugin-plugin</artifactId>
@@ -952,7 +951,7 @@
                     <plugin>
                         <groupId>com.jcabi</groupId>
                         <artifactId>jcabi-maven-plugin</artifactId>
-                        <version>0.9.3</version>
+                        <version>0.13</version>
                         <executions>
                             <execution>
                                 <id>jcabi-versionalize-packages</id>
@@ -1475,7 +1474,7 @@
                 <plugin>
                     <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-maven-plugin</artifactId>
-                    <version>0.9.3</version>
+                    <version>0.13</version>
                 </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
@@ -1508,7 +1507,7 @@
                     -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>cobertura-maven-plugin</artifactId>
-                    <version>2.5.2</version> <!-- don't upgrade it, see https://github.com/jcabi/parent/issues/1 -->
+                    <version>2.7</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-antrun-plugin</artifactId>
