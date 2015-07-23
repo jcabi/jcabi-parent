@@ -1451,7 +1451,7 @@
                 <executions>
                     <execution>
                         <id>jcabi-build-number</id>
-                        <phase>generate-resources</phase>
+                        <phase>initialize</phase>
                         <goals>
                             <goal>create</goal>
                             <goal>create-timestamp</goal>
