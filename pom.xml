@@ -792,7 +792,7 @@
             </build>
         </profile>
         <profile>
-            <id>antlr4</id>
+            <id>jcabi-antlr4</id>
             <activation>
                 <file>
                     <exists>${basedir}/src/main/antlr4</exists>
@@ -803,17 +803,13 @@
                     <groupId>org.antlr</groupId>
                     <artifactId>antlr4-runtime</artifactId>
                 </dependency>
-                <dependency>
-                    <groupId>org.antlr</groupId>
-                    <artifactId>antlr4-annotations</artifactId>
-                </dependency>
             </dependencies>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.antlr</groupId>
                         <artifactId>antlr4-maven-plugin</artifactId>
-                        <version>4.3</version>
+                        <version>4.5.1</version>
                         <configuration>
                             <sourceDirectory>src/main/antlr4</sourceDirectory>
                         </configuration>
@@ -1394,11 +1390,6 @@
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-runtime</artifactId>
                 <version>4.5</version>
-            </dependency>
-            <dependency>
-                <groupId>org.antlr</groupId>
-                <artifactId>antlr4-annotations</artifactId>
-                <version>4.3</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>
