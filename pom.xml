@@ -114,10 +114,6 @@
         You should keep it empty in your project.
         @see http://www.sonatype.com/people/2009/02/why-putting-repositories-in-your-poms-is-a-bad-idea/
         -->
-        <repository>
-            <id>oss.sonatype.org</id>
-            <url>https://oss.sonatype.org/content/groups/public</url>
-        </repository>
     </repositories>
     <pluginRepositories>
         <!--
