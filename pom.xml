@@ -1011,7 +1011,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.10.4</version>
+                <version>1.12</version>
             </dependency>
             <dependency>
                 <!--
@@ -1038,7 +1038,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.16</version>
+                <version>0.17</version>
             </dependency>
             <dependency>
                 <!--
@@ -1074,7 +1074,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-odesk</artifactId>
-                <version>0.9</version>
+                <version>0.12</version>
             </dependency>
             <dependency>
                 <!--
@@ -1101,7 +1101,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-ssh</artifactId>
-                <version>1.4</version>
+                <version>1.5</version>
             </dependency>
             <dependency>
                 <!--
@@ -1179,7 +1179,7 @@
                 -->
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>18.0</version>
+                <version>19.0-rc2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1241,7 +1241,7 @@
                 -->
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
-                <version>1.8.6</version>
+                <version>1.8.7</version>
             </dependency>
             <dependency>
                 <!--
@@ -1257,7 +1257,7 @@
                 -->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>5.2.0.CR1</version>
+                <version>5.2.1.Final</version>
             </dependency>
             <dependency>
                 <!-- Required for Hibernate validator -->
@@ -1269,7 +1269,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.7.0-RC1</version>
+                <version>1.8.0-alpha5</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1297,7 +1297,7 @@
                 -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.16.4</version>
+                <version>1.16.6</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -1353,7 +1353,7 @@
                 -->
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>1.10.19</version>
+                <version>2.0.31-beta</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.hamcrest</groupId>
@@ -1385,12 +1385,12 @@
             <dependency>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-runtime</artifactId>
-                <version>4.5</version>
+                <version>4.5.1-1</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
-                <version>2.4.3</version>
+                <version>2.4.5</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
