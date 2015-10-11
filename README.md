@@ -5,6 +5,7 @@
 
 [![Build Status](https://travis-ci.org/jcabi/jcabi-parent.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent)
+[![Dependencies](https://www.versioneye.com/user/projects/561a9feca193340f32000ee6/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561a9feca193340f32000ee6)
 
 More details are here: [parent.jcabi.com](http://parent.jcabi.com/index.html)
 
