@@ -979,7 +979,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.22</version>
+                <version>0.22.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -997,7 +997,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-email</artifactId>
-                <version>1.6.3</version>
+                <version>1.7</version>
             </dependency>
             <dependency>
                 <!--
@@ -1006,7 +1006,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-github</artifactId>
-                <version>0.24</version>
+                <version>0.25</version>
             </dependency>
             <dependency>
                 <!--
@@ -1015,7 +1015,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.12</version>
+                <version>1.14</version>
             </dependency>
             <dependency>
                 <!--
@@ -1087,7 +1087,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-s3</artifactId>
-                <version>0.10</version>
+                <version>0.11.4</version>
             </dependency>
             <dependency>
                 <!--
@@ -1141,7 +1141,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
-                <version>0.16.2</version>
+                <version>0.16.4</version>
             </dependency>
             <dependency>
                 <!-- JSON API -->
@@ -1183,7 +1183,7 @@
                 -->
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>19.0-rc2</version>
+                <version>19.0-rc3</version>
             </dependency>
             <dependency>
                 <!--
@@ -1219,7 +1219,7 @@
                 -->
                 <groupId>commons-net</groupId>
                 <artifactId>commons-net</artifactId>
-                <version>3.3</version>
+                <version>3.4</version>
             </dependency>
             <dependency>
                 <!--
@@ -1261,7 +1261,7 @@
                 -->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>5.2.1.Final</version>
+                <version>5.2.2.Final</version>
             </dependency>
             <dependency>
                 <!-- Required for Hibernate validator -->
@@ -1273,7 +1273,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.8.0-alpha5</version>
+                <version>1.8.0-RC3</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1369,7 +1369,7 @@
                 <!-- Forward all SLF4J calls to LOG4J. -->
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
-                <version>1.7.12</version>
+                <version>1.7.13</version>
             </dependency>
             <dependency>
                 <!-- Use LOG4J logging facility for all loggings. -->
