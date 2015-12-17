@@ -1015,7 +1015,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.14</version>
+                <version>1.14.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1033,7 +1033,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-jdbc</artifactId>
-                <version>0.15</version>
+                <version>0.16</version>
             </dependency>
             <dependency>
                 <!--
@@ -1141,7 +1141,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
-                <version>0.16.4</version>
+                <version>0.17</version>
             </dependency>
             <dependency>
                 <!-- JSON API -->
@@ -1183,7 +1183,7 @@
                 -->
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>19.0-rc3</version>
+                <version>19.0</version>
             </dependency>
             <dependency>
                 <!--
@@ -1273,7 +1273,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.8.0-RC3</version>
+                <version>1.8.0-RC4</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1357,7 +1357,7 @@
                 -->
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>2.0.31-beta</version>
+                <version>2.0.32-beta</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.hamcrest</groupId>
