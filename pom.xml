@@ -979,7 +979,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.22.2</version>
+                <version>0.22.3</version>
             </dependency>
             <dependency>
                 <!--
@@ -1015,7 +1015,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-http</artifactId>
-                <version>1.14.1</version>
+                <version>1.14.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -1042,7 +1042,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-log</artifactId>
-                <version>0.17</version>
+                <version>0.17.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1141,7 +1141,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
-                <version>0.17</version>
+                <version>0.17.1</version>
             </dependency>
             <dependency>
                 <!-- JSON API -->
@@ -1201,7 +1201,7 @@
                 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-math3</artifactId>
-                <version>3.5</version>
+                <version>3.6</version>
             </dependency>
             <dependency>
                 <!--
@@ -1245,7 +1245,7 @@
                 -->
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
-                <version>1.8.7</version>
+                <version>1.8.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -1261,7 +1261,7 @@
                 -->
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
-                <version>5.2.2.Final</version>
+                <version>5.3.0.Alpha1</version>
             </dependency>
             <dependency>
                 <!-- Required for Hibernate validator -->
@@ -1273,7 +1273,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.8.0-RC4</version>
+                <version>1.8.0</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1357,7 +1357,7 @@
                 -->
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>2.0.36-beta</version>
+                <version>2.0.40-beta</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.hamcrest</groupId>
@@ -1369,7 +1369,7 @@
                 <!-- Forward all SLF4J calls to LOG4J. -->
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
-                <version>1.7.13</version>
+                <version>1.7.14</version>
             </dependency>
             <dependency>
                 <!-- Use LOG4J logging facility for all loggings. -->
@@ -1475,7 +1475,7 @@
                 <plugin>
                     <groupId>com.jcabi</groupId>
                     <artifactId>jcabi-dynamodb-maven-plugin</artifactId>
-                    <version>0.7.1</version>
+                    <version>0.7.2</version>
                 </plugin>
                 <plugin>
                     <groupId>com.jcabi</groupId>
@@ -1531,7 +1531,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.3</version>
+                    <version>3.5</version>
                     <configuration>
                         <source>1.6</source>
                         <target>1.6</target>
@@ -1565,7 +1565,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>2.19</version>
+                    <version>2.19.1</version>
                     <configuration>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
@@ -1658,7 +1658,7 @@
                     to the STDOUT as well, not only to the file.
                     -->
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.19</version>
+                    <version>2.19.1</version>
                     <configuration>
                         <useFile>false</useFile>
                         <runOrder>random</runOrder>
@@ -1692,7 +1692,7 @@
                 <plugin>
                     <groupId>com.qulice</groupId>
                     <artifactId>qulice-maven-plugin</artifactId>
-                    <version>0.14</version>
+                    <version>0.15.4</version>
                     <configuration>
                         <license>file:${basedir}/LICENSE.txt</license>
                     </configuration>
