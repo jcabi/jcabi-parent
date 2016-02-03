@@ -1006,7 +1006,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-github</artifactId>
-                <version>0.25</version>
+                <version>0.26</version>
             </dependency>
             <dependency>
                 <!--
@@ -1141,7 +1141,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-xml</artifactId>
-                <version>0.17.1</version>
+                <version>0.17.2</version>
             </dependency>
             <dependency>
                 <!-- JSON API -->
@@ -1357,7 +1357,7 @@
                 -->
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>2.0.40-beta</version>
+                <version>2.0.41-beta</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.hamcrest</groupId>
@@ -1389,7 +1389,7 @@
             <dependency>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-runtime</artifactId>
-                <version>4.5.1-1</version>
+                <version>4.5.2-1</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>
@@ -1692,7 +1692,7 @@
                 <plugin>
                     <groupId>com.qulice</groupId>
                     <artifactId>qulice-maven-plugin</artifactId>
-                    <version>0.15.4</version>
+                    <version>0.16</version>
                     <configuration>
                         <license>file:${basedir}/LICENSE.txt</license>
                     </configuration>
