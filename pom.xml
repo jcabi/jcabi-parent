@@ -1429,6 +1429,26 @@
         </extensions>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4.1</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                           <goal>enforce</goal>
+                        </goals>
+                       <configuration>
+                           <rules>
+                               <requireMavenVersion>
+                                   <version>3.1</version>
+                               </requireMavenVersion>
+                           </rules>
+                       </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <!--
                 This plugin will collect current build number
                 from Git and save it into Maven property
