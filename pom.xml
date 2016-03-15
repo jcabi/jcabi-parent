@@ -1593,6 +1593,7 @@
                         <perCoreThreadCount>true</perCoreThreadCount>
                         <runOrder>random</runOrder>
                         <threadCount>8</threadCount>
+                        <trimStackTrace>false</trimStackTrace>
                     </configuration>
                 </plugin>
                 <plugin>
