@@ -976,7 +976,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-aspects</artifactId>
-                <version>0.22.3</version>
+                <version>0.22.5</version>
             </dependency>
             <dependency>
                 <!--
@@ -985,7 +985,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-dynamo</artifactId>
-                <version>0.21</version>
+                <version>0.21.2</version>
             </dependency>
             <dependency>
                 <!--
@@ -994,7 +994,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-email</artifactId>
-                <version>1.7</version>
+                <version>1.8</version>
             </dependency>
             <dependency>
                 <!--
@@ -1003,7 +1003,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-github</artifactId>
-                <version>0.27</version>
+                <version>0.28</version>
             </dependency>
             <dependency>
                 <!--
@@ -1084,7 +1084,7 @@
                 -->
                 <groupId>com.jcabi</groupId>
                 <artifactId>jcabi-s3</artifactId>
-                <version>0.11.4</version>
+                <version>0.11.5</version>
             </dependency>
             <dependency>
                 <!--
@@ -1198,7 +1198,7 @@
                 -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-math3</artifactId>
-                <version>3.6</version>
+                <version>3.6.1</version>
             </dependency>
             <dependency>
                 <!--
@@ -1216,7 +1216,7 @@
                 -->
                 <groupId>commons-net</groupId>
                 <artifactId>commons-net</artifactId>
-                <version>3.4</version>
+                <version>3.5</version>
             </dependency>
             <dependency>
                 <!--
@@ -1225,7 +1225,7 @@
                 -->
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>2.4</version>
+                <version>2.5</version>
             </dependency>
             <dependency>
                 <!--
@@ -1270,7 +1270,7 @@
                 <!-- Clojure -->
                 <groupId>org.clojure</groupId>
                 <artifactId>clojure</artifactId>
-                <version>1.8.0</version>
+                <version>1.9.0-alpha7</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1354,7 +1354,7 @@
                 -->
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>2.0.44-beta</version>
+                <version>2.0.58-beta</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.hamcrest</groupId>
@@ -1366,7 +1366,7 @@
                 <!-- Forward all SLF4J calls to LOG4J. -->
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
-                <version>1.7.19</version>
+                <version>1.7.21</version>
             </dependency>
             <dependency>
                 <!-- Use LOG4J logging facility for all loggings. -->
@@ -1386,12 +1386,12 @@
             <dependency>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-runtime</artifactId>
-                <version>4.5.2-1</version>
+                <version>4.5.3</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-all</artifactId>
-                <version>2.4.6</version>
+                <version>2.4.7</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
