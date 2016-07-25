@@ -395,6 +395,11 @@
                                     </reportSets>
                                 </plugin>
                                 <plugin>
+                                    <groupId>org.jacoco</groupId>
+                                    <artifactId>jacoco-maven-plugin</artifactId>
+                                    <version>0.7.7.201606060606</version>
+                                </plugin>
+                                <plugin>
                                     <artifactId>maven-plugin-plugin</artifactId>
                                     <version>3.3</version>
                                 </plugin>
@@ -448,9 +453,9 @@
                     <scope>provided</scope>
                 </dependency>
                 <dependency>
-                   <groupId>javax.el</groupId>
-                   <artifactId>javax.el-api</artifactId>
-                   <scope>provided</scope>
+                    <groupId>javax.el</groupId>
+                    <artifactId>javax.el-api</artifactId>
+                    <scope>provided</scope>
                 </dependency>
             </dependencies>
             <build>
@@ -950,97 +955,6 @@
                 </plugins>
             </build>
         </profile>
-        <profile>
-            <id>jacoco</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.jacoco</groupId>
-                        <artifactId>jacoco-maven-plugin</artifactId>
-                        <version>0.7.6.201602180812</version>
-                        <executions>
-                            <execution>
-                                <id>default-prepare-agent</id>
-                                <goals>
-                                    <goal>prepare-agent</goal>
-                                </goals>
-                            </execution>
-                            <execution>
-                                <id>default-report</id>
-                                <phase>prepare-package</phase>
-                                <goals>
-                                    <goal>report</goal>
-                                </goals>
-                            </execution>
-                            <execution>
-                                <id>default-check</id>
-                                <goals>
-                                    <goal>check</goal>
-                                </goals>
-                                <configuration>
-                                    <rules>
-                                        <rule>
-                                            <element>BUNDLE</element>
-                                            <limits>
-                                                <limit>
-                                                    <counter>LINE</counter>
-                                                    <value>COVEREDRATIO</value>
-                                                    <minimum>0.8</minimum>
-                                                </limit>
-                                                <limit>
-                                                    <counter>BRANCH</counter>
-                                                    <value>COVEREDRATIO</value>
-                                                    <minimum>0.8</minimum>
-                                                </limit>
-                                            </limits>
-                                        </rule>
-                                        <rule>
-                                            <element>PACKAGE</element>
-                                            <limits>
-                                                <limit>
-                                                    <counter>LINE</counter>
-                                                    <value>COVEREDRATIO</value>
-                                                    <minimum>0.8</minimum>
-                                                </limit>
-                                                <limit>
-                                                    <counter>BRANCH</counter>
-                                                    <value>COVEREDRATIO</value>
-                                                    <minimum>0.8</minimum>
-                                                </limit>
-                                            </limits>
-                                        </rule>
-                                        <rule>
-                                            <element>CLASS</element>
-                                            <limits>
-                                                <limit>
-                                                    <counter>LINE</counter>
-                                                    <value>COVEREDRATIO</value>
-                                                    <minimum>0.8</minimum>
-                                                </limit>
-                                                <limit>
-                                                    <counter>BRANCH</counter>
-                                                    <value>COVEREDRATIO</value>
-                                                    <minimum>0.8</minimum>
-                                                </limit>
-                                            </limits>
-                                        </rule>
-                                    </rules>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-            <reporting>
-                <plugins>
-                    <plugin>
-                        <groupId>org.jacoco</groupId>
-                        <artifactId>jacoco-maven-plugin</artifactId>
-                        <version>0.7.6.201602180812</version>
-                    </plugin>
-                </plugins>
-            </reporting>
-        </profile>
     </profiles>
     <dependencyManagement>
         <dependencies>
@@ -1346,9 +1260,9 @@
             </dependency>
             <dependency>
                 <!-- Required for Hibernate validator -->
-               <groupId>javax.el</groupId>
-               <artifactId>javax.el-api</artifactId>
-               <version>3.0.1-b04</version>
+                <groupId>javax.el</groupId>
+                <artifactId>javax.el-api</artifactId>
+                <version>3.0.1-b04</version>
             </dependency>
             <dependency>
                 <!-- Clojure -->
@@ -1520,15 +1434,15 @@
                     <execution>
                         <id>enforce-maven</id>
                         <goals>
-                           <goal>enforce</goal>
+                            <goal>enforce</goal>
                         </goals>
-                       <configuration>
-                           <rules>
-                               <requireMavenVersion>
-                                   <version>3.1</version>
-                               </requireMavenVersion>
-                           </rules>
-                       </configuration>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>3.1</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
