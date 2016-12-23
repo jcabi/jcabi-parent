@@ -4,7 +4,7 @@
 [![DevOps By Rultor.com](http://www.rultor.com/b/jcabi/jcabi-parent)](http://www.rultor.com/p/jcabi/jcabi-parent)
 
 [![Build Status](https://travis-ci.org/jcabi/jcabi-parent.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-parent)
-[![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-parent)](http://www.0pdd.com/p?name=teamed/jcabi/jcabi-parent)
+[![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-parent)](http://www.0pdd.com/p?name=jcabi/jcabi-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent)
 [![Dependencies](https://www.versioneye.com/user/projects/561a9feca193340f32000ee6/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561a9feca193340f32000ee6)
 
