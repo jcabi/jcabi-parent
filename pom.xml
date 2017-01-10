@@ -350,6 +350,7 @@
                                             <link>http://jolbox.com/bonecp/downloads/site/apidocs/</link>
                                         </links>
                                         <detectLinks>true</detectLinks>
+                                        <additionalparam>-Xdoclint:none</additionalparam>
                                         <tags>
                                             <!--
                                             Here we instruct plugin to use custom tag
