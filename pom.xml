@@ -108,6 +108,8 @@
         later in the file
         -->
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
     <repositories>
         <!--
@@ -1552,8 +1554,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.6.0</version>
                     <configuration>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
                         <optimize>true</optimize>
                         <showWarnings>true</showWarnings>
                         <showDeprecation>true</showDeprecation>
