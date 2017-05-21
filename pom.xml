@@ -1561,7 +1561,7 @@
                         <showDeprecation>true</showDeprecation>
                         <compilerArgs>
                             <arg>-Xlint</arg>
-                            <arg>-Werror</arg>
+                            <!--<arg>-Werror</arg>-->
                             <arg>-Xlint:-path</arg>
                             <!-- @see https://blogs.oracle.com/darcy/entry/bootclasspath_older_source -->
                             <arg>-Xlint:-options</arg>
