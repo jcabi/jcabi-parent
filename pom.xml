@@ -96,9 +96,6 @@
             <url>http://parent.jcabi.com/</url>
         </site>
     </distributionManagement>
-    <prerequisites>
-        <maven>3.0.4</maven>
-    </prerequisites>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -1455,7 +1452,7 @@
                         <configuration>
                             <rules>
                                 <requireMavenVersion>
-                                    <version>3.1</version>
+                                    <version>[3.2.5,)</version>
                                 </requireMavenVersion>
                             </rules>
                         </configuration>
