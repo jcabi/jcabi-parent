@@ -232,10 +232,56 @@
                                 </goals>
                                 <configuration>
                                     <license>file:${basedir}/LICENSE.txt</license>
+                                    <excludes>
+                                        <exclude>xml:.*</exclude>
+                                    </excludes>
                                 </configuration>
                             </execution>
                         </executions>
                     </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <!--
+            Xdoc is a static validator of XML formatting.
+            @see https://github.com/yegor256/xdoc/
+            -->
+            <id>xdoc</id>
+            <activation>
+                <file>
+                    <exists>${basedir}/LICENSE.txt</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <configuration>
+              <target>
+                <apply executable="xcop" failonerror="true">
+                    <arg value="--license"/>
+                    <arg value="LICENSE.txt"/>
+                  <fileset dir=".">
+                    <include name="**/*.xml"/>
+                    <include name="**/*.xsl"/>
+                    <include name="**/*.xsd"/>
+                    <exclude name="target/**/*"/>
+                    <exclude name=".idea/**/*"/>
+                  </fileset>
+                </apply>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
                 </plugins>
             </build>
         </profile>
