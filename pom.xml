@@ -259,17 +259,28 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                 <phase>verify</phase>
                 <configuration>
                   <target>
-                    <apply executable="xcop" failonerror="true">
-                      <arg value="--license"/>
-                      <arg value="LICENSE.txt"/>
-                      <fileset dir=".">
-                        <include name="**/*.xml"/>
-                        <include name="**/*.xsl"/>
-                        <include name="**/*.xsd"/>
-                        <exclude name="target/**/*"/>
-                        <exclude name=".idea/**/*"/>
-                      </fileset>
-                    </apply>
+                    <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
+                    <property environment="env"/>
+                    <available file="xcop" filepath="${env.PATH}" property="xcop.present"/>
+                    <if>
+                      <equals arg1="${xcop.present}" arg2="true"/>
+                      <then>
+                        <apply executable="xcop" failonerror="true">
+                          <arg value="--license"/>
+                          <arg value="LICENSE.txt"/>
+                          <fileset dir=".">
+                            <include name="**/*.xml"/>
+                            <include name="**/*.xsl"/>
+                            <include name="**/*.xsd"/>
+                            <exclude name="target/**/*"/>
+                            <exclude name=".idea/**/*"/>
+                          </fileset>
+                        </apply>
+                      </then>
+                      <else>
+                        <echo message="XCOP is not available in PATH"/>
+                      </else>
+                    </if>
                   </target>
                 </configuration>
                 <goals>
