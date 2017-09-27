@@ -1259,6 +1259,15 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       </dependency>
       <dependency>
         <!--
+        Commons Text
+        @see http://commons.apache.org/text/
+        -->
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-text</artifactId>
+        <version>1.1</version>
+      </dependency>
+      <dependency>
+        <!--
         Commons Collections
         @see https://commons.apache.org/proper/commons-collections/
         -->
