@@ -1042,7 +1042,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-aspects</artifactId>
-        <version>0.22.5</version>
+        <version>0.22.6</version>
       </dependency>
       <dependency>
         <!--
@@ -1051,7 +1051,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-dynamo</artifactId>
-        <version>0.21.3</version>
+        <version>0.21.4</version>
       </dependency>
       <dependency>
         <!--
@@ -1060,7 +1060,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-email</artifactId>
-        <version>1.8</version>
+        <version>1.10</version>
       </dependency>
       <dependency>
         <!--
@@ -1069,7 +1069,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-github</artifactId>
-        <version>0.28</version>
+        <version>0.33</version>
       </dependency>
       <dependency>
         <!--
@@ -1078,7 +1078,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-http</artifactId>
-        <version>1.16</version>
+        <version>1.17.1</version>
       </dependency>
       <dependency>
         <!--
@@ -1123,7 +1123,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-matchers</artifactId>
-        <version>1.3</version>
+        <version>1.4</version>
       </dependency>
       <dependency>
         <!--
@@ -1150,7 +1150,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-s3</artifactId>
-        <version>0.11.5</version>
+        <version>0.17.1</version>
       </dependency>
       <dependency>
         <!--
@@ -1168,7 +1168,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-ssh</artifactId>
-        <version>1.5.2</version>
+        <version>1.6</version>
       </dependency>
       <dependency>
         <!--
@@ -1195,7 +1195,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-w3c</artifactId>
-        <version>1.2</version>
+        <version>1.3</version>
       </dependency>
       <dependency>
         <!--
@@ -1204,20 +1204,20 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-xml</artifactId>
-        <version>0.17.2</version>
+        <version>0.20.1</version>
       </dependency>
       <dependency>
         <!-- JSON API -->
         <groupId>javax.json</groupId>
         <artifactId>javax.json-api</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <!-- JSON reference implementation -->
         <groupId>org.glassfish</groupId>
         <artifactId>javax.json</artifactId>
-        <version>1.0.4</version>
+        <version>1.1</version>
         <scope>runtime</scope>
       </dependency>
       <dependency>
@@ -1231,7 +1231,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- JAXB API -->
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
-        <version>2.2.12</version>
+        <version>2.3.0</version>
         <exclusions>
           <exclusion>
             <groupId>javax.xml.bind</groupId>
@@ -1255,7 +1255,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
-        <version>3.5</version>
+        <version>3.6</version>
       </dependency>
       <dependency>
         <!--
@@ -1291,7 +1291,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>commons-net</groupId>
         <artifactId>commons-net</artifactId>
-        <version>3.5</version>
+        <version>3.6</version>
       </dependency>
       <dependency>
         <!--
@@ -1308,7 +1308,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
-        <version>1.8.9</version>
+        <version>1.8.11</version>
       </dependency>
       <dependency>
         <!--
@@ -1316,7 +1316,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
-        <version>1.1.0.Final</version>
+        <version>2.0.0.Final</version>
       </dependency>
       <dependency>
         <!--
@@ -1324,7 +1324,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
-        <version>5.3.2.Final</version>
+        <version>6.0.2.Final</version>
       </dependency>
       <dependency>
         <!-- Required for Hibernate validator -->
@@ -1336,7 +1336,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- Clojure -->
         <groupId>org.clojure</groupId>
         <artifactId>clojure</artifactId>
-        <version>1.9.0-alpha14</version>
+        <version>1.9.0-beta1</version>
       </dependency>
       <dependency>
         <!-- Clojure -->
@@ -1348,13 +1348,13 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- Clojure -->
         <groupId>org.clojure</groupId>
         <artifactId>tools.logging</artifactId>
-        <version>0.3.1</version>
+        <version>0.4.0</version>
       </dependency>
       <dependency>
         <!-- Servlet API -->
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.0-b01</version>
+        <version>4.0.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -1364,7 +1364,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.16.10</version>
+        <version>1.16.18</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -1421,7 +1421,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>2.2.21</version>
+        <version>2.10.0</version>
         <exclusions>
           <exclusion>
             <groupId>org.hamcrest</groupId>
@@ -1433,7 +1433,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- Forward all SLF4J calls to LOG4J. -->
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
-        <version>1.7.21</version>
+        <version>1.8.0-alpha2</version>
       </dependency>
       <dependency>
         <!-- Use LOG4J logging facility for all loggings. -->
@@ -1453,12 +1453,12 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       <dependency>
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-runtime</artifactId>
-        <version>4.5.3</version>
+        <version>4.7</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
-        <version>2.4.7</version>
+        <version>2.6.0-alpha-1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
