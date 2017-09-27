@@ -265,17 +265,19 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                     <if>
                       <equals arg1="${xcop.present}" arg2="true"/>
                       <then>
-                        <apply executable="xcop" failonerror="true">
+                        <fileset dir="." id="files">
+                          <include name="**/*.xml"/>
+                          <include name="**/*.xsl"/>
+                          <include name="**/*.xsd"/>
+                          <exclude name="target/**/*"/>
+                          <exclude name=".idea/**/*"/>
+                        </fileset>
+                        <pathconvert refid="files" property="converted" pathsep=" "/>
+                        <exec executable="xcop" failonerror="true">
                           <arg value="--license"/>
                           <arg value="LICENSE.txt"/>
-                          <fileset dir=".">
-                            <include name="**/*.xml"/>
-                            <include name="**/*.xsl"/>
-                            <include name="**/*.xsd"/>
-                            <exclude name="target/**/*"/>
-                            <exclude name=".idea/**/*"/>
-                          </fileset>
-                        </apply>
+                          <arg line="${converted}"/>
+                        </exec>
                       </then>
                       <else>
                         <echo message="XCOP is not available in PATH"/>
