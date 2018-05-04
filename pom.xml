@@ -146,6 +146,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <executions>
               <execution>
                 <id>jcabi-sources</id>
+                <configuration>
+                  <forceCreation>true</forceCreation>
+                </configuration>
                 <goals>
                   <goal>jar</goal>
                 </goals>
