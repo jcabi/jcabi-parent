@@ -262,6 +262,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                 <phase>verify</phase>
                 <configuration>
                   <target>
+                    <condition property="os.windows">
+                      <os family="windows"/>
+                    </condition>
                     <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
                     <property environment="env"/>
                     <available file="xcop" filepath="${env.PATH}" property="xcop.present"/>
@@ -276,11 +279,23 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                           <exclude name=".idea/**/*"/>
                         </fileset>
                         <pathconvert refid="files" property="converted" pathsep=" "/>
-                        <exec executable="xcop" failonerror="true">
-                          <arg value="--license"/>
-                          <arg value="LICENSE.txt"/>
-                          <arg line="${converted}"/>
-                        </exec>
+                        <if>
+                          <equals arg1="${os.windows}" arg2="true"/>
+                          <then>
+                            <exec executable="cmd" failonerror="true">
+                              <arg value="--license"/>
+                              <arg value="LICENSE.txt"/>
+                              <arg line="/c xcop ${converted}"/>
+                            </exec>
+                          </then>
+                          <else>
+                            <exec executable="xcop" failonerror="true">
+                              <arg value="--license"/>
+                              <arg value="LICENSE.txt"/>
+                              <arg line="${converted}"/>
+                            </exec>
+                          </else>
+                        </if>
                       </then>
                       <else>
                         <echo message="XCOP is not available in PATH"/>
