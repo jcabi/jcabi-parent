@@ -243,10 +243,10 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     </profile>
     <profile>
       <!--
-      Xdoc is a static validator of XML formatting.
-      @see https://github.com/yegor256/xdoc/
+      Xcop is a static validator of XML formatting.
+      @see https://github.com/yegor256/xcop/
       -->
-      <id>xdoc</id>
+      <id>xcop</id>
       <activation>
         <file>
           <exists>${basedir}/LICENSE.txt</exists>
