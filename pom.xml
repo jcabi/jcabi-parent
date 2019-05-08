@@ -283,9 +283,10 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                           <equals arg1="${os.windows}" arg2="true"/>
                           <then>
                             <exec executable="cmd" failonerror="true">
+                              <arg line="/c xcop"/>
                               <arg value="--license"/>
                               <arg value="LICENSE.txt"/>
-                              <arg line="/c xcop ${converted}"/>
+                              <arg line="${converted}"/>
                             </exec>
                           </then>
                           <else>
