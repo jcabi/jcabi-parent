@@ -262,30 +262,49 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                 <phase>verify</phase>
                 <configuration>
                   <target>
-                    <condition property="os.windows">
-                      <os family="windows"/>
-                    </condition>
                     <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
                     <property environment="env"/>
                     <available file="xcop" filepath="${env.PATH}" property="xcop.present"/>
                     <if>
                       <equals arg1="${xcop.present}" arg2="true"/>
                       <then>
-                        <fileset dir="." id="files">
+                        <patternset id="xcop.main">
                           <include name="**/*.xml"/>
                           <include name="**/*.xsl"/>
                           <include name="**/*.xsd"/>
                           <exclude name="target/**/*"/>
                           <exclude name=".idea/**/*"/>
-                        </fileset>
-                        <pathconvert refid="files" property="converted" pathsep=" "/>
+                        </patternset>
+                        <condition property="xcop.excludes.defined">
+                          <isreference refid="xcop.excludes"/>
+                        </condition>
+                        <if>
+                          <equals arg1="${xcop.excludes.defined}" arg2="true"/>
+                          <then>
+                            <fileset dir="." id="files">
+                              <patternset refid="xcop.main"/>
+                              <patternset refid="xcop.excludes"/>
+                            </fileset>
+                            <pathconvert refid="files" property="converted" pathsep=" "/>
+                          </then>
+                          <else>
+                            <fileset dir="." id="files">
+                              <patternset refid="xcop.main"/>
+                            </fileset>
+                            <pathconvert refid="files" property="converted" pathsep=" "/>
+                          </else>
+                        </if>
+                        <condition property="os.windows">
+                          <os family="windows"/>
+                        </condition>
                         <if>
                           <equals arg1="${os.windows}" arg2="true"/>
                           <then>
                             <exec executable="cmd" failonerror="true">
+                              <arg line="/c xcop"/>
                               <arg value="--license"/>
                               <arg value="LICENSE.txt"/>
-                              <arg line="/c xcop ${converted}"/>
+                              <arg line="${converted}"/>
                             </exec>
                           </then>
                           <else>
