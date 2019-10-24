@@ -40,12 +40,12 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
   <inceptionYear>2012</inceptionYear>
   <organization>
     <name>jcabi.com</name>
-    <url>http://www.jcabi.com</url>
+    <url>https://www.jcabi.com</url>
   </organization>
   <licenses>
     <license>
       <name>BSD</name>
-      <url>http://www.jcabi.com/LICENSE.txt</url>
+      <url>https://www.jcabi.com/LICENSE.txt</url>
       <distribution>repo</distribution>
       <comments>BSD License</comments>
     </license>
@@ -89,7 +89,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     </snapshotRepository>
     <site>
       <id>parent.jcabi.com</id>
-      <url>http://parent.jcabi.com/</url>
+      <url>https://parent.jcabi.com/</url>
     </site>
   </distributionManagement>
   <properties>
