@@ -272,7 +272,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                           <include name="**/*.xml"/>
                           <include name="**/*.xsl"/>
                           <include name="**/*.xsd"/>
-                          <exclude name="target/**/*"/>
+                          <exclude name="**/target/**/*"/>
                           <exclude name=".idea/**/*"/>
                         </patternset>
                         <condition property="xcop.excludes.defined">
