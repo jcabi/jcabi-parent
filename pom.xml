@@ -909,7 +909,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <plugin>
             <groupId>org.antlr</groupId>
             <artifactId>antlr4-maven-plugin</artifactId>
-            <version>4.5.3</version>
+            <version>4.7.2</version>
             <configuration>
               <sourceDirectory>src/main/antlr4</sourceDirectory>
             </configuration>
@@ -1499,7 +1499,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       <dependency>
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-runtime</artifactId>
-        <version>4.7</version>
+        <version>4.7.2</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
