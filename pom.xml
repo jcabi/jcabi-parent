@@ -343,7 +343,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <profile>
       <!--
       The profile builds site for production environment.
-      @see http://www.jcabi.com/jcabi-parent/profile-qulice.html
+      @see https://www.jcabi.com/jcabi-parent/profile-qulice.html
       -->
       <id>site</id>
       <build>

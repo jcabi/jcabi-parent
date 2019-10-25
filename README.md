@@ -7,9 +7,8 @@
 [![Build Status](https://travis-ci.org/jcabi/jcabi-parent.svg?branch=master)](https://travis-ci.org/jcabi/jcabi-parent)
 [![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-parent)](http://www.0pdd.com/p?name=jcabi/jcabi-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent)
-[![Dependencies](https://www.versioneye.com/user/projects/561a9feca193340f32000ee6/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561a9feca193340f32000ee6)
 
-More details are here: [parent.jcabi.com](http://parent.jcabi.com/index.html)
+More details are here: [parent.jcabi.com](https://parent.jcabi.com/index.html)
 
 Base your Maven projects on this artifact and you will get
 many pre-configuration benefits, including up-to-date
@@ -31,11 +30,6 @@ define our artifact as a parent of your project:
 </project>
 ```
 
-## Questions?
-
-If you have any questions about the framework, or something doesn't work as expected,
-please [submit an issue here](https://github.com/jcabi/jcabi-parent/issues/new).
-
 ## How to contribute?
 
 Fork the repository, make changes, submit a pull request.
@@ -47,3 +41,5 @@ Please run Maven build before submitting a pull request:
 ```
 $ mvn clean install -Pqulice
 ```
+
+That's it.
