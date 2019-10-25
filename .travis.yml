@@ -3,12 +3,6 @@ sudo: false
 cache:
   directories:
     - $HOME/.m2
-script:
-  - set -e
-  - mvn clean install -Pqulice --errors --batch-mode
-  - mvn clean
-  - pdd --source=$(pwd) --file=/dev/null
-  - est --dir=est --file=/dev/null
 before_install:
   - rvm install 2.6.0
   - rvm use 2.6.0
@@ -20,5 +14,11 @@ env:
   global:
     - MAVEN_OPTS="-Xmx256m"
     - JAVA_OPTS="-Xmx256m"
+script:
+  - set -e
+  - mvn clean install --errors --batch-mode
+  - mvn clean
+  - pdd -f /dev/null
+  - est --dir=est --file=/dev/null
 jdk:
   - oraclejdk11

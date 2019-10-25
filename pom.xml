@@ -224,7 +224,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <artifactId>qulice-maven-plugin</artifactId>
             <executions>
               <execution>
-                <id>jcabi-check</id>
+                <id>jcabi-qulice-check</id>
                 <phase>verify</phase>
                 <goals>
                   <goal>check</goal>
