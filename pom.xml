@@ -103,6 +103,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <junit-platform.version>5.4.2</junit-platform.version>
   </properties>
   <repositories>
     <!--
@@ -940,18 +941,18 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       </activation>
       <dependencies>
         <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-api</artifactId>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-engine</artifactId>
           <scope>test</scope>
         </dependency>
         <dependency>
           <groupId>org.hamcrest</groupId>
-          <artifactId>hamcrest-core</artifactId>
-          <scope>test</scope>
-        </dependency>
-        <dependency>
-          <groupId>org.hamcrest</groupId>
-          <artifactId>hamcrest-library</artifactId>
+          <artifactId>hamcrest</artifactId>
           <scope>test</scope>
         </dependency>
         <dependency>
@@ -1431,15 +1432,14 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         in the market. Other options considered: TestNG.
         @link http://www.junit.org/
         -->
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-core</artifactId>
-          </exclusion>
-        </exclusions>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>${junit-platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>${junit-platform.version}</version>
       </dependency>
       <dependency>
         <!--
@@ -1447,17 +1447,8 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         @link http://code.google.com/p/hamcrest/wiki/Tutorial
         -->
         <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest-core</artifactId>
-        <version>1.3</version>
-      </dependency>
-      <dependency>
-        <!--
-        Assertions and matchers for unit tests.
-        @link http://code.google.com/p/hamcrest/wiki/Tutorial
-        -->
-        <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest-library</artifactId>
-        <version>1.3</version>
+        <artifactId>hamcrest</artifactId>
+        <version>2.1</version>
       </dependency>
       <dependency>
         <!--
