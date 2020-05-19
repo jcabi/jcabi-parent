@@ -5,15 +5,17 @@ assets:
   secring.gpg: yegor256/home#assets/secring.gpg
   settings.xml: yegor256/home#assets/jcabi/settings.xml
   pubring.gpg: yegor256/home#assets/pubring.gpg
+install: |-
+  sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
+  pdd --file=/dev/null
+env:
+  MAVEN_OPTS: -XX:MaxPermSize=256m -Xmx1g
 merge:
   script: |-
-    pdd --verbose -f /dev/null
     mvn clean install -Pqulice --errors --settings ../settings.xml
 deploy:
   script: |-
     mvn clean deploy -Pqulice --errors --settings ../settings.xml
-env:
-  MAVEN_OPTS: -XX:MaxPermSize=256m -Xmx1g
 release:
   pre: false
   script: |-
