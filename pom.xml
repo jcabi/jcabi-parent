@@ -184,6 +184,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
               <serverId>oss.sonatype.org</serverId>
               <nexusUrl>https://oss.sonatype.org/</nexusUrl>
               <description>${project.version}</description>
+              <stagingProgressTimeoutMinutes>10</stagingProgressTimeoutMinutes>
             </configuration>
             <executions>
               <execution>
