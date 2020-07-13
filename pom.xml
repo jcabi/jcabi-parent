@@ -103,7 +103,6 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <junit-platform.version>5.4.2</junit-platform.version>
   </properties>
   <repositories>
     <!--
@@ -1439,14 +1438,11 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         in the market. Other options considered: TestNG.
         @link http://www.junit.org/
         -->
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${junit-platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>${junit-platform.version}</version>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>5.6.2</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <!--
