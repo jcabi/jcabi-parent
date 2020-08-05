@@ -1462,7 +1462,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>2.11.0</version>
+        <version>3.4.5</version>
         <exclusions>
           <exclusion>
             <groupId>org.hamcrest</groupId>
