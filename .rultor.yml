@@ -12,14 +12,14 @@ env:
   MAVEN_OPTS: -XX:MaxPermSize=256m -Xmx1g
 merge:
   script: |-
-    mvn clean install -Pqulice --errors --settings ../settings.xml
+    mvn clean install -Pqulice -Dstyle.color=never --errors --settings ../settings.xml
 deploy:
   script: |-
-    mvn clean deploy -Pqulice --errors --settings ../settings.xml
+    mvn clean deploy -Pqulice -Dstyle.color=never --errors --settings ../settings.xml
 release:
   pre: false
   script: |-
-    mvn -U versions:set "-DnewVersion=${tag}"
+    mvn -Dstyle.color=never -U versions:set "-DnewVersion=${tag}"
     git commit -am "${tag}"
-    mvn clean deploy -Pqulice -Psonatype -Pjcabi --errors --settings ../settings.xml
+    mvn clean deploy -Pqulice -Psonatype -Pjcabi -Dstyle.color=never --errors --settings ../settings.xml
     # mvn clean site-deploy -Psite --errors --settings ../settings.xml
