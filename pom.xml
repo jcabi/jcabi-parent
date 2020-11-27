@@ -1150,7 +1150,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-log</artifactId>
-        <version>0.18.1</version>
+        <version>0.19.0</version>
       </dependency>
       <dependency>
         <!--
