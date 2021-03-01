@@ -230,12 +230,6 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                 <goals>
                   <goal>check</goal>
                 </goals>
-                <configuration>
-                  <license>file:${basedir}/LICENSE.txt</license>
-                  <excludes>
-                    <exclude>xml:.*</exclude>
-                  </excludes>
-                </configuration>
               </execution>
             </executions>
           </plugin>
@@ -1816,6 +1810,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <version>0.18.19</version>
           <configuration>
             <license>file:${basedir}/LICENSE.txt</license>
+            <excludes>
+              <exclude>xml:.*</exclude>
+            </excludes>
           </configuration>
         </plugin>
         <plugin>
