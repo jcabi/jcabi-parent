@@ -1339,7 +1339,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>commons-net</groupId>
         <artifactId>commons-net</artifactId>
-        <version>3.7</version>
+        <version>3.7.2</version>
       </dependency>
       <dependency>
         <!--
