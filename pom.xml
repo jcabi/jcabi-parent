@@ -1468,7 +1468,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- Forward all SLF4J calls to LOG4J. -->
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
-        <version>2.0.0-alpha2</version>
+        <version>1.7.32</version>
       </dependency>
       <dependency>
         <!-- Use LOG4J logging facility for all loggings. -->
