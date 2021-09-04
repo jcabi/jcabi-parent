@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>jcabi-parent &#x2013; "Site" Profile for Advanced Maven Site Configuration</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
-        <link media="all" rel="stylesheet" type="text/css" href="./ico/ico.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
                             <script>
                 var _gaq = _gaq || [];
@@ -17,16 +16,12 @@
                     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
                 })();
             </script>
-                                                                                                                
-<link rel="shortcut icon" href="http://img.jcabi.com/favicon.ico"/>
-                                                                                                                
-<link rel="author" href="https://plus.google.com/u/0/114792568016408327418?rel=author"/>
-                                            <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-        <script type="text/javascript" src="./js/jcabi.js"></script>
+                                            <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script src="./js/jcabi.js"></script>
     </head>
     <body>
-                <section class="page" itemscope="" itemtype="http://schema.org/BlogPosting">
-            <nav class="menu-section" role="navigation">
+                <div class="page" itemscope="" itemtype="http://schema.org/BlogPosting">
+            <nav class="menu-section">
                 <ul class="menu" id="menu">
                                                                                     <li>
                             <span>Overview</span>
@@ -124,7 +119,7 @@
                                     </ul>
             </nav>
             <div class="right-side">
-                <main role="main">
+                <main>
                     <div class="content">
                         <header>
                             <div class="logo">
@@ -138,80 +133,41 @@
                                     />
                                 </a>
                             </div>
-                            <div class="teamed">
-                                <a href="http://www.teamed.io">
-                                    <img src="http://img.teamed.io/btn.svg" alt="teamed.io logo"/>
-                                </a>
-                            </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.49.5</strong>
+                                    <strong itemprop="version">0.53.3</strong>
                                 </li>
                                 <li>
                                     
-                                    <time itemprop="datePublished" datetime="2019-05-21T04:31:41Z">
+                                    <time itemprop="datePublished" datetime="2021-09-04T07:23:17Z">
                                         
-                                        21-May-2019
+                                        04-Sep-2021
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
                             </ul>
-                            <div class="social">
-                                <a href="http://www.facebook.com/sharer/sharer.php?u=URL"
-                                    title="Share on Facebook" class="ico">
-                                    <i class="icon-facebook"></i>
-                                </a>
-                                <a href="https://twitter.com/share?url=URL&amp;text=TITLE"
-                                    title="Share on Twitter" class="ico">
-                                    <i class="icon-twitter"></i>
-                                </a>
-                                <a href="https://plus.google.com/share?url=URL"
-                                    title="Share on Google+" class="ico">
-                                    <i class="icon-googleplus"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/cws/share?url=URL"
-                                    title="Share on LinkedIn" class="ico">
-                                    <i class="icon-linkedin"></i>
-                                </a>
-                                <a href="http://www.stumbleupon.com/submit?url=URL&amp;title=TITLE"
-                                    title="Share on StumbleUpon" class="ico">
-                                    <i class="icon-stumbleupon"></i>
-                                </a>
-                                <a href="http://digg.com/submit?phase=2&amp;url=URL&amp;title=TITLE"
-                                    title="Share on Digg" class="ico">
-                                    <i class="icon-digg"></i>
-                                </a>
-                                <a href="http://reddit.com/submit?url=URL&amp;title=TITLE"
-                                    title="Share on Reddit" class="ico">
-                                    <i class="icon-reddit"></i>
-                                </a>
-                                <a href="http://news.ycombinator.com/submitlink?u=URL&amp;t=TITLE"
-                                    title="Share on Hacker News" class="ico">
-                                    <i class="icon-hackernews"></i>
-                                </a>
-                            </div>
                         </header>
                         <div id="here-goes-menu" class="menu-off"></div>
                                                                             <a href="https://github.com/jcabi/jcabi-parent">
                                 <img src="http://img.jcabi.com/fork-me.svg" class="fork-me"/>
                             </a>
-                                                <article role="article" itemprop="articleBody">
-                            <!--  --><!-- ~~ Copyright (c) 2012-2017, jcabi.com --><!-- All rights reserved. --><!--  --><!-- Redistribution and use in source and binary forms, with or without --><!-- modification, are permitted provided that the following conditions --><!-- are met: 1) Redistributions of source code must retain the above --><!-- copyright notice, this list of conditions and the following --><!-- disclaimer. 2) Redistributions in binary form must reproduce the above --><!-- copyright notice, this list of conditions and the following --><!-- disclaimer in the documentation and/or other materials provided --><!-- with the distribution. 3) Neither the name of the jcabi.com nor --><!-- the names of its contributors may be used to endorse or promote --><!-- products derived from this software without specific prior written --><!-- permission. --><!--  --><!-- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS --><!-- "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT --><!-- NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND --><!-- FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL --><!-- THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, --><!-- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES --><!-- (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR --><!-- SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) --><!-- HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, --><!-- STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) --><!-- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED --><!-- OF THE POSSIBILITY OF SUCH DAMAGE. --><!--  --><div class="section">
-<h2><a name="aSite_Profile_for_Advanced_Maven_Site_Configuration"></a>&quot;Site&quot; Profile for Advanced Maven Site Configuration</h2>
-<p>Most of production site content takes time to build (for example, JavaDoc API, changes report, etc). It's convenient to move that configuration plugins to a profile, which is activated only once in a while. Profile <tt>site</tt> does exactly that, grouping together most time-consuming reporting plugins. The profile can be activated only manually from command line, e.g.:</p>
+                                                <article itemprop="articleBody">
+                            <section>
+<h2><a name="a.22Site.22_Profile_for_Advanced_Maven_Site_Configuration"></a>&quot;Site&quot; Profile for Advanced Maven Site Configuration</h2>
+<p>Most of production site content takes time to build (for example, JavaDoc API, changes report, etc). It's convenient to move that configuration plugins to a profile, which is activated only once in a while. Profile <code>site</code> does exactly that, grouping together most time-consuming reporting plugins. The profile can be activated only manually from command line, e.g.:</p>
 <div class="source">
 <pre>$ mvn clean install site-deploy -Psite</pre></div>
-<p>The profile configures <a class="externalLink" href="http://maven.apache.org/plugins/maven-site-plugin/"><tt>maven-site-plugin</tt></a> with all required reporting plugins:</p>
+<p>The profile configures <a class="externalLink" href="http://maven.apache.org/plugins/maven-site-plugin/"><code>maven-site-plugin</code></a> with all required reporting plugins:</p>
 <ul>
-<li><a class="externalLink" href="http://maven.apache.org/plugins/maven-project-info-reports-plugin/"><tt>maven-project-info-reports-plugin</tt></a> creates basic &quot;project information&quot; reports.</li>
-<li><a class="externalLink" href="http://maven.apache.org/plugins/maven-javadoc-plugin/"><tt>maven-javadoc-plugin</tt></a> builds JavaDoc API documentation in <tt>./apidocs-$<a name="project.version">project.version</a></tt> directory.</li>
-<li><a class="externalLink" href="http://mojo.codehaus.org/cobertura-maven-plugin/"><tt>cobertura-maven-plugin</tt></a> generates code coverage report.</li>
-<li><a class="externalLink" href="http://maven.apache.org/plugin-tools/maven-plugin-plugin/"><tt>maven-plugin-plugin</tt></a> generate documentation for maven plugin.</li>
-<li><a class="externalLink" href="http://mojo.codehaus.org/versions-maven-plugin/"><tt>versions-maven-plugin</tt></a> reports about available dependency and plugin versions.</li></ul>
-<p>Also <tt>site</tt> profile has the following plugins:</p>
+<li><a class="externalLink" href="http://maven.apache.org/plugins/maven-project-info-reports-plugin/"><code>maven-project-info-reports-plugin</code></a> creates basic &quot;project information&quot; reports.</li>
+<li><a class="externalLink" href="http://maven.apache.org/plugins/maven-javadoc-plugin/"><code>maven-javadoc-plugin</code></a> builds JavaDoc API documentation in <code>./apidocs-$<a name="project.version">project.version</a></code> directory.</li>
+<li><a class="externalLink" href="http://mojo.codehaus.org/cobertura-maven-plugin/"><code>cobertura-maven-plugin</code></a> generates code coverage report.</li>
+<li><a class="externalLink" href="http://maven.apache.org/plugin-tools/maven-plugin-plugin/"><code>maven-plugin-plugin</code></a> generate documentation for maven plugin.</li>
+<li><a class="externalLink" href="http://mojo.codehaus.org/versions-maven-plugin/"><code>versions-maven-plugin</code></a> reports about available dependency and plugin versions.</li></ul>
+<p>Also <code>site</code> profile has the following plugins:</p>
 <ul>
-<li><a class="externalLink" href="http://maven.apache.org/plugins/maven-docck-plugin/index.html"><tt>maven-docck-plugin</tt></a> checks the quality of Maven project documentation.</li></ul>
-<p>You can add your own reporting plugins, for example (pay attention to <tt>combine.children</tt> attribute of <tt>reportPlugins</tt> element):</p>
+<li><a class="externalLink" href="http://maven.apache.org/plugins/maven-docck-plugin/index.html"><code>maven-docck-plugin</code></a> checks the quality of Maven project documentation.</li></ul>
+<p>You can add your own reporting plugins, for example (pay attention to <code>combine.children</code> attribute of <code>reportPlugins</code> element):</p>
 <div class="source">
 <pre>&lt;profiles&gt;
   [...]
@@ -241,19 +197,19 @@
     &lt;/build&gt;
   &lt;/profile&gt;
 &lt;/profiles&gt;</pre></div>
-<p>Also you can add your own plugins that should be executed when you're building a production site. Just add them to the <tt>site</tt> profile.</p></div>
+<p>Also you can add your own plugins that should be executed when you're building a production site. Just add them to the <code>site</code> profile.</p></section>
                         </article>
                     </div>
                 </main>
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2019
+                                                                            2012-2021
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>
                 </footer>
             </div>
-        </section>
+        </div>
     </body>
 </html>
