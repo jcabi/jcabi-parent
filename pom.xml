@@ -709,7 +709,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <groupId>com.github.github</groupId>
             <artifactId>site-maven-plugin</artifactId>
             <configuration>
-              <message>site for ${project.version}</message>
+              <message>Site for ${project.version}</message>
               <path>${site.path}</path>
               <merge>true</merge>
             </configuration>
