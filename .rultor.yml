@@ -1,25 +1,17 @@
-install:
-- sudo gem install pdd -v 0.20.5
-- sudo gem install xcop -v 0.6
 assets:
   secring.gpg: yegor256/home#assets/secring.gpg
   settings.xml: yegor256/home#assets/jcabi/settings.xml
   pubring.gpg: yegor256/home#assets/pubring.gpg
-install: |-
+install: |
   sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
   pdd --file=/dev/null
-env:
-  MAVEN_OPTS: -XX:MaxPermSize=256m -Xmx1g
 merge:
-  script: |-
-    mvn clean install -Pqulice -Dstyle.color=never --errors --settings ../settings.xml
-deploy:
-  script: |-
-    mvn clean deploy -Pqulice -Dstyle.color=never --errors --settings ../settings.xml
+  script: |
+    mvn clean install -Pqulice --errors -Dstyle.color=never
 release:
   pre: false
   script: |-
-    mvn -Dstyle.color=never -U versions:set "-DnewVersion=${tag}"
+    mvn versions:set "-DnewVersion=${tag}" -Dstyle.color=never
     git commit -am "${tag}"
     mvn clean deploy -Pqulice -Psonatype -Pjcabi -Dstyle.color=never --errors --settings ../settings.xml
-    # mvn clean site-deploy -Psite --errors --settings ../settings.xml
+    mvn clean site-deploy -Psite --errors --settings ../settings.xml
