@@ -1112,7 +1112,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-http</artifactId>
-        <version>1.17.7</version>
+        <version>1.18.1</version>
       </dependency>
       <dependency>
         <!--
@@ -1379,7 +1379,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- Clojure -->
         <groupId>org.clojure</groupId>
         <artifactId>clojure</artifactId>
-        <version>1.11.0-alpha1</version>
+        <version>1.11.0-alpha2</version>
       </dependency>
       <dependency>
         <!-- Clojure -->
@@ -1488,7 +1488,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
-        <version>3.0.8</version>
+        <version>3.0.9</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
