@@ -1773,7 +1773,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <useFile>false</useFile>
             <runOrder>random</runOrder>
             <trimStackTrace>false</trimStackTrace>
-            <failIfNoTests>false</failIfNoTests>
+            <failIfNoTests>true</failIfNoTests>
             <failIfNoSpecifiedTests>true</failIfNoSpecifiedTests>
             <parallel>all</parallel>
             <parallelTestsTimeoutInSeconds>0</parallelTestsTimeoutInSeconds>
