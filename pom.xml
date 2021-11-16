@@ -1697,7 +1697,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-invoker-plugin</artifactId>
-          <version>3.2.1</version>
+          <version>3.2.2</version>
           <configuration>
             <mergeUserSettings>true</mergeUserSettings>
             <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
@@ -1710,7 +1710,8 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <settingsFile>${basedir}/src/it/settings.xml</settingsFile>
             <showErrors>true</showErrors>
             <showVersion>false</showVersion>
-            <streamLogs>true</streamLogs>
+            <streamLogs>false</streamLogs>
+            <streamLogsOnFailures>true</streamLogsOnFailures>
           </configuration>
         </plugin>
         <plugin>
