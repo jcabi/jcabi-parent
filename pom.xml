@@ -103,6 +103,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <skipITs/>
   </properties>
   <repositories>
     <!--
@@ -839,6 +840,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <plugins>
           <plugin>
             <artifactId>maven-invoker-plugin</artifactId>
+            <configuration>
+              <skipInvocation>${skipITs}</skipInvocation>
+            </configuration>
             <executions>
               <execution>
                 <goals>
