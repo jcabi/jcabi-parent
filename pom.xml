@@ -61,7 +61,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <role>Architect</role>
         <role>Developer</role>
       </roles>
-      <timezone>-7</timezone>
+      <timezone>+3</timezone>
     </developer>
   </developers>
   <issueManagement>
@@ -169,7 +169,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                   <goal>jar</goal>
                 </goals>
                 <configuration>
-                  <additionalparam>${javadoc.opts}</additionalparam>
+                  <additionalOptions>${javadoc.opts}</additionalOptions>
                 </configuration>
               </execution>
             </executions>
@@ -458,7 +458,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                 <link>https://docs.oracle.com/en/java/javase/14/docs/api/</link>
               </links>
               <detectLinks>true</detectLinks>
-              <additionalparam>${javadoc.opts}</additionalparam>
+              <additionalOptions>${javadoc.opts}</additionalOptions>
               <tags>
                 <!--
                 Here we instruct plugin to use custom tag
@@ -615,9 +615,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                 <configuration>
                   <tempDirectory>${project.build.directory}/jcabi-ajc</tempDirectory>
                   <classesDirectory>${project.build.outputDirectory}</classesDirectory>
-                  <aspectsDirectories>
+                  <aspectDirectories>
                     <directory>${project.basedir}/src/main/aspect</directory>
-                  </aspectsDirectories>
+                  </aspectDirectories>
                 </configuration>
               </execution>
               <execution>
@@ -629,10 +629,10 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                 <configuration>
                   <tempDirectory>${project.build.directory}/jcabi-ajc-test</tempDirectory>
                   <classesDirectory>${project.build.testOutputDirectory}</classesDirectory>
-                  <aspectsDirectories>
+                  <aspectDirectories>
                     <directory>${project.basedir}/src/main/aspect</directory>
                     <directory>${project.basedir}/src/test/aspect</directory>
-                  </aspectsDirectories>
+                  </aspectDirectories>
                   <scopes>
                     <scope>compile</scope>
                     <scope>provided</scope>
@@ -663,7 +663,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <plugin>
             <groupId>com.theoryinpractise</groupId>
             <artifactId>clojure-maven-plugin</artifactId>
-            <version>1.8.1</version>
+            <version>1.7.1</version>
             <configuration>
               <warnOnReflection>true</warnOnReflection>
               <vmargs>-Dlog4j.configuration=file:${basedir}/src/test/resources/log4j.properties</vmargs>
