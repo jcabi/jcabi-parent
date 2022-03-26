@@ -1689,10 +1689,10 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <target>${maven.compiler.target}</target>
             <optimize>true</optimize>
             <showWarnings>true</showWarnings>
+            <failOnWarning>true</failOnWarning>
             <showDeprecation>true</showDeprecation>
             <compilerArgs>
               <arg>-Xlint</arg>
-              <arg>-Werror</arg>
               <arg>-Xlint:-path</arg>
               <!-- @see https://stackoverflow.com/questions/6770455 -->
               <arg>-Xpkginfo:always</arg>
