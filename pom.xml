@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright (c) 2012-2021, jcabi.com
+Copyright (c) 2012-2022, jcabi.com
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -178,7 +178,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <!-- @see http://www.sonatype.com/books/nexus-book/reference/staging-sect-deployment.html -->
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.7</version>
+            <version>1.6.13</version>
             <extensions>true</extensions>
             <configuration>
               <serverId>oss.sonatype.org</serverId>
@@ -1675,7 +1675,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.4.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -1683,7 +1683,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.9.0</version>
           <configuration>
             <source>${maven.compiler.source}</source>
             <target>${maven.compiler.target}</target>
@@ -1717,7 +1717,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.0.0-M1</version>
+          <version>3.0.0-M7</version>
         </plugin>
         <plugin>
           <artifactId>maven-failsafe-plugin</artifactId>
@@ -1748,7 +1748,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-invoker-plugin</artifactId>
-          <version>3.2.2</version>
+          <version>3.3.0</version>
           <configuration>
             <mergeUserSettings>true</mergeUserSettings>
             <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
@@ -1767,11 +1767,11 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.2.0</version>
+          <version>3.2.2</version>
         </plugin>
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.3.1</version>
+          <version>3.4.0</version>
           <configuration>
             <source>8</source>
             <tags>
@@ -1788,11 +1788,11 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-plugin-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.6.4</version>
         </plugin>
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
-          <version>3.0.0-M1</version>
+          <version>3.0.0-M6</version>
         </plugin>
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
@@ -1820,7 +1820,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           to the STDOUT as well, not only to the file.
           -->
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M5</version>
+          <version>3.0.0-M7</version>
           <configuration>
             <useFile>false</useFile>
             <runOrder>random</runOrder>
@@ -1855,7 +1855,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <plugin>
           <groupId>com.qulice</groupId>
           <artifactId>qulice-maven-plugin</artifactId>
-          <version>0.19.0</version>
+          <version>0.19.4</version>
           <configuration>
             <license>file:${basedir}/LICENSE.txt</license>
             <excludes>
@@ -1866,7 +1866,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.7</version>
+          <version>0.8.8</version>
         </plugin>
         <plugin>
           <groupId>org.eluder.coveralls</groupId>
