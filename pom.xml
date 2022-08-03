@@ -1860,7 +1860,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <plugin>
           <groupId>com.qulice</groupId>
           <artifactId>qulice-maven-plugin</artifactId>
-          <version>0.19.4</version>
+          <version>0.21.1</version>
           <configuration>
             <license>file:${basedir}/LICENSE.txt</license>
             <excludes>
