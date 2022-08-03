@@ -9,7 +9,6 @@
 [![codecov](https://codecov.io/gh/jcabi/jcabi-parent/branch/master/graph/badge.svg)](https://codecov.io/gh/jcabi/jcabi-parent)
 [![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-parent)](http://www.0pdd.com/p?name=jcabi/jcabi-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent)
-
 [![Hits-of-Code](https://hitsofcode.com/github/jcabi/jcabi-parent)](https://hitsofcode.com/view/github/jcabi/jcabi-parent)
 ![Lines of code](https://img.shields.io/tokei/lines/github/jcabi/jcabi-parent)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/jcabi/jcabi-parent/blob/master/LICENSE.txt)
