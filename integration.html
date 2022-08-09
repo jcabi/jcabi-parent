@@ -134,13 +134,13 @@
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.60.1</strong>
+                                    <strong itemprop="version">0.60.4</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2022-08-08T01:40:59Z">
-                                        
-                                        08-Aug-2022
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,21 +152,17 @@
                             </a>
                                                 <article itemprop="articleBody">
                             <section>
-<h2><a name="Overview"></a>Overview</h2><a name="Overview"></a>
+<h1><a name="Overview"></a>Overview</h1><a name="Overview"></a>
 <p>This project uses Continuous Integration System.</p></section><section>
-<h2><a name="Access"></a>Access</h2><a name="Access"></a>
+<h1><a name="Access"></a>Access</h1><a name="Access"></a>
 <p>The following is a link to the continuous integration system used by the project.</p>
-<div class="source">
-<pre><a class="externalLink" href="https://travis-ci.org/jcabi/jcabi-parent">https://travis-ci.org/jcabi/jcabi-parent</a></pre></div></section><section>
-<h2><a name="Notifiers"></a>Notifiers</h2><a name="Notifiers"></a>
-<p>No notifiers are defined. Please check back at a later date.</p></section>
                         </article>
                     </div>
                 </main>
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2022
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

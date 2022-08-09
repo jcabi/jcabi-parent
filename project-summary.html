@@ -134,13 +134,13 @@
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.60.1</strong>
+                                    <strong itemprop="version">0.60.4</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2022-08-08T01:41:01Z">
-                                        
-                                        08-Aug-2022
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,57 +152,57 @@
                             </a>
                                                 <article itemprop="articleBody">
                             <section>
-<h2><a name="Project_Summary"></a>Project Summary</h2><a name="Project_Summary"></a><section>
-<h3><a name="Project_Information"></a>Project Information</h3><a name="Project_Information"></a>
+<h1><a name="Project_Summary"></a>Project Summary</h1><a name="Project_Summary"></a><section>
+<h2><a name="Project_Information"></a>Project Information</h2><a name="Project_Information"></a>
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Field</th>
 <th>Value</th></tr>
 <tr class="b">
-<td>Name</td>
+<td align="left">Name</td>
 <td>parent</td></tr>
 <tr class="a">
-<td>Description</td>
+<td align="left">Description</td>
 <td>Parent POM.xml with most oftenly used pre-configured features</td></tr>
 <tr class="b">
-<td>Homepage</td>
+<td align="left">Homepage</td>
 <td><a class="externalLink" href="https://www.jcabi.com/parent">https://www.jcabi.com/parent</a></td></tr></table></section><section>
-<h3><a name="Project_Organization"></a>Project Organization</h3><a name="Project_Organization"></a>
+<h2><a name="Project_Organization"></a>Project Organization</h2><a name="Project_Organization"></a>
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Field</th>
 <th>Value</th></tr>
 <tr class="b">
-<td>Name</td>
+<td align="left">Name</td>
 <td>jcabi.com</td></tr>
 <tr class="a">
-<td>URL</td>
+<td align="left">URL</td>
 <td><a class="externalLink" href="https://www.jcabi.com">https://www.jcabi.com</a></td></tr></table></section><section>
-<h3><a name="Build_Information"></a>Build Information</h3><a name="Build_Information"></a>
+<h2><a name="Build_Information"></a>Build Information</h2><a name="Build_Information"></a>
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Field</th>
 <th>Value</th></tr>
 <tr class="b">
-<td>GroupId</td>
+<td align="left">GroupId</td>
 <td>com.jcabi</td></tr>
 <tr class="a">
-<td>ArtifactId</td>
+<td align="left">ArtifactId</td>
 <td>parent</td></tr>
 <tr class="b">
-<td>Version</td>
-<td>0.60.1</td></tr>
+<td align="left">Version</td>
+<td>0.60.4</td></tr>
 <tr class="a">
-<td>Type</td>
+<td align="left">Type</td>
 <td>pom</td></tr></table></section><section>
-<h3><a name="Download"></a>Download</h3><a name="Download"></a><a class="externalLink" href="https://oss.sonatype.org/content/groups/public">https://oss.sonatype.org/content/groups/public</a></section></section>
+<h2><a name="Download"></a>Download</h2><a name="Download"></a><a class="externalLink" href="https://oss.sonatype.org/content/groups/public">https://oss.sonatype.org/content/groups/public</a></section></section>
                         </article>
                     </div>
                 </main>
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2022
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

@@ -134,13 +134,13 @@
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.60.1</strong>
+                                    <strong itemprop="version">0.60.4</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2022-08-08T01:41:08Z">
-                                        
-                                        08-Aug-2022
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,11 +152,11 @@
                             </a>
                                                 <article itemprop="articleBody">
                             <section>
-<h2><a name="Sitemap"></a>Sitemap</h2>
+<h1><a name="Sitemap"></a>Sitemap</h1>
 
 <p>This page lists all entries of the navigation menu in expanded form.</p>
 <section><section>
-<h4><a name="Overview"></a>Overview</h4><hr />
+<h3><a name="Overview"></a>Overview</h3><hr />
 
 <ul>
 
@@ -166,7 +166,7 @@
 
 <li><a href="pluginManagement.html">Plugins</a></li></ul>
 </section><section>
-<h4><a name="Profiles"></a>Profiles</h4><hr />
+<h3><a name="Profiles"></a>Profiles</h3><hr />
 
 <ul>
 
@@ -184,7 +184,7 @@
 
 <li><a href="profile-sonatype.html">sonatype</a></li></ul>
 </section><section>
-<h4><a name="Implicit_Profiles"></a>Implicit Profiles</h4><hr />
+<h3><a name="Implicit_Profiles"></a>Implicit Profiles</h3><hr />
 
 <ul>
 
@@ -199,7 +199,7 @@
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2022
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

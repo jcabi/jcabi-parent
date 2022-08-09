@@ -135,13 +135,13 @@
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.60.1</strong>
+                                    <strong itemprop="version">0.60.4</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2022-08-08T01:40:59Z">
-                                        
-                                        08-Aug-2022
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -153,7 +153,7 @@
                             </a>
                                                 <article itemprop="articleBody">
                             <section>
-<h2><a name="SLF4J_and_LOG4J_Logging"></a>SLF4J and LOG4J Logging</h2>
+<h1><a name="SLF4J_and_LOG4J_Logging"></a>SLF4J and LOG4J Logging</h1>
 <p>The profile is activated automatically when <code>src/test/resources/log4j.properties</code> file exists in your project. The following two dependencies become available in classpath (in <code>test</code> scope): <code>org.slf4j:slf4j-log4j12</code> and <code>log4j:log4j</code>.</p>
 <p>A good practice is 1) to annotate your methods/classes with <a href="../jcabi-aspects/annotation-loggable.html"><code>@Loggable</code></a>, 2) activate <a href="./profile-aspectj.html"><code>aspectj</code></a> profile, and 3) create <code>src/test/resources/log4j.properties</code> file with LOG4J configuration for unit testing.</p>
 <p>This page explains the format of log4j.properties: <a class="externalLink" href="http://logging.apache.org/log4j/1.2/manual.html">Short introduction to log4j: Ceki G&#xfc;lc&#xfc;, March 2002</a>. This is a short example that works:</p>
@@ -169,7 +169,7 @@ log4j.appender.CONSOLE.layout.ConversionPattern=[%color{%p}] %t %c: %m%n</pre></
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2022
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

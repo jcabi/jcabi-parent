@@ -134,13 +134,13 @@
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.60.1</strong>
+                                    <strong itemprop="version">0.60.4</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2022-08-08T01:41:01Z">
-                                        
-                                        08-Aug-2022
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,84 +152,84 @@
                             </a>
                                                 <article itemprop="articleBody">
                             <section>
-<h2><a name="Project_Build_Plugins"></a>Project Build Plugins</h2><a name="Project_Build_Plugins"></a>
+<h1><a name="Project_Build_Plugins"></a>Project Build Plugins</h1><a name="Project_Build_Plugins"></a>
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th></tr>
 <tr class="b">
-<td>com.github.github</td>
+<td align="left">com.github.github</td>
 <td><a class="externalLink" href="https://github.com/github/maven-plugins">site-maven-plugin</a></td>
 <td>0.12</td></tr>
 <tr class="a">
-<td>com.jcabi</td>
+<td align="left">com.jcabi</td>
 <td><a class="externalLink" href="https://www.jcabi.com/jcabi-maven-plugin">jcabi-maven-plugin</a></td>
 <td>0.16.0</td></tr>
 <tr class="b">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="http://maven.apache.org/plugins/maven-antrun-plugin/">maven-antrun-plugin</a></td>
 <td>1.8</td></tr>
 <tr class="a">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="https://maven.apache.org/plugins/maven-clean-plugin/">maven-clean-plugin</a></td>
-<td>3.1.0</td></tr>
+<td>3.2.0</td></tr>
 <tr class="b">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="https://maven.apache.org/plugins/maven-deploy-plugin/">maven-deploy-plugin</a></td>
 <td>3.0.0-M2</td></tr>
 <tr class="a">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="http://maven.apache.org/plugins/maven-docck-plugin/">maven-docck-plugin</a></td>
 <td>1.1</td></tr>
 <tr class="b">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="https://maven.apache.org/enforcer/maven-enforcer-plugin/">maven-enforcer-plugin</a></td>
-<td>3.0.0-M3</td></tr>
+<td>3.1.0</td></tr>
 <tr class="a">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="https://maven.apache.org/plugins/maven-install-plugin/">maven-install-plugin</a></td>
-<td>3.0.0-M1</td></tr>
+<td>3.0.1</td></tr>
 <tr class="b">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="https://maven.apache.org/plugins/maven-site-plugin/">maven-site-plugin</a></td>
-<td>3.9.1</td></tr>
+<td>4.0.0-M3</td></tr>
 <tr class="a">
-<td>org.codehaus.mojo</td>
-<td><a class="externalLink" href="http://www.mojohaus.org/buildnumber-maven-plugin/buildnumber-maven-plugin">buildnumber-maven-plugin</a></td>
-<td>1.4</td></tr></table></section><section>
-<h2><a name="Project_Report_Plugins"></a>Project Report Plugins</h2><a name="Project_Report_Plugins"></a>
+<td align="left">org.codehaus.mojo</td>
+<td><a class="externalLink" href="https://www.mojohaus.org/buildnumber-maven-plugin/">buildnumber-maven-plugin</a></td>
+<td>3.0.0</td></tr></table></section><section>
+<h1><a name="Project_Report_Plugins"></a>Project Report Plugins</h1><a name="Project_Report_Plugins"></a>
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>GroupId</th>
 <th>ArtifactId</th>
 <th>Version</th></tr>
 <tr class="b">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="https://maven.apache.org/plugins/maven-javadoc-plugin/">maven-javadoc-plugin</a></td>
 <td>3.4.0</td></tr>
 <tr class="a">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="http://maven.apache.org/jxr/maven-jxr-plugin/">maven-jxr-plugin</a></td>
 <td>2.4</td></tr>
 <tr class="b">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="https://maven.apache.org/plugin-tools/maven-plugin-plugin">maven-plugin-plugin</a></td>
 <td>3.6.0</td></tr>
 <tr class="a">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="http://maven.apache.org/plugins/maven-project-info-reports-plugin/">maven-project-info-reports-plugin</a></td>
 <td>2.7</td></tr>
 <tr class="b">
-<td>org.apache.maven.plugins</td>
+<td align="left">org.apache.maven.plugins</td>
 <td><a class="externalLink" href="http://maven.apache.org/surefire/maven-surefire-report-plugin">maven-surefire-report-plugin</a></td>
 <td>2.17</td></tr>
 <tr class="a">
-<td>org.codehaus.mojo</td>
+<td align="left">org.codehaus.mojo</td>
 <td><a class="externalLink" href="http://mojo.codehaus.org/versions-maven-plugin">versions-maven-plugin</a></td>
 <td>2.2</td></tr>
 <tr class="b">
-<td>org.jacoco</td>
+<td align="left">org.jacoco</td>
 <td><a class="externalLink" href="https://www.jacoco.org/jacoco/trunk/doc/maven.html">jacoco-maven-plugin</a></td>
 <td>0.8.8</td></tr></table></section>
                         </article>
@@ -238,7 +238,7 @@
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2022
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>
