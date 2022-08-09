@@ -987,12 +987,6 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.junit</groupId>
-          <artifactId>junit-bom</artifactId>
-          <type>pom</type>
-          <scope>import</scope>
-        </dependency>
-        <dependency>
           <groupId>org.hamcrest</groupId>
           <artifactId>hamcrest</artifactId>
           <scope>test</scope>
