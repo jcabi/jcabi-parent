@@ -1284,7 +1284,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-xml</artifactId>
-        <version>0.23.2</version>
+        <version>0.24.0</version>
       </dependency>
       <dependency>
         <!-- JSON API -->
