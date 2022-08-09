@@ -826,7 +826,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>build-helper-maven-plugin</artifactId>
-            <version>1.12</version>
+            <version>3.3.0</version>
             <executions>
               <execution>
                 <id>jcabi-add-test-sources</id>
@@ -956,7 +956,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <groupId>org.antlr</groupId>
             <artifactId>antlr4-maven-plugin</artifactId>
             <!-- Don't forget to change the version of the ANTLR4-RUNTIME too! -->
-            <version>4.9.2</version>
+            <version>4.10.1</version>
             <configuration>
               <sourceDirectory>src/main/antlr4</sourceDirectory>
             </configuration>
@@ -1230,7 +1230,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-s3</artifactId>
-        <version>0.18</version>
+        <version>0.19.0</version>
       </dependency>
       <dependency>
         <!--
@@ -1248,7 +1248,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-ssh</artifactId>
-        <version>1.8.0</version>
+        <version>1.8.2</version>
       </dependency>
       <dependency>
         <!--
@@ -1515,7 +1515,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- Forward all SLF4J calls to LOG4J. -->
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
-        <version>2.0.0-alpha7</version>
+        <version>2.0.0-alpha5</version>
       </dependency>
       <dependency>
         <!-- Use LOG4J logging facility for all loggings. -->
@@ -1535,6 +1535,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       <dependency>
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-runtime</artifactId>
+        <!-- Don't forget to change the version of the ANTLR4-MAVEN-PLUGIN too! -->
         <version>4.10.1</version>
       </dependency>
       <dependency>
@@ -1580,7 +1581,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.0.0-M3</version>
+        <version>3.1.0</version>
         <executions>
           <execution>
             <id>enforce-maven</id>
@@ -1604,7 +1605,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>buildnumber-maven-plugin</artifactId>
-        <version>1.4</version>
+        <version>3.0.0</version>
         <executions>
           <execution>
             <id>jcabi-build-number</id>
@@ -1646,7 +1647,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <plugin>
           <groupId>com.jcabi</groupId>
           <artifactId>jcabi-ssl-maven-plugin</artifactId>
-          <version>0.12</version>
+          <version>0.13.0</version>
         </plugin>
         <plugin>
           <groupId>com.jcabi</groupId>
@@ -1677,15 +1678,15 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.4.0</version>
+          <version>3.4.2</version>
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.9.0</version>
+          <version>3.10.1</version>
           <configuration>
             <source>${maven.compiler.source}</source>
             <target>${maven.compiler.target}</target>
@@ -1715,7 +1716,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.3.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
@@ -1743,7 +1744,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
-          <version>3.0.0-M1</version>
+          <version>3.0.1</version>
           <configuration>
             <createChecksum>true</createChecksum>
           </configuration>
@@ -1802,7 +1803,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.9.1</version>
+          <version>4.0.0-M3</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.maven.doxia</groupId>
