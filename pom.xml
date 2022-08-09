@@ -1611,7 +1611,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <configuration>
               <buildNumberPropertyName>buildNumber</buildNumberPropertyName>
               <timestampPropertyName>timestamp</timestampPropertyName>
-              <timestampFormat>{0,date,yyyy-MM-dd'T'HH:mm:ss}</timestampFormat>
+              <timestampFormat>yyyy-MM-dd'T'HH:mm:ss</timestampFormat>
               <doCheck>false</doCheck>
               <doUpdate>false</doUpdate>
               <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
@@ -1797,7 +1797,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.9.1</version>
+          <version>4.0.0-M3</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.maven.doxia</groupId>
