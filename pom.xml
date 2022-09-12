@@ -256,6 +256,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <executions>
               <execution>
                 <phase>verify</phase>
+                <id>jcabi-xcop</id>
                 <configuration>
                   <target>
                     <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
