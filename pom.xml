@@ -988,6 +988,21 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       </activation>
       <dependencies>
         <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-engine</artifactId>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-params</artifactId>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-api</artifactId>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
           <groupId>org.hamcrest</groupId>
           <artifactId>hamcrest</artifactId>
           <scope>test</scope>
@@ -1494,12 +1509,6 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>4.7.0</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-core</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <!-- Forward all SLF4J calls to LOG4J. -->
