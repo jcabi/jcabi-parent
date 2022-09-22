@@ -924,7 +924,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <plugin>
             <groupId>org.antlr</groupId>
             <artifactId>antlr3-maven-plugin</artifactId>
-            <version>3.5.2</version>
+            <version>3.5.3</version>
             <executions>
               <execution>
                 <id>jcabi-antlr3</id>
