@@ -706,7 +706,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <plugin>
             <groupId>org.codehaus.gmavenplus</groupId>
             <artifactId>gmavenplus-plugin</artifactId>
-            <version>1.11.1</version>
+            <version>1.13.1</version>
             <configuration>
               <verbose>true</verbose>
               <stacktrace>true</stacktrace>
