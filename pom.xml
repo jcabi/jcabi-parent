@@ -1249,7 +1249,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-simpledb</artifactId>
-        <version>0.3</version>
+        <version>0.4.0</version>
       </dependency>
       <dependency>
         <!--
