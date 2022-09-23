@@ -1508,7 +1508,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>4.7.0</version>
+        <version>4.8.0</version>
       </dependency>
       <dependency>
         <!-- Forward all SLF4J calls to LOG4J. -->
