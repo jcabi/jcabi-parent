@@ -1540,7 +1540,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
-        <version>3.0.12</version>
+        <version>3.0.13</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
