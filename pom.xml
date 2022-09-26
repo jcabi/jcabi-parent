@@ -1258,7 +1258,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-ssh</artifactId>
-        <version>1.8.2</version>
+        <version>1.9.0</version>
       </dependency>
       <dependency>
         <!--
