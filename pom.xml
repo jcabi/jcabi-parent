@@ -397,10 +397,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                 <reports>
                   <report>dependencies</report>
                   <report>index</report>
-                  <report>license</report>
-                  <report>mailing-list</report>
                   <report>plugins</report>
-                  <report>project-team</report>
                   <report>scm</report>
                   <report>summary</report>
                 </reports>
