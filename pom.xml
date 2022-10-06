@@ -395,7 +395,6 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <reportSets>
               <reportSet>
                 <reports>
-                  <report>cim</report>
                   <report>dependencies</report>
                   <report>index</report>
                   <report>issue-tracking</report>
