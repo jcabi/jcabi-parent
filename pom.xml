@@ -453,7 +453,8 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
               <links>
                 <link>https://docs.oracle.com/en/java/javase/14/docs/api/</link>
               </links>
-              <detectLinks>true</detectLinks>
+              <detectLinks>false</detectLinks>
+              <detectJavaApiLink>false</detectJavaApiLink>
               <additionalOptions>${javadoc.opts}</additionalOptions>
               <tags>
                 <!--
