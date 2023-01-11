@@ -1719,7 +1719,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.0.0-M7</version>
+          <version>3.0.0-M8</version>
           <configuration>
             <encoding>${project.build.sourceEncoding}</encoding>
             <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
