@@ -1818,7 +1818,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           to the STDOUT as well, not only to the file.
           -->
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M7</version>
+          <version>3.0.0-M8</version>
           <configuration>
             <useFile>false</useFile>
             <runOrder>random</runOrder>
