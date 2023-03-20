@@ -1790,7 +1790,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
-          <version>3.0.0-M7</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
