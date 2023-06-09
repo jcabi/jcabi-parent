@@ -1182,7 +1182,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-jdbc</artifactId>
-        <version>0.18.0</version>
+        <version>0.18.1</version>
       </dependency>
       <dependency>
         <!--
