@@ -1419,7 +1419,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.hibernate.validator</groupId>
         <artifactId>hibernate-validator</artifactId>
-        <version>8.0.0.Final</version>
+        <version>8.0.1.Final</version>
       </dependency>
       <dependency>
         <!-- Required for Hibernate validator -->
