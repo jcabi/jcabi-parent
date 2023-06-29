@@ -1332,7 +1332,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>32.0.1-jre</version>
+        <version>32.1.0-jre</version>
       </dependency>
       <dependency>
         <!--
