@@ -1272,7 +1272,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-velocity</artifactId>
-        <version>0.9</version>
+        <version>0.10.0</version>
       </dependency>
       <dependency>
         <!--
