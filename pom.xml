@@ -1860,7 +1860,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.10</version>
+          <version>0.8.11</version>
         </plugin>
         <plugin>
           <groupId>org.eluder.coveralls</groupId>
