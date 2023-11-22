@@ -1341,7 +1341,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
-        <version>3.13.0</version>
+        <version>3.14.0</version>
       </dependency>
       <dependency>
         <!--
