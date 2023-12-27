@@ -24,11 +24,11 @@ define our artifact as a parent of your project:
   <parent>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.0</version>
+    <version>0.66.0</version>
   </parent>
   <groupId>your-group-id</groupId>
   <artifactId>your-artifact-id</artifactId>
-  <version>1.2.3-SNAPSHOT</version>
+  <version>0.66.0</version>
   [...]
 </project>
 ```
