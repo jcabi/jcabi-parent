@@ -26,9 +26,6 @@ define our artifact as a parent of your project:
     <artifactId>parent</artifactId>
     <version>0.66.0</version>
   </parent>
-  <groupId>your-group-id</groupId>
-  <artifactId>your-artifact-id</artifactId>
-  <version>0.66.0</version>
   [...]
 </project>
 ```
