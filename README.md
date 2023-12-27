@@ -1,7 +1,6 @@
-<img alt="logo" src="http://img.jcabi.com/logo-square.png" width="64px" height="64px" />
+<img alt="logo" src="https://www.jcabi.com/logo-square.svg" width="64px" height="64px" />
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
-[![Managed by Zerocracy](https://www.0crat.com/badge/C3RUBL5H9.svg)](https://www.0crat.com/p/C3RUBL5H9)
 [![DevOps By Rultor.com](http://www.rultor.com/b/jcabi/jcabi-parent)](http://www.rultor.com/p/jcabi/jcabi-parent)
 [![We recommend IntelliJ IDEA](https://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
 
@@ -9,7 +8,6 @@
 [![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-parent)](http://www.0pdd.com/p?name=jcabi/jcabi-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent)
 [![Hits-of-Code](https://hitsofcode.com/github/jcabi/jcabi-parent)](https://hitsofcode.com/view/github/jcabi/jcabi-parent)
-![Lines of code](https://img.shields.io/tokei/lines/github/jcabi/jcabi-parent)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/jcabi/jcabi-parent/blob/master/LICENSE.txt)
 
 More details are here: [parent.jcabi.com](https://parent.jcabi.com/index.html)
@@ -26,6 +24,7 @@ define our artifact as a parent of your project:
   <parent>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
+    <version>0.0.0</version>
   </parent>
   <groupId>your-group-id</groupId>
   <artifactId>your-artifact-id</artifactId>
