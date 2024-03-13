@@ -1408,7 +1408,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
-        <version>1.9.21.1</version>
+        <version>1.9.21.2</version>
       </dependency>
       <dependency>
         <!--
