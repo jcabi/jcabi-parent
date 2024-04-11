@@ -789,7 +789,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             @link http://www.sonatype.com/people/2010/01/how-to-generate-pgp-signatures-with-maven/
             -->
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>3.2.2</version>
+            <version>3.2.3</version>
             <executions>
               <execution>
                 <id>jcabi-sign-artifacts</id>
