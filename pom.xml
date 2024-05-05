@@ -511,7 +511,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           </plugin>
           <plugin>
             <artifactId>maven-plugin-plugin</artifactId>
-            <version>3.12.0</version>
+            <version>3.13.0</version>
           </plugin>
         </plugins>
       </reporting>
@@ -1788,7 +1788,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-plugin-plugin</artifactId>
-          <version>3.12.0</version>
+          <version>3.13.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
