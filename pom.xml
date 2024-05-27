@@ -178,7 +178,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             <!-- @see http://www.sonatype.com/books/nexus-book/reference/staging-sect-deployment.html -->
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.13</version>
+            <version>1.6.14</version>
             <extensions>true</extensions>
             <configuration>
               <serverId>oss.sonatype.org</serverId>
