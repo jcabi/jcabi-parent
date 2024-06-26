@@ -387,7 +387,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <plugins>
           <plugin>
             <artifactId>maven-project-info-reports-plugin</artifactId>
-            <version>3.5.0</version>
+            <version>3.6.1</version>
             <configuration>
               <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
               <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
