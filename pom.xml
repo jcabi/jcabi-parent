@@ -1382,7 +1382,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         -->
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.17.0</version>
+        <version>1.17.1</version>
       </dependency>
       <dependency>
         <!--
