@@ -1338,7 +1338,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <!-- JSR-311 JAX-RS API -->
         <groupId>jakarta.ws.rs</groupId>
         <artifactId>jakarta.ws.rs-api</artifactId>
-        <version>4.0.0</version>
+        <version>3.1.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
