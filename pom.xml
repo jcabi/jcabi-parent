@@ -1580,7 +1580,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-runtime</artifactId>
         <!-- Don't forget to change the version of the ANTLR4-MAVEN-PLUGIN too! -->
-        <version>4.13.1</version>
+        <version>4.13.2</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
