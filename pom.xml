@@ -1760,7 +1760,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.7.1</version>
+          <version>3.8.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
