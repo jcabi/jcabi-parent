@@ -1768,7 +1768,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.4.0</version>
+          <version>3.5.0</version>
           <configuration>
             <encoding>${project.build.sourceEncoding}</encoding>
             <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
