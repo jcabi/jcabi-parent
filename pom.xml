@@ -665,7 +665,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
           <plugin>
             <groupId>com.theoryinpractise</groupId>
             <artifactId>clojure-maven-plugin</artifactId>
-            <version>1.9.2</version>
+            <version>1.9.3</version>
             <configuration>
               <warnOnReflection>true</warnOnReflection>
               <vmargs>-Dlog4j.configuration=file:${basedir}/src/test/resources/log4j.properties</vmargs>
