@@ -1844,7 +1844,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.20.0</version>
+          <version>3.21.0</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.maven.doxia</groupId>
