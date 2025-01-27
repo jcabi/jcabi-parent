@@ -114,4 +114,3 @@ $ mvn clean install site-deploy -Psite
   Also you can add your own plugins that should be
   executed when you're building a production site. Just add them
   to the <<<site>>> profile.
-

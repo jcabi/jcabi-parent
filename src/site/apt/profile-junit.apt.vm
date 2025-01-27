@@ -56,4 +56,3 @@ JUnit, Hamcrest, and Mockito
 
   Thus, all you need is to create a unit test in <<<src/test/java>>> and all
   necessary dependencies will be available in classpath.
-
