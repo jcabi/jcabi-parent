@@ -1,5 +1,8 @@
-target/
-/.settings/
-/.project
-.idea
 *.iml
+.DS_Store
+.idea
+.idea/
+/.project
+/.settings/
+node_modules/
+target/
