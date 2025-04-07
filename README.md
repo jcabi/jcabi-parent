@@ -1,11 +1,11 @@
 <img alt="logo" src="https://www.jcabi.com/logo-square.svg" width="64px" height="64px" />
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
-[![DevOps By Rultor.com](http://www.rultor.com/b/jcabi/jcabi-parent)](http://www.rultor.com/p/jcabi/jcabi-parent)
+[![DevOps By Rultor.com](https://www.rultor.com/b/jcabi/jcabi-parent)](https://www.rultor.com/p/jcabi/jcabi-parent)
 [![We recommend IntelliJ IDEA](https://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
 
 [![mvn](https://github.com/jcabi/jcabi-parent/actions/workflows/mvn.yml/badge.svg)](https://github.com/jcabi/jcabi-parent/actions/workflows/mvn.yml)
-[![PDD status](http://www.0pdd.com/svg?name=jcabi/jcabi-parent)](http://www.0pdd.com/p?name=jcabi/jcabi-parent)
+[![PDD status](https://www.0pdd.com/svg?name=jcabi/jcabi-parent)](https://www.0pdd.com/p?name=jcabi/jcabi-parent)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jcabi/parent)
 [![Hits-of-Code](https://hitsofcode.com/github/jcabi/jcabi-parent)](https://hitsofcode.com/view/github/jcabi/jcabi-parent)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/jcabi/jcabi-parent/blob/master/LICENSE.txt)
