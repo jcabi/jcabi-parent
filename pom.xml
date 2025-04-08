@@ -1521,7 +1521,7 @@
         <!-- XML APIs. -->
         <groupId>xml-apis</groupId>
         <artifactId>xml-apis</artifactId>
-        <version>1.4.01</version>
+        <version>1.0.b2</version>
       </dependency>
       <dependency>
         <!--
