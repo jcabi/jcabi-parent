@@ -1,7 +1,7 @@
-*.iml
 .DS_Store
 .idea
 .idea/
+*.iml
 /.project
 /.settings/
 node_modules/
