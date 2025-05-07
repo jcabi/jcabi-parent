@@ -685,14 +685,13 @@
             <version>4.2.0</version>
             <configuration>
               <verbose>true</verbose>
-              <stacktrace>true</stacktrace>
             </configuration>
             <executions>
               <execution>
                 <id>jcabi-groovy</id>
                 <goals>
                   <goal>compile</goal>
-                  <goal>testCompile</goal>
+                  <goal>compileTests</goal>
                 </goals>
               </execution>
             </executions>
@@ -1412,7 +1411,7 @@
         -->
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.18.0</version>
+        <version>2.19.0</version>
       </dependency>
       <dependency>
         <!--
@@ -1420,7 +1419,7 @@
         -->
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
-        <version>1.9.22.1</version>
+        <version>1.9.24</version>
       </dependency>
       <dependency>
         <!--
@@ -1489,7 +1488,7 @@
         -->
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.36</version>
+        <version>1.18.38</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -1534,7 +1533,7 @@
         <!-- Forward all SLF4J calls to LOG4J. -->
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-reload4j</artifactId>
-        <version>2.0.16</version>
+        <version>2.0.17</version>
       </dependency>
       <dependency>
         <!-- Use LOG4J logging facility for all loggings. -->
@@ -1560,7 +1559,7 @@
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
-        <version>3.0.23</version>
+        <version>3.0.24</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -1705,7 +1704,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.13.0</version>
+          <version>3.14.0</version>
           <configuration>
             <source>${maven.compiler.source}</source>
             <target>${maven.compiler.target}</target>
@@ -1884,7 +1883,7 @@
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.12</version>
+          <version>0.8.13</version>
         </plugin>
         <plugin>
           <groupId>org.eluder.coveralls</groupId>
