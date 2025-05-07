@@ -685,14 +685,13 @@
             <version>4.2.0</version>
             <configuration>
               <verbose>true</verbose>
-              <stacktrace>true</stacktrace>
             </configuration>
             <executions>
               <execution>
                 <id>jcabi-groovy</id>
                 <goals>
                   <goal>compile</goal>
-                  <goal>testCompile</goal>
+                  <goal>compileTests</goal>
                 </goals>
               </execution>
             </executions>
