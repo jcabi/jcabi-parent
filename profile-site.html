@@ -3,20 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jcabi-parent &#x2013; "Site" Profile for Advanced Maven Site Configuration</title>
+        <title>"Site" Profile for Advanced Maven Site Configuration – jcabi-parent</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
-                            <script>
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-1963507-23']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-                                            <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+                                                    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="./js/jcabi.js"></script>
     </head>
     <body>
@@ -125,23 +115,21 @@
                             <div class="logo">
                                 <a href="../"
                                     title=" logo ">
-                                    <img src="../logo-square.svg"
+                                    <img src="${decoration.bannerLeft.src}"
                                         alt="jcabi"
-                                                                                    width="64"
-                                                                                                                            height="64"
-                                                                                itemprop="image"
+                                                                                                                        itemprop="image"
                                     />
                                 </a>
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.68.0</strong>
+                                    <strong itemprop="version">0.69.2</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2024-07-17T04:43:51Z">
-                                        
-                                        17-Jul-2024
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,15 +140,14 @@
                                 <img src="https://www.jcabi.com/fork-me.svg" class="fork-me"/>
                             </a>
                                                 <article itemprop="articleBody">
-                            <section>
-<h2><a name="a.22Site.22_Profile_for_Advanced_Maven_Site_Configuration"></a>&quot;Site&quot; Profile for Advanced Maven Site Configuration</h2>
+                            <section><a id="a.22Site.22_Profile_for_Advanced_Maven_Site_Configuration"></a>
+<h1>&quot;Site&quot; Profile for Advanced Maven Site Configuration</h1>
 <p>Most of production site content takes time to build (for example, JavaDoc API, changes report, etc). It's convenient to move that configuration plugins to a profile, which is activated only once in a while. Profile <code>site</code> does exactly that, grouping together most time-consuming reporting plugins. The profile can be activated only manually from command line, e.g.:</p>
-<div class="source">
-<pre>$ mvn clean install site-deploy -Psite</pre></div>
+<pre><code>$ mvn clean install site-deploy -Psite</code></pre>
 <p>The profile configures <a class="externalLink" href="http://maven.apache.org/plugins/maven-site-plugin/"><code>maven-site-plugin</code></a> with all required reporting plugins:</p>
 <ul>
 <li><a class="externalLink" href="http://maven.apache.org/plugins/maven-project-info-reports-plugin/"><code>maven-project-info-reports-plugin</code></a> creates basic &quot;project information&quot; reports.</li>
-<li><a class="externalLink" href="http://maven.apache.org/plugins/maven-javadoc-plugin/"><code>maven-javadoc-plugin</code></a> builds JavaDoc API documentation in <code>./apidocs-$<a name="project.version">project.version</a></code> directory.</li>
+<li><a class="externalLink" href="http://maven.apache.org/plugins/maven-javadoc-plugin/"><code>maven-javadoc-plugin</code></a> builds JavaDoc API documentation in <code>./apidocs-$<a id="project.version">project.version</a></code> directory.</li>
 <li><a class="externalLink" href="http://mojo.codehaus.org/cobertura-maven-plugin/"><code>cobertura-maven-plugin</code></a> generates code coverage report.</li>
 <li><a class="externalLink" href="http://maven.apache.org/plugin-tools/maven-plugin-plugin/"><code>maven-plugin-plugin</code></a> generate documentation for maven plugin.</li>
 <li><a class="externalLink" href="http://mojo.codehaus.org/versions-maven-plugin/"><code>versions-maven-plugin</code></a> reports about available dependency and plugin versions.</li></ul>
@@ -168,8 +155,7 @@
 <ul>
 <li><a class="externalLink" href="http://maven.apache.org/plugins/maven-docck-plugin/index.html"><code>maven-docck-plugin</code></a> checks the quality of Maven project documentation.</li></ul>
 <p>You can add your own reporting plugins, for example (pay attention to <code>combine.children</code> attribute of <code>reportPlugins</code> element):</p>
-<div class="source">
-<pre>&lt;profiles&gt;
+<pre><code>&lt;profiles&gt;
   [...]
   &lt;profile&gt;
     &lt;id&gt;site&lt;/id&gt;
@@ -196,7 +182,7 @@
       &lt;/plugins&gt;
     &lt;/build&gt;
   &lt;/profile&gt;
-&lt;/profiles&gt;</pre></div>
+&lt;/profiles&gt;</code></pre>
 <p>Also you can add your own plugins that should be executed when you're building a production site. Just add them to the <code>site</code> profile.</p></section>
                         </article>
                     </div>
@@ -204,7 +190,7 @@
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2024
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

@@ -3,20 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jcabi-parent &#x2013; Universal Maven Parent POM</title>
+        <title>Universal Maven Parent POM – jcabi-parent</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
-                            <script>
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-1963507-23']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-                                            <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+                                                    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="./js/jcabi.js"></script>
     </head>
     <body>
@@ -125,23 +115,21 @@
                             <div class="logo">
                                 <a href="../"
                                     title=" logo ">
-                                    <img src="../logo-square.svg"
+                                    <img src="${decoration.bannerLeft.src}"
                                         alt="jcabi"
-                                                                                    width="64"
-                                                                                                                            height="64"
-                                                                                itemprop="image"
+                                                                                                                        itemprop="image"
                                     />
                                 </a>
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.68.0</strong>
+                                    <strong itemprop="version">0.69.2</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2024-07-17T04:43:50Z">
-                                        
-                                        17-Jul-2024
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,22 +140,21 @@
                                 <img src="https://www.jcabi.com/fork-me.svg" class="fork-me"/>
                             </a>
                                                 <article itemprop="articleBody">
-                            <section>
-<h2><a name="Universal_Maven_Parent_POM"></a>Universal Maven Parent POM</h2>
+                            <section><a id="Universal_Maven_Parent_POM"></a>
+<h1>Universal Maven Parent POM</h1>
 <p>Base your Maven projects on this artifact and you will get many pre-configuration benefits, including up-to-date <code>dependencies</code>, <code>plugins</code>, build <code>extensions</code>, <code>repositories</code>, and more. All that you need to do is to define our artifact as a parent of your project:</p>
-<div class="source">
-<pre>&lt;project&gt;
+<pre><code>&lt;project&gt;
   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
   &lt;parent&gt;
     &lt;groupId&gt;com.jcabi&lt;/groupId&gt;
     &lt;artifactId&gt;parent&lt;/artifactId&gt;
-    &lt;version&gt;0.68.0&lt;/version&gt;
+    &lt;version&gt;0.69.2&lt;/version&gt;
   &lt;/parent&gt;
   &lt;groupId&gt;your-group-id&lt;/groupId&gt;
   &lt;artifactId&gt;your-artifact-id&lt;/artifactId&gt;
   &lt;version&gt;1.2.3-SNAPSHOT&lt;/version&gt;
   [...]
-&lt;/project&gt;</pre></div>
+&lt;/project&gt;</code></pre>
 <p>This is what we have in our <a class="externalLink" href="https://github.com/jcabi/jcabi-parent/blob/master/pom.xml"><code>pom.xml</code></a>.</p>
 <p>Take a look at the <a class="externalLink" href="https://github.com/jcabi/jcabi/blob/master/pom.xml"><code>pom.xml</code></a> of jcabi itself, as a good example of how <code>com.jcabi:parent</code> can be effectively used to minimize XML duplication.</p></section>
                         </article>
@@ -176,7 +163,7 @@
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2024
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

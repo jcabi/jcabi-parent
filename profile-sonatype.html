@@ -3,20 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jcabi-parent &#x2013; "Sonatype" Profile for Deployment to Sonatype Repository</title>
+        <title>"Sonatype" Profile for Deployment to Sonatype Repository – jcabi-parent</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
-                            <script>
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-1963507-23']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-                                            <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+                                                    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="./js/jcabi.js"></script>
     </head>
     <body>
@@ -125,23 +115,21 @@
                             <div class="logo">
                                 <a href="../"
                                     title=" logo ">
-                                    <img src="../logo-square.svg"
+                                    <img src="${decoration.bannerLeft.src}"
                                         alt="jcabi"
-                                                                                    width="64"
-                                                                                                                            height="64"
-                                                                                itemprop="image"
+                                                                                                                        itemprop="image"
                                     />
                                 </a>
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.68.0</strong>
+                                    <strong itemprop="version">0.69.2</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2024-07-17T04:43:51Z">
-                                        
-                                        17-Jul-2024
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,11 +140,10 @@
                                 <img src="https://www.jcabi.com/fork-me.svg" class="fork-me"/>
                             </a>
                                                 <article itemprop="articleBody">
-                            <section>
-<h2><a name="a.22Sonatype.22_Profile_for_Deployment_to_Sonatype_Repository"></a>&quot;Sonatype&quot; Profile for Deployment to Sonatype Repository</h2>
+                            <section><a id="a.22Sonatype.22_Profile_for_Deployment_to_Sonatype_Repository"></a>
+<h1>&quot;Sonatype&quot; Profile for Deployment to Sonatype Repository</h1>
 <p>Profile <code>sonatype</code> can be activated only manually from command line, e.g.:</p>
-<div class="source">
-<pre>$ mvn clean deploy -Psonatype</pre></div>
+<pre><code>$ mvn clean deploy -Psonatype</code></pre>
 <p>The profile will try to &quot;deploy&quot; your artifacts to <code>oss.sonatype.org</code> Maven repository, using <a class="externalLink" href="https://github.com/sonatype/nexus-maven-plugins/tree/master/nexus-staging-maven-plugin"><code>nexus-staging-maven-plugin</code></a>, &quot;close&quot; remote repository and &quot;release&quot; it.</p>
 <p>Deployment is bound to the <code>deploy</code> Maven phase. The profile also skips the default deployment of <code>maven-deploy-plugin</code>.</p>
 <p>The profile also automates creation of <code>-sources.jar</code> and <code>-javadoc.jar</code> artifacts, required by Sonatype.</p></section>
@@ -166,7 +153,7 @@
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2024
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

@@ -3,20 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jcabi-parent &#x2013; "Aspectj" Profile for AOP Weaving</title>
+        <title>"Aspectj" Profile for AOP Weaving – jcabi-parent</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
-                            <script>
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-1963507-23']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-                                            <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+                                                    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="./js/jcabi.js"></script>
     </head>
     <body>
@@ -125,23 +115,21 @@
                             <div class="logo">
                                 <a href="../"
                                     title=" logo ">
-                                    <img src="../logo-square.svg"
+                                    <img src="${decoration.bannerLeft.src}"
                                         alt="jcabi"
-                                                                                    width="64"
-                                                                                                                            height="64"
-                                                                                itemprop="image"
+                                                                                                                        itemprop="image"
                                     />
                                 </a>
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.68.0</strong>
+                                    <strong itemprop="version">0.69.2</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2024-07-17T04:43:50Z">
-                                        
-                                        17-Jul-2024
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,11 +140,10 @@
                                 <img src="https://www.jcabi.com/fork-me.svg" class="fork-me"/>
                             </a>
                                                 <article itemprop="articleBody">
-                            <section>
-<h2><a name="a.22Aspectj.22_Profile_for_AOP_Weaving"></a>&quot;Aspectj&quot; Profile for AOP Weaving</h2>
+                            <section><a id="a.22Aspectj.22_Profile_for_AOP_Weaving"></a>
+<h1>&quot;Aspectj&quot; Profile for AOP Weaving</h1>
 <p>The profile is activated automatically when you have a <code>src/main/aspect</code> directory in the project. Otherwise, you can activate it explicitly:</p>
-<div class="source">
-<pre>$ mvn clean install -Paspectj</pre></div>
+<pre><code>$ mvn clean install -Paspectj</code></pre>
 <p>The profile runs <a class="externalLink" href="http://plugin.jcabi.com/example-ajc.html"><code>jcabi-maven-plugin:ajc</code></a> plugin and adds these dependencies to the classpath:</p>
 <ul>
 <li><a class="externalLink" href="http://aspects.jcabi.com/"><code>com.jcabi:jcabi-aspects</code></a>: JSR-303 and other AOP aspects;</li>
@@ -164,8 +151,7 @@
 <li><a class="externalLink" href="http://docs.oracle.com/javaee/6/api/javax/validation/package-summary.html"><code>javax.validation:validation-api</code></a>: JSR-303 API;</li></ul>
 <p>Don't forget to add JSR-303 validator implementation to your classpath, as explained in <a class="externalLink" href="http://aspects.jcabi.com/jsr-303.html">jcabi-aspects</a>.</p>
 <p>Pay attention that these dependencies are there only when profile is activated. After the artifact installation the profile won't be activated and you should add runtime dependencies explicitly to the project:</p>
-<div class="source">
-<pre>&lt;dependencies&gt;
+<pre><code>&lt;dependencies&gt;
   &lt;dependency&gt;
     &lt;groupId&gt;com.jcabi&lt;/groupId&gt;
     &lt;artifactId&gt;jcabi-aspects&lt;/artifactId&gt;
@@ -180,7 +166,7 @@
     &lt;artifactId&gt;validation-api&lt;/artifactId&gt;
     &lt;scope&gt;runtime&lt;/scope&gt;
   &lt;/dependency&gt;
-&lt;/dependencies&gt;</pre></div>
+&lt;/dependencies&gt;</code></pre>
 <p>This profile doesn't conflict with <a class="externalLink" href="http://docs.oracle.com/javase/1.5.0/docs/guide/apt/GettingStarted.html">APT</a>, because AspectJ weaving is happening outside of the main directory and its results are applied on top of APT-processed classes. The solution is borrowed from <a class="externalLink" href="http://stackoverflow.com/questions/3660547">Sean Patrick Floyd</a>.</p></section>
                         </article>
                     </div>
@@ -188,7 +174,7 @@
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2024
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

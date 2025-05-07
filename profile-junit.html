@@ -3,20 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jcabi-parent &#x2013; JUnit, Hamcrest, and Mockito</title>
+        <title>JUnit, Hamcrest, and Mockito – jcabi-parent</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
-                            <script>
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-1963507-23']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-                                            <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+                                                    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="./js/jcabi.js"></script>
     </head>
     <body>
@@ -125,23 +115,21 @@
                             <div class="logo">
                                 <a href="../"
                                     title=" logo ">
-                                    <img src="../logo-square.svg"
+                                    <img src="${decoration.bannerLeft.src}"
                                         alt="jcabi"
-                                                                                    width="64"
-                                                                                                                            height="64"
-                                                                                itemprop="image"
+                                                                                                                        itemprop="image"
                                     />
                                 </a>
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.68.0</strong>
+                                    <strong itemprop="version">0.69.2</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2024-07-17T04:43:50Z">
-                                        
-                                        17-Jul-2024
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,8 +140,8 @@
                                 <img src="https://www.jcabi.com/fork-me.svg" class="fork-me"/>
                             </a>
                                                 <article itemprop="articleBody">
-                            <section>
-<h2><a name="JUnit.2C_Hamcrest.2C_and_Mockito"></a>JUnit, Hamcrest, and Mockito</h2>
+                            <section><a id="JUnit.2C_Hamcrest.2C_and_Mockito"></a>
+<h1>JUnit, Hamcrest, and Mockito</h1>
 <p>The profile is activated automatically when <code>src/test/java</code> directory exists in the project. These artifacts are automatically added to the list of <code>dependencies</code> (in <code>test</code> scope, of course):</p>
 <ul>
 <li><a class="externalLink" href="https://github.com/kentbeck/junit/wiki"><code>junit:junit</code></a>: unit testing framework;</li>
@@ -166,7 +154,7 @@
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2024
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

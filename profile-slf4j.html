@@ -3,20 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jcabi-parent &#x2013; SLF4J and LOG4J Logging</title>
+        <title>SLF4J and LOG4J Logging – jcabi-parent</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
-                            <script>
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-1963507-23']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-                                            <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+                                                    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="./js/jcabi.js"></script>
     </head>
     <body>
@@ -125,23 +115,21 @@
                             <div class="logo">
                                 <a href="../"
                                     title=" logo ">
-                                    <img src="../logo-square.svg"
+                                    <img src="${decoration.bannerLeft.src}"
                                         alt="jcabi"
-                                                                                    width="64"
-                                                                                                                            height="64"
-                                                                                itemprop="image"
+                                                                                                                        itemprop="image"
                                     />
                                 </a>
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.68.0</strong>
+                                    <strong itemprop="version">0.69.2</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2024-07-17T04:43:51Z">
-                                        
-                                        17-Jul-2024
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,16 +140,15 @@
                                 <img src="https://www.jcabi.com/fork-me.svg" class="fork-me"/>
                             </a>
                                                 <article itemprop="articleBody">
-                            <section>
-<h2><a name="SLF4J_and_LOG4J_Logging"></a>SLF4J and LOG4J Logging</h2>
+                            <section><a id="SLF4J_and_LOG4J_Logging"></a>
+<h1>SLF4J and LOG4J Logging</h1>
 <p>The profile is activated automatically when <code>src/test/resources/log4j.properties</code> file exists in your project. The following two dependencies become available in classpath (in <code>test</code> scope): <code>org.slf4j:slf4j-log4j12</code> and <code>log4j:log4j</code>.</p>
 <p>A good practice is 1) to annotate your methods/classes with <a href="../jcabi-aspects/annotation-loggable.html"><code>@Loggable</code></a>, 2) activate <a href="./profile-aspectj.html"><code>aspectj</code></a> profile, and 3) create <code>src/test/resources/log4j.properties</code> file with LOG4J configuration for unit testing.</p>
 <p>This page explains the format of log4j.properties: <a class="externalLink" href="http://logging.apache.org/log4j/1.2/manual.html">Short introduction to log4j: Ceki G&#xfc;lc&#xfc;, March 2002</a>. This is a short example that works:</p>
-<div class="source">
-<pre>log4j.rootLogger=INFO, CONSOLE
+<pre><code>log4j.rootLogger=INFO, CONSOLE
 log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
 log4j.appender.CONSOLE.layout=com.jcabi.log.MulticolorLayout
-log4j.appender.CONSOLE.layout.ConversionPattern=[%color{%p}] %t %c: %m%n</pre></div>
+log4j.appender.CONSOLE.layout.ConversionPattern=[%color{%p}] %t %c: %m%n</code></pre>
 <p>In this example we use <a href="../jcabi-log/multicolor.html"><code>MulticolorLayout</code></a> from <a href="../jcabi-log/index.html"><code>jcabi-log</code></a>, which colors log output depending on log priorities.</p></section>
                         </article>
                     </div>
@@ -169,7 +156,7 @@ log4j.appender.CONSOLE.layout.ConversionPattern=[%color{%p}] %t %c: %m%n</pre></
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2024
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>

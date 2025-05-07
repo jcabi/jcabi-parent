@@ -3,20 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jcabi-parent &#x2013; "Mock" Profile for Building of a "-mock.jar" artifact</title>
+        <title>"Mock" Profile for Building of a "-mock.jar" artifact – jcabi-parent</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
                     <meta name="author" content="Yegor Bugayenko" />
-                            <script>
-                var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-1963507-23']);
-                _gaq.push(['_trackPageview']);
-                (function() {
-                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                })();
-            </script>
-                                            <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+                                                    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="./js/jcabi.js"></script>
     </head>
     <body>
@@ -125,23 +115,21 @@
                             <div class="logo">
                                 <a href="../"
                                     title=" logo ">
-                                    <img src="../logo-square.svg"
+                                    <img src="${decoration.bannerLeft.src}"
                                         alt="jcabi"
-                                                                                    width="64"
-                                                                                                                            height="64"
-                                                                                itemprop="image"
+                                                                                                                        itemprop="image"
                                     />
                                 </a>
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.68.0</strong>
+                                    <strong itemprop="version">0.69.2</strong>
                                 </li>
                                 <li>
-                                    
-                                    <time itemprop="datePublished" datetime="2024-07-17T04:43:51Z">
-                                        
-                                        17-Jul-2024
+                                    $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
+                                    <time itemprop="datePublished" datetime="${dateFormat.format($currentDate)}">
+                                        $dateFormat.applyPattern('dd-MMM-yyyy')
+                                        ${dateFormat.format($currentDate)}
                                     </time>
                                 </li>
                                 <li class="menu-button">menu</li>
@@ -152,21 +140,19 @@
                                 <img src="https://www.jcabi.com/fork-me.svg" class="fork-me"/>
                             </a>
                                                 <article itemprop="articleBody">
-                            <section>
-<h2><a name="a.22Mock.22_Profile_for_Building_of_a_.22-mock.jar.22_artifact"></a>&quot;Mock&quot; Profile for Building of a &quot;-mock.jar&quot; artifact</h2>
+                            <section><a id="a.22Mock.22_Profile_for_Building_of_a_.22-mock.jar.22_artifact"></a>
+<h1>&quot;Mock&quot; Profile for Building of a &quot;-mock.jar&quot; artifact</h1>
 <p>Profile <code>mock</code> is activated automatically when there is a <code>src/mock/java</code> directory in the project. The profile adds this directory to the list of test directories and compiles and packages its content into a JAR with a <code>mock</code> classifier. Only classes that named as <code>*Mocker.java</code> or <code>*Mocker$*.java</code> are included into the JAR.</p>
 <p>This mechanism is very helpful when you develop an API that contains interfaces that have to be mocked in other modules or projects. For example, these are the interfaces from your public API in module <code>example-api</code>:</p>
-<div class="source">
-<pre>package com.example;
+<pre><code>package com.example;
 public interface Document {
   String content();
 }
 public interface Printer {
   void print(Document doc);
-}</pre></div>
+}</code></pre>
 <p>Class <code>Printer</code> expects an instance of <code>Document</code> as a single parameter of method <code>print()</code>. In another module, say, <code>example-printer</code> you want to implement a <code>Printer</code> and to mock a <code>Document</code> in order to test it:</p>
-<div class="source">
-<pre>import org.junit.Test;
+<pre><code>import org.junit.Test;
 import org.mockito.Mockito;
 public PrinterTest {
   @Test
@@ -177,10 +163,9 @@ public PrinterTest {
     printer.print(doc);
     Mockito.verify(doc).content();
   }
-}</pre></div>
+}</code></pre>
 <p>A more convenient way to do it is to ship a mocker together with an interface:</p>
-<div class="source">
-<pre>public DocumentMocker {
+<pre><code>public DocumentMocker {
   private Document doc = Mockito.mock(Document.class);
   public DocumentMocker withContent(String text) {
     Mockito.doReturn(text).when(this.doc).content();
@@ -189,10 +174,9 @@ public PrinterTest {
   public Document mock() {
     return this.doc;
   }
-}</pre></div>
+}</code></pre>
 <p>This mocker will be used as following:</p>
-<div class="source">
-<pre>import org.junit.Test;
+<pre><code>import org.junit.Test;
 public PrinterTest {
   @Test
   public void testPrinting() {
@@ -203,24 +187,23 @@ public PrinterTest {
     printer.print(doc);
     Mockito.verify(doc).content();
   }
-}</pre></div>
+}</code></pre>
 <p>For complex interfaces such mockers may become a very convenient tool.</p>
 <p>Place the mocker into <code>src/mock/java/com/example/DocumentMocker.java</code> file and it will be compiled and packaged into <code>example-api-1.0-SNAPSHOT-mock.jar</code> artifact. Later, in order to add this artifact to the <code>example-core</code> module use this dependency definition:</p>
-<div class="source">
-<pre>&lt;dependency&gt;
+<pre><code>&lt;dependency&gt;
   &lt;groupId&gt;com.example&lt;/groupId&gt;
   &lt;artifactId&gt;example-api&lt;/artifactId&gt;
   &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
   &lt;classifier&gt;mock&lt;/classifier&gt; &lt;!-- this is the trick --&gt;
   &lt;scope&gt;test&lt;/scope&gt;
-&lt;/dependency&gt;</pre></div></section>
+&lt;/dependency&gt;</code></pre></section>
                         </article>
                     </div>
                 </main>
                 <footer class="legal-notes">
                     <div>
                         Copyright &#169;
-                                                                            2012-2024
+                                                                            2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
                     <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>
