@@ -675,6 +675,8 @@
         <dependency>
           <groupId>org.codehaus.groovy</groupId>
           <artifactId>groovy-all</artifactId>
+          <version>3.0.24</version>
+          <type>pom</type>
         </dependency>
       </dependencies>
       <build>
@@ -1555,11 +1557,6 @@
         <artifactId>antlr4-runtime</artifactId>
         <!-- Don't forget to change the version of the ANTLR4-MAVEN-PLUGIN too! -->
         <version>4.13.2</version>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.groovy</groupId>
-        <artifactId>groovy-all</artifactId>
-        <version>3.0.24</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
