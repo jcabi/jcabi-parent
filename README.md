@@ -1,4 +1,6 @@
-<img alt="logo" src="https://www.jcabi.com/logo-square.svg" width="64px" height="64px" />
+# JCabi-Parent
+
+![logo](logo.svg)
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![DevOps By Rultor.com](https://www.rultor.com/b/jcabi/jcabi-parent)](https://www.rultor.com/p/jcabi/jcabi-parent)
@@ -38,8 +40,8 @@ the `master` branch, if they look correct.
 
 Please run Maven build before submitting a pull request:
 
-```
-$ mvn clean install -Pqulice
+```bash
+mvn clean install -Pqulice
 ```
 
 That's it.
