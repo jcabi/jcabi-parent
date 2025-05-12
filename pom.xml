@@ -19,10 +19,10 @@
   </organization>
   <licenses>
     <license>
-      <name>BSD</name>
+      <name>MIT</name>
       <url>https://www.jcabi.com/LICENSE.txt</url>
       <distribution>repo</distribution>
-      <comments>BSD License</comments>
+      <comments>MIT License</comments>
     </license>
   </licenses>
   <developers>
