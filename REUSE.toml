@@ -10,6 +10,7 @@ path = [
     ".pdd",
     "**.json",
     "**.md",
+    "**.svg",
     "**.txt",
     "**.vm",
     "**/.DS_Store",
