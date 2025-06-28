@@ -1762,7 +1762,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-invoker-plugin</artifactId>
-          <version>3.9.0</version>
+          <version>3.9.1</version>
           <configuration>
             <mergeUserSettings>true</mergeUserSettings>
             <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
