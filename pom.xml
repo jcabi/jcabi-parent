@@ -150,27 +150,16 @@
             </executions>
           </plugin>
           <plugin>
-            <!-- @see http://www.sonatype.com/books/nexus-book/reference/staging-sect-deployment.html -->
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.7.0</version>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+            <version>0.8.0</version>
             <extensions>true</extensions>
             <configuration>
-              <serverId>oss.sonatype.org</serverId>
-              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-              <description>${project.version}</description>
-              <stagingProgressTimeoutMinutes>10</stagingProgressTimeoutMinutes>
+              <publishingServerId>central</publishingServerId>
+              <autoPublish>true</autoPublish>
+              <waitUntil>published</waitUntil>
+              <deploymentName>${project.version}</deploymentName>
             </configuration>
-            <executions>
-              <execution>
-                <id>jcabi-deploy-to-sonatype</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>deploy</goal>
-                  <goal>release</goal>
-                </goals>
-              </execution>
-            </executions>
           </plugin>
         </plugins>
       </build>
