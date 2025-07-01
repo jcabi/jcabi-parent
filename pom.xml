@@ -157,7 +157,7 @@
             <configuration>
               <publishingServerId>central</publishingServerId>
               <autoPublish>true</autoPublish>
-              <waitUntil>published</waitUntil>
+              <waitUntil>validated</waitUntil>
               <deploymentName>${project.version}</deploymentName>
             </configuration>
           </plugin>
