@@ -302,7 +302,7 @@
             -->
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>versions-maven-plugin</artifactId>
-            <version>2.19.0</version>
+            <version>2.19.1</version>
             <reportSets>
               <reportSet>
                 <reports>
@@ -1753,7 +1753,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
-          <version>2.19.0</version>
+          <version>2.19.1</version>
           <configuration>
             <generateBackupPoms>false</generateBackupPoms>
           </configuration>
