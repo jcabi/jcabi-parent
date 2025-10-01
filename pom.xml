@@ -171,7 +171,7 @@
       define github.repo property). It also skips default deployment plugin.
       @see http://www.jcabi.com/jcabi-parent/profile-github.html
       -->
-      <id>github</id>
+      <id>github-packages</id>
       <build>
         <pluginManagement>
           <plugins>
