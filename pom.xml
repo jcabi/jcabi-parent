@@ -1034,7 +1034,7 @@
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-github</artifactId>
-        <version>1.9.1</version>
+        <version>1.10.0</version>
       </dependency>
       <dependency>
         <!--
