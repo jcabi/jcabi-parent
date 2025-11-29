@@ -78,6 +78,7 @@
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <github.repo>jcabi/parent</github.repo>
     <skipITs/>
   </properties>
   <repositories>
@@ -163,6 +164,90 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <profile>
+      <!--
+      The profile deploys all artifacts to Github Packages repository (if you
+      define github.repo property). It also skips default deployment plugin.
+      @see http://www.jcabi.com/jcabi-parent/profile-github.html
+      -->
+      <id>github-packages</id>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-deploy-plugin</artifactId>
+              <configuration>
+                <skip>true</skip>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>validate-github-repo</id>
+                <goals>
+                  <goal>enforce</goal>
+                </goals>
+                <phase>validate</phase>
+                <configuration>
+                  <rules>
+                    <requireProperty>
+                      <property>github.repo</property>
+                      <message>You must define 'github.repo' property to deploy to Github Packages.</message>
+                      <regex>^(?!\s*$).+</regex>
+                    </requireProperty>
+                  </rules>
+                  <fail>true</fail>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>jcabi-sources</id>
+                <configuration>
+                  <forceCreation>true</forceCreation>
+                </configuration>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <!--
+            Generate -javadoc.jar artifact.
+            -->
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>jcabi-javadoc</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+                <configuration>
+                  <additionalOptions>${javadoc.opts}</additionalOptions>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <distributionManagement>
+        <repository>
+          <id>github</id>
+          <name>GitHub Packages</name>
+          <url>https://maven.pkg.github.com/${github.repo}</url>
+        </repository>
+      </distributionManagement>
     </profile>
     <profile>
       <!--
