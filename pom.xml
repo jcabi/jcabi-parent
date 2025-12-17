@@ -1319,7 +1319,7 @@
         -->
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
-        <version>1.9.25</version>
+        <version>1.9.25.1</version>
       </dependency>
       <dependency>
         <!--
