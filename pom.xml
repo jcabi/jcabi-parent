@@ -78,6 +78,7 @@
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <github.repo>jcabi/parent</github.repo>
     <skipITs/>
   </properties>
   <repositories>
@@ -163,6 +164,24 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <profile>
+      <!--
+      The profile deploys all artifacts to Github Packages repository (if you
+      define github.repo property). It also skips default deployment plugin.
+      @see http://www.jcabi.com/jcabi-parent/profile-github.html
+      -->
+      <id>github-packages</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <distributionManagement>
+        <repository>
+          <id>github-packages</id>
+          <name>GitHub Packages</name>
+          <url>https://maven.pkg.github.com/${github.repo}</url>
+        </repository>
+      </distributionManagement>
     </profile>
     <profile>
       <!--
