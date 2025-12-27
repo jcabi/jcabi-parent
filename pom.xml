@@ -1709,6 +1709,10 @@
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.4.0</version>
+          <configuration>
+            <encoding>${project.build.sourceEncoding}</encoding>
+            <propertiesEncoding>${project.reporting.outputEncoding}</propertiesEncoding>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
