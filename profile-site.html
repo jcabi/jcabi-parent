@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>"Site" Profile for Advanced Maven Site Configuration – jcabi-parent</title>
         <link media="all" rel="stylesheet" type="text/css" href="./css/jcabi.css"/>
-                    <meta name="author" content="Yegor Bugayenko" />
+                    <meta name="author" content="Yegor Bugayenko"/>
                                                     <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="./js/jcabi.js"></script>
     </head>
@@ -123,7 +123,7 @@
                             </div>
                             <ul class="badges">
                                 <li>
-                                    <strong itemprop="version">0.71.0</strong>
+                                    <strong itemprop="version">0.71.1</strong>
                                 </li>
                                 <li>
                                     $dateFormat.applyPattern("yyyy-MM-dd'T'hh:mm:ss'Z'")
@@ -142,14 +142,14 @@
                                                 <article itemprop="articleBody">
                             <section><a id="a.22Site.22_Profile_for_Advanced_Maven_Site_Configuration"></a>
 <h1>&quot;Site&quot; Profile for Advanced Maven Site Configuration</h1>
-<p>Most of production site content takes time to build (for example, JavaDoc API, changes report, etc). It's convenient to move that configuration plugins to a profile, which is activated only once in a while. Profile <code>site</code> does exactly that, grouping together most time-consuming reporting plugins. The profile can be activated only manually from command line, e.g.:</p>
+<p>Most of production site content takes time to build (for example, JavaDoc API, changes report, etc). It's convenient to move those configuration plugins to a profile, which is activated only once in a while. Profile <code>site</code> does exactly that, grouping together most time-consuming reporting plugins. The profile can be activated only manually from command line, e.g.:</p>
 <pre><code>$ mvn clean install site-deploy -Psite</code></pre>
 <p>The profile configures <a class="externalLink" href="http://maven.apache.org/plugins/maven-site-plugin/"><code>maven-site-plugin</code></a> with all required reporting plugins:</p>
 <ul>
 <li><a class="externalLink" href="http://maven.apache.org/plugins/maven-project-info-reports-plugin/"><code>maven-project-info-reports-plugin</code></a> creates basic &quot;project information&quot; reports.</li>
 <li><a class="externalLink" href="http://maven.apache.org/plugins/maven-javadoc-plugin/"><code>maven-javadoc-plugin</code></a> builds JavaDoc API documentation in <code>./apidocs-$<a id="project.version">project.version</a></code> directory.</li>
 <li><a class="externalLink" href="http://mojo.codehaus.org/cobertura-maven-plugin/"><code>cobertura-maven-plugin</code></a> generates code coverage report.</li>
-<li><a class="externalLink" href="http://maven.apache.org/plugin-tools/maven-plugin-plugin/"><code>maven-plugin-plugin</code></a> generate documentation for maven plugin.</li>
+<li><a class="externalLink" href="http://maven.apache.org/plugin-tools/maven-plugin-plugin/"><code>maven-plugin-plugin</code></a> generates documentation for a Maven plugin.</li>
 <li><a class="externalLink" href="http://mojo.codehaus.org/versions-maven-plugin/"><code>versions-maven-plugin</code></a> reports about available dependency and plugin versions.</li></ul>
 <p>Also <code>site</code> profile has the following plugins:</p>
 <ul>
@@ -193,7 +193,7 @@
                                                                             2012-${currentYear}
                                             </div>
                     <div>jcabi.com, All Rights Reserved.</div>
-                    <div><a href="http://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>
+                    <div><a href="https://maven.apache.org/privacy-policy.html">Privacy Policy</a>.</div>
                 </footer>
             </div>
         </div>
