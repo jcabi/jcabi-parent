@@ -590,7 +590,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.codehaus.groovy</groupId>
+          <groupId>org.apache.groovy</groupId>
           <artifactId>groovy</artifactId>
         </dependency>
       </dependencies>
@@ -1368,9 +1368,9 @@
       </dependency>
       <dependency>
         <!-- Groovy -->
-        <groupId>org.codehaus.groovy</groupId>
+        <groupId>org.apache.groovy</groupId>
         <artifactId>groovy</artifactId>
-        <version>3.0.25</version>
+        <version>5.0.3</version>
       </dependency>
       <dependency>
         <!-- Clojure -->
