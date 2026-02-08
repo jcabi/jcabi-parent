@@ -10,7 +10,8 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>parent</name>
-  <description>Parent POM.xml with most commonly used pre-configured features</description>
+  <description>Parent POM.xml with most commonly used pre-configured features
+  </description>
   <url>https://www.jcabi.com/parent</url>
   <inceptionYear>2012</inceptionYear>
   <organization>
@@ -49,7 +50,8 @@
   </ciManagement>
   <scm>
     <connection>scm:git:github.com:jcabi/jcabi-parent.git</connection>
-    <developerConnection>scm:git:github.com:jcabi/jcabi-parent.git</developerConnection>
+    <developerConnection>scm:git:github.com:jcabi/jcabi-parent.git
+    </developerConnection>
     <url>https://github.com/jcabi/jcabi-parent</url>
   </scm>
   <distributionManagement>
@@ -75,7 +77,8 @@
     property is defined in order to give us an ability to use ${maven.build.timestamp}
     later in the file
     -->
-    <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+    <maven.build.timestamp.format>yyyy-MM-dd HH:mm
+    </maven.build.timestamp.format>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <github.repo>jcabi/parent</github.repo>
@@ -175,6 +178,28 @@
       <activation>
         <activeByDefault>false</activeByDefault>
       </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <!--
+            Generate -javadoc.jar artifact.
+            -->
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>jcabi-javadoc</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+                <configuration>
+                  <additionalOptions>${javadoc.opts}</additionalOptions>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
       <distributionManagement>
         <repository>
           <id>github-packages</id>
@@ -372,7 +397,8 @@
                   <report>javadoc</report>
                 </reports>
                 <configuration>
-                  <windowtitle>${project.name} ${project.version} API</windowtitle>
+                  <windowtitle>${project.name} ${project.version} API
+                  </windowtitle>
                   <doctitle>${project.name} ${project.version} API</doctitle>
                   <sourcepath>src/main/java</sourcepath>
                   <destDir>apidocs-${project.version}</destDir>
@@ -384,8 +410,10 @@
                   <report>test-javadoc</report>
                 </reports>
                 <configuration>
-                  <testWindowtitle>${project.name} ${project.version} Mock API</testWindowtitle>
-                  <testDoctitle>${project.name} ${project.version} Mock API</testDoctitle>
+                  <testWindowtitle>${project.name} ${project.version} Mock API
+                  </testWindowtitle>
+                  <testDoctitle>${project.name} ${project.version} Mock API
+                  </testDoctitle>
                   <sourcepath>src/mock/java</sourcepath>
                   <destDir>testapidocs-${project.version}</destDir>
                 </configuration>
@@ -507,8 +535,10 @@
                   <goal>ajc</goal>
                 </goals>
                 <configuration>
-                  <tempDirectory>${project.build.directory}/jcabi-ajc</tempDirectory>
-                  <classesDirectory>${project.build.outputDirectory}</classesDirectory>
+                  <tempDirectory>${project.build.directory}/jcabi-ajc
+                  </tempDirectory>
+                  <classesDirectory>${project.build.outputDirectory}
+                  </classesDirectory>
                   <aspectDirectories>
                     <directory>${project.basedir}/src/main/aspect</directory>
                   </aspectDirectories>
@@ -521,8 +551,10 @@
                   <goal>ajc</goal>
                 </goals>
                 <configuration>
-                  <tempDirectory>${project.build.directory}/jcabi-ajc-test</tempDirectory>
-                  <classesDirectory>${project.build.testOutputDirectory}</classesDirectory>
+                  <tempDirectory>${project.build.directory}/jcabi-ajc-test
+                  </tempDirectory>
+                  <classesDirectory>${project.build.testOutputDirectory}
+                  </classesDirectory>
                   <aspectDirectories>
                     <directory>${project.basedir}/src/main/aspect</directory>
                     <directory>${project.basedir}/src/test/aspect</directory>
@@ -560,7 +592,9 @@
             <version>1.9.3</version>
             <configuration>
               <warnOnReflection>true</warnOnReflection>
-              <vmargs>-Dlog4j.configuration=file:${basedir}/src/test/resources/log4j.properties</vmargs>
+              <vmargs>
+                -Dlog4j.configuration=file:${basedir}/src/test/resources/log4j.properties
+              </vmargs>
             </configuration>
             <executions>
               <execution>
@@ -745,11 +779,13 @@
                   <goal>jar</goal>
                 </goals>
                 <configuration>
-                  <classesDirectory>${project.build.testOutputDirectory}</classesDirectory>
+                  <classesDirectory>${project.build.testOutputDirectory}
+                  </classesDirectory>
                   <archive>
                     <index>true</index>
                     <manifest>
-                      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                      <addDefaultImplementationEntries>true
+                      </addDefaultImplementationEntries>
                     </manifest>
                   </archive>
                   <classifier>mock</classifier>
@@ -1676,7 +1712,8 @@
             <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
             <forkCount>0</forkCount>
             <parallel>all</parallel>
-            <parallelTestsTimeoutForcedInSeconds>0</parallelTestsTimeoutForcedInSeconds>
+            <parallelTestsTimeoutForcedInSeconds>0
+            </parallelTestsTimeoutForcedInSeconds>
             <parallelTestsTimeoutInSeconds>0</parallelTestsTimeoutInSeconds>
             <perCoreThreadCount>true</perCoreThreadCount>
             <runOrder>random</runOrder>
@@ -1699,7 +1736,8 @@
             <mergeUserSettings>true</mergeUserSettings>
             <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
             <debug>false</debug>
-            <localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
+            <localRepositoryPath>${project.build.directory}/local-repo
+            </localRepositoryPath>
             <noLog>false</noLog>
             <postBuildHookScript>verify</postBuildHookScript>
             <preBuildHookScript>setup</preBuildHookScript>
@@ -1745,7 +1783,8 @@
           <version>3.4.0</version>
           <configuration>
             <encoding>${project.build.sourceEncoding}</encoding>
-            <propertiesEncoding>${project.reporting.outputEncoding}</propertiesEncoding>
+            <propertiesEncoding>${project.reporting.outputEncoding}
+            </propertiesEncoding>
           </configuration>
         </plugin>
         <plugin>
@@ -1779,7 +1818,8 @@
             <failIfNoSpecifiedTests>true</failIfNoSpecifiedTests>
             <parallel>all</parallel>
             <parallelTestsTimeoutInSeconds>0</parallelTestsTimeoutInSeconds>
-            <parallelTestsTimeoutForcedInSeconds>0</parallelTestsTimeoutForcedInSeconds>
+            <parallelTestsTimeoutForcedInSeconds>0
+            </parallelTestsTimeoutForcedInSeconds>
             <perCoreThreadCount>true</perCoreThreadCount>
             <threadCount>4</threadCount>
           </configuration>
