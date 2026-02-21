@@ -1670,7 +1670,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.5.4</version>
+          <version>3.5.5</version>
           <configuration>
             <encoding>${project.build.sourceEncoding}</encoding>
             <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
