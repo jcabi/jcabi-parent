@@ -1696,6 +1696,7 @@
           <artifactId>maven-invoker-plugin</artifactId>
           <version>3.9.1</version>
           <configuration>
+            <groovyVersion>4.0.27</groovyVersion>
             <mergeUserSettings>true</mergeUserSettings>
             <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
             <debug>false</debug>
