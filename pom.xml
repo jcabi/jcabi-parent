@@ -1105,7 +1105,7 @@
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-matchers</artifactId>
-        <version>1.8.0</version>
+        <version>1.9.0</version>
       </dependency>
       <dependency>
         <!--
@@ -1370,7 +1370,7 @@
         <!-- Groovy -->
         <groupId>org.apache.groovy</groupId>
         <artifactId>groovy</artifactId>
-        <version>5.0.5</version>
+        <version>5.0.6</version>
       </dependency>
       <dependency>
         <!-- Clojure -->
@@ -1694,12 +1694,12 @@
         </plugin>
         <plugin>
           <artifactId>maven-invoker-plugin</artifactId>
-          <version>3.10.0</version>
+          <version>3.10.1</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.groovy</groupId>
               <artifactId>groovy</artifactId>
-              <version>5.0.5</version>
+              <version>5.0.6</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -1811,7 +1811,7 @@
         <plugin>
           <groupId>com.qulice</groupId>
           <artifactId>qulice-maven-plugin</artifactId>
-          <version>0.26.0</version>
+          <version>0.27.6</version>
           <configuration>
             <excludes>
               <exclude>xml:.*</exclude>

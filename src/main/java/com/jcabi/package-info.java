@@ -5,7 +5,6 @@
 
 /**
  * Parent project.
- *
  * @since 0.1
  */
 package com.jcabi;
