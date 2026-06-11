@@ -1186,7 +1186,7 @@
         -->
         <groupId>com.jcabi</groupId>
         <artifactId>jcabi-xml</artifactId>
-        <version>0.36.0</version>
+        <version>0.37.1</version>
       </dependency>
       <dependency>
         <!-- JSON API -->
