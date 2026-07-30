@@ -83,11 +83,6 @@
     Options for maven-javadoc-plugin. Doclint stays on, since the custom
     Qulice tags are registered in maven-javadoc-plugin below and javadoc
     accepts them. Override this property to loosen the checks.
-    ~ @todo #81:30m/DEV Turn on failOnWarnings in maven-javadoc-plugin.
-    ~  Doclint reports a forgotten @param or an undocumented class as a
-    ~  warning, and the build stays green. The five biggest jcabi
-    ~  projects together produce fourteen such warnings, so the cleanup
-    ~  is small, but it belongs to a separate change.
     -->
     <javadoc.opts>-Xdoclint:all</javadoc.opts>
     <skipITs/>
@@ -342,6 +337,7 @@
             <artifactId>maven-javadoc-plugin</artifactId>
             <configuration>
               <failOnError>true</failOnError>
+              <failOnWarnings>true</failOnWarnings>
               <source>${maven.compiler.source}</source>
               <quiet>true</quiet>
               <links>
@@ -1729,6 +1725,7 @@
           <version>3.12.0</version>
           <configuration>
             <source>${maven.compiler.source}</source>
+            <failOnWarnings>true</failOnWarnings>
             <tags>
               <tag>
                 <name>todo</name>
