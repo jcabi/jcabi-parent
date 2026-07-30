@@ -340,9 +340,11 @@
               <failOnWarnings>true</failOnWarnings>
               <source>${maven.compiler.source}</source>
               <quiet>true</quiet>
-              <links>
-                <link>https://docs.oracle.com/en/java/javase/14/docs/api/</link>
-              </links>
+              <!--
+              No <links> here. Linking to the modular JDK API docs from
+              code that lives in the unnamed module makes javadoc warn,
+              and the warning fails the build.
+              -->
               <detectLinks>false</detectLinks>
               <detectJavaApiLink>false</detectJavaApiLink>
               <additionalOptions>${javadoc.opts}</additionalOptions>

@@ -9,4 +9,11 @@ package com.jcabi;
  * @since 0.2
  */
 public final class JCabi {
+
+    /**
+     * Make it.
+     */
+    public JCabi() {
+        // nothing to configure here
+    }
 }
