@@ -79,6 +79,12 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <github.repo>jcabi/parent</github.repo>
+    <!--
+    Options for maven-javadoc-plugin. Doclint stays on, since the custom
+    Qulice tags are registered in maven-javadoc-plugin below and javadoc
+    accepts them. Override this property to loosen the checks.
+    -->
+    <javadoc.opts>-Xdoclint:all</javadoc.opts>
     <skipITs/>
   </properties>
   <repositories>
@@ -221,15 +227,6 @@
       </build>
     </profile>
     <profile>
-      <id>jcabi-doclint-java8-disable</id>
-      <activation>
-        <jdk>[1.8,)</jdk>
-      </activation>
-      <properties>
-        <javadoc.opts>-Xdoclint:none</javadoc.opts>
-      </properties>
-    </profile>
-    <profile>
       <!--
       The profile builds site for production environment.
       @see https://www.jcabi.com/jcabi-parent/profile-qulice.html
@@ -340,6 +337,7 @@
             <artifactId>maven-javadoc-plugin</artifactId>
             <configuration>
               <failOnError>true</failOnError>
+              <failOnWarnings>true</failOnWarnings>
               <source>${maven.compiler.source}</source>
               <quiet>true</quiet>
               <links>
@@ -1727,6 +1725,7 @@
           <version>3.12.0</version>
           <configuration>
             <source>${maven.compiler.source}</source>
+            <failOnWarnings>true</failOnWarnings>
             <tags>
               <tag>
                 <name>todo</name>
