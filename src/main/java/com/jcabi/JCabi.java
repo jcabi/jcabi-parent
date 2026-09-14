@@ -6,6 +6,7 @@ package com.jcabi;
 
 /**
  * Entrance class.
+ *
  * @since 0.2
  */
 public final class JCabi {
