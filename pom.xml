@@ -922,11 +922,6 @@
           <artifactId>slf4j-reload4j</artifactId>
           <scope>test</scope>
         </dependency>
-        <dependency>
-          <groupId>log4j</groupId>
-          <artifactId>log4j</artifactId>
-          <scope>test</scope>
-        </dependency>
       </dependencies>
     </profile>
     <profile>
@@ -1453,12 +1448,6 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-reload4j</artifactId>
         <version>2.0.20</version>
-      </dependency>
-      <dependency>
-        <!-- Use LOG4J logging facility for all loggings. -->
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>1.2.17</version>
       </dependency>
       <dependency>
         <!--
