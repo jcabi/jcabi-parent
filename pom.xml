@@ -1661,9 +1661,6 @@
             <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
             <forkCount>0</forkCount>
             <parallel>all</parallel>
-            <parallelTestsTimeoutForcedInSeconds>0</parallelTestsTimeoutForcedInSeconds>
-            <parallelTestsTimeoutInSeconds>0</parallelTestsTimeoutInSeconds>
-            <perCoreThreadCount>true</perCoreThreadCount>
             <runOrder>random</runOrder>
             <threadCount>8</threadCount>
             <trimStackTrace>false</trimStackTrace>
@@ -1771,9 +1768,6 @@
             <failIfNoTests>true</failIfNoTests>
             <failIfNoSpecifiedTests>true</failIfNoSpecifiedTests>
             <parallel>all</parallel>
-            <parallelTestsTimeoutInSeconds>0</parallelTestsTimeoutInSeconds>
-            <parallelTestsTimeoutForcedInSeconds>0</parallelTestsTimeoutForcedInSeconds>
-            <perCoreThreadCount>true</perCoreThreadCount>
             <threadCount>4</threadCount>
           </configuration>
         </plugin>
