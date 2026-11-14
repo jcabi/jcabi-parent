@@ -318,7 +318,7 @@
             -->
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>versions-maven-plugin</artifactId>
-            <version>2.25.1</version>
+            <version>2.25.2</version>
             <reportSets>
               <reportSet>
                 <reports>
@@ -1778,7 +1778,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
-          <version>2.25.1</version>
+          <version>2.25.2</version>
           <configuration>
             <generateBackupPoms>false</generateBackupPoms>
           </configuration>
