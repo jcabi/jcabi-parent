@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"com.jcabi","c":"JCabi","l":"JCabi()","u":"%3Cinit%3E()"}];updateSearchResults();
+memberSearchIndex = [{"p":"com.jcabi","c":"JCabi","l":"JCabi()","u":"%3Cinit%3E()","k":"3"}];updateSearchResults();
