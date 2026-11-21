@@ -35,3 +35,4 @@ jobs:
       - run: mvn --errors --batch-mode clean install -Pqulice
       - run: tests/slf4j-profile.sh
       - run: tests/gh-pages-profile.sh
+      - run: tests/deprecated-surefire-parameters.sh
