@@ -626,6 +626,7 @@
       </activation>
       <properties>
         <github.global.server>github</github.global.server>
+        <site.path>${project.version}</site.path>
       </properties>
       <build>
         <plugins>
